@@ -1,4 +1,4 @@
-import HeroVideo from "../../../assets/videos/frontPageHero.mp4"
+import HeroVideo from "../../../assets/videos/frontPage.mp4"
 
 export default function HeroSection() {
   return (
@@ -6,8 +6,10 @@ export default function HeroSection() {
       <video
         src={HeroVideo}
         autoPlay
+        muted
         loop
-         className="absolute inset-0 w-full h-full object-cover"
+        playsInline
+        className="w-full h-full object-cover"
       />
 
       <div className="absolute inset-0  bg-opacity-40 flex flex-col justify-center items-center text-center text-white px-4">
