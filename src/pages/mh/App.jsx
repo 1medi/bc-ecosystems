@@ -1,4 +1,4 @@
-
+import MHPieChart from "../../components/mhPie"
 
 function App() {
 
@@ -6,6 +6,7 @@ function App() {
     <>
       <div>
         <h1>Mountain Hemlock</h1>
+        <MHPieChart/>
       </div>
     </>
   )

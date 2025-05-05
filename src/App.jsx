@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import CWH from '../src/pages/cwh/App.jsx'
-import MH from '../src/pages/mh/App.jsx'
+import MH from './pages/mh/App.jsx'
 import Home from "./Home.jsx"
+
 
 function App() {
   return (
