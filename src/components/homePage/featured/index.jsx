@@ -4,9 +4,9 @@ import PPFeatured from '../../../assets/cardImages/pp/ppFeatured.png'
 import ATFeatured from '../../../assets/cardImages/at/atFeatured.png'
 export default function FeaturedEcosystems() {
   const featured = [
-    { name: 'Coastal Western Hemlock', img: CWHFeatured , link: '/CWH' },
-    { name: 'Ponderosa Pine', img: PPFeatured , link: '/PP' },
-    { name: 'Alpine Tundra', img: ATFeatured, link: '/AT' },
+    { name: 'Coastal Western Hemlock', img: CWHFeatured , link: '/Coastal-Western-Hemlock' },
+    { name: 'Ponderosa Pine', img: PPFeatured , link: '/Ponderora-Pine' },
+    { name: 'Coastal Mountain Altai Fescue Alpine', img: ATFeatured, link: '/Coastal-Mountain-Altai-Fescue-Alpine' },
   ]
 
   return (
