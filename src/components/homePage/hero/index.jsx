@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section className="relative h-[100vh] w-full overflow-hidden">
       <video
         src={HeroVideo}
-        autoPlaya
+        autoPlay
         muted
         loop
         playsInline

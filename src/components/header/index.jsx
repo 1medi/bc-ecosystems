@@ -9,13 +9,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="/">
-          <div className="text-green-700 font-bold tracking-wide text-lg">
+          <div className="text-green-700 font-component-header tracking-wide text-lg">
             BC ECOSYSTEMS
           </div>
         </a>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700 uppercase tracking-widest">
+        <nav className="hidden font-body-copy md:flex space-x-8 text-sm font-medium text-gray-700 uppercase tracking-widest">
           <a href="/" className="hover:text-green-700">
             Home
           </a>

@@ -1,19 +1,17 @@
 import EcosystemPage from "../../../components/ecosystemTemplate"
 // import bgHero from "@/assets/images/bg-hero.jpg"
-
-export default function BunchgrassPage() {
+export default function SBSPage() {
   return (
     <EcosystemPage
-      title="Interior Cedar Hemlock"
-      subtitle="A hot, dry grassland ecosystem found in the southern interior"
-      ecosystem={"Interior Cedar Hemlock"}
-    //   heroImage={bgHero}
-      description="The Bunchgrass zone is characterized by rolling grasslands, sparse trees, and semi-arid climate conditions. It is an important ecosystem for agriculture and grazing."
+      title="Sub-Boreal Spruce Zone"
+      subtitle="A moist, cool forested zone important for forestry and wildlife"
+          //   heroImage={bgHero}
+      description="This zone includes dense forests and wetlands, supporting moose, bears, and other northern wildlife."
       stats={[
-        { label: "Mean Annual Temp", value: "9°C" },
-        { label: "Annual Precipitation", value: "250–400 mm" },
-        { label: "Dominant Grass", value: "Bluebunch Wheatgrass" },
-        { label: "Zone Code", value: "BG" },
+        { label: "Mean Annual Temp", value: "4°C" },
+        { label: "Annual Precipitation", value: "400–1000 mm" },
+        { label: "Dominant Tree", value: "Hybrid White Spruce" },
+        { label: "Zone Code", value: "SBS" },
       ]}
     />
   )

@@ -31,7 +31,7 @@ export default function EcosystemPage({
   
         {/* Description */}
         <section className="py-12 px-6 md:px-12 max-w-5xl mx-auto">
-          <h2 className="text-xl font-bold mb-4">About the {ecosystem}</h2>
+          <h2 className="text-xl font-bold mb-4">About the {title}</h2>
           <p className="font-body-copy leading-relaxed">{description}</p>
         </section>
   

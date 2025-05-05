@@ -1,19 +1,17 @@
 import EcosystemPage from "../../../components/ecosystemTemplate"
 // import bgHero from "@/assets/images/bg-hero.jpg"
-
-export default function BunchgrassPage() {
+export default function IMAPage() {
   return (
     <EcosystemPage
-      title="Interior Cedar Hemlock"
-      subtitle="A hot, dry grassland ecosystem found in the southern interior"
-      ecosystem={"Interior Cedar Hemlock"}
-    //   heroImage={bgHero}
-      description="The Bunchgrass zone is characterized by rolling grasslands, sparse trees, and semi-arid climate conditions. It is an important ecosystem for agriculture and grazing."
+      title="Interior Mountain-Heather Alpine"
+      subtitle="High elevation alpine tundra in the interior"
+          //   heroImage={bgHero}
+      description="Above the treeline, this cold and windswept zone supports dwarf shrubs and hardy herbs. It's essential for alpine species and snow storage."
       stats={[
-        { label: "Mean Annual Temp", value: "9°C" },
-        { label: "Annual Precipitation", value: "250–400 mm" },
-        { label: "Dominant Grass", value: "Bluebunch Wheatgrass" },
-        { label: "Zone Code", value: "BG" },
+        { label: "Mean Annual Temp", value: "-4°C" },
+        { label: "Annual Precipitation", value: "200–500 mm" },
+        { label: "Dominant Plant", value: "Mountain Heather" },
+        { label: "Zone Code", value: "IMA" },
       ]}
     />
   )

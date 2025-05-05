@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
-
+import CWHFeatured from '../../../assets/cardImages/cwh/cwhFeatured.png'
+import PPFeatured from '../../../assets/cardImages/pp/ppFeatured.png'
+import ATFeatured from '../../../assets/cardImages/at/atFeatured.png'
 export default function FeaturedEcosystems() {
   const featured = [
-    { name: 'Coastal Western Hemlock', img: '/cwh.jpg', link: '/CWH' },
-    { name: 'Ponderosa Pine', img: '/pp.jpg', link: '/PP' },
-    { name: 'Alpine Tundra', img: '/at.jpg', link: '/AT' },
+    { name: 'Coastal Western Hemlock', img: CWHFeatured , link: '/CWH' },
+    { name: 'Ponderosa Pine', img: PPFeatured , link: '/PP' },
+    { name: 'Alpine Tundra', img: ATFeatured, link: '/AT' },
   ]
 
   return (
