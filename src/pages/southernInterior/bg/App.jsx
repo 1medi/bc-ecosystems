@@ -4,9 +4,9 @@ import EcosystemPage from "../../../components/ecosystemTemplate"
 export default function BunchgrassPage() {
   return (
     <EcosystemPage
-      title="Interior Cedar Hemlock"
+      title="Bunchgrass Zone"
       subtitle="A hot, dry grassland ecosystem found in the southern interior"
-      ecosystem={"Interior Cedar Hemlock"}
+      ecosystem={"Bunchgrass Zone"}
     //   heroImage={bgHero}
       description="The Bunchgrass zone is characterized by rolling grasslands, sparse trees, and semi-arid climate conditions. It is an important ecosystem for agriculture and grazing."
       stats={[

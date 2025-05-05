@@ -1,11 +1,12 @@
-import HeroVideo from "../../../assets/videos/frontPage.mp4"
+import HeroVideo from "../../../assets/videos/frontPage.mp4";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
     <section className="relative h-[100vh] w-full overflow-hidden">
       <video
         src={HeroVideo}
-        autoPlay
+        autoPlaya
         muted
         loop
         playsInline
@@ -16,13 +17,15 @@ export default function HeroSection() {
         <h1 className="font-kapital-hero-header tracking-wide text-4xl md:text-6xl font-bold">
           Explore the Ecosystems of BC
         </h1>
-        <a
+        <motion.a
           href="#explore"
-          className="font-kapital-big-button mt-6 bg-green-600 hover:bg-green-700 px-6 py-3 rounded text-white text-lg"
+          whileHover={{ backgroundColor: "#5C7A50" }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="font-kapital-big-button mt-6 p-6 bg-[#4C6440] rounded-xl text-white text-lg inline-block"
         >
           EXPLORE
-        </a>
+        </motion.a>
       </div>
     </section>
-  )
+  );
 }
