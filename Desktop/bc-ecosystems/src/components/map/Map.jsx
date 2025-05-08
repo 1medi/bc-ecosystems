@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../Header';
+import Header from '../header';
 import Footer from '../footer';
 import BEC from '/BEC.png';
 import BG from '/BG.png';
