@@ -11,10 +11,9 @@
 }
 
 /* Hero Header */
-.font-kapital-hero-header {
+.font-hero-header {
   font-family: 'Kapital', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.025em;
+  font-weight: 300;
   font-size: clamp(3.5rem, 7vw, 8rem); /* 56–128px */
 }
 
@@ -67,8 +66,7 @@
 .font-kapital-big-button {
   font-family: 'Kapital', sans-serif;
   font-size: clamp(3rem, 6vw, 4rem); /* 48–64px */
-  line-height: 1.1;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 /* Subheader */
