@@ -2,7 +2,16 @@
 
 @font-face {
   font-family: 'Kapital';
-  src: url('./assets/fonts/kapital') format('otf');
+  src: url('./assets/fonts/kapital/kapitalLight.otf') format('otf');
+}
+@font-face {
+  font-family: 'Kapital-Light';
+  src: url('./assets/fonts/kapital/kapitalLight.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Kapital-Demi';
+  src: url('./assets/fonts/kapital/kapitalDemi.otf') format('otf');
 }
 
 @font-face {
@@ -12,15 +21,15 @@
 
 /* Hero Header */
 .font-hero-header {
-  font-family: 'Kapital', sans-serif;
-  font-weight: 300;
-  font-size: clamp(3.5rem, 7vw, 8rem); /* 56–128px */
+  font-family: 'Kapital-Demi', sans-serif;
+  font-weight: 100;
+  font-size: clamp(3.5rem, 8vw, 7rem); 
 }
 
 /* Body Copy */
 .font-body-copy {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(0.875rem, 1.5vw, 1rem); /* 14–16px */
+  font-size: clamp(0.875rem, 1.5vw, 1rem); 
   line-height: 1.5;
   font-weight: 400;
 }
@@ -28,7 +37,7 @@
 /* Regular Header */
 .font-regular-header {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(1.5rem, 3vw, 2rem); /* 24–32px */
+  font-size: clamp(1.5rem, 3vw, 2rem); 
   line-height: 1.25;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -37,7 +46,7 @@
 /* Component Header */
 .font-component-header {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* 20–24px */
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem); 
   line-height: 1.3;
   font-weight: 400;
   letter-spacing: 0.015em;
@@ -46,7 +55,7 @@
 /* Button Text */
 .font-kapital-button {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.125rem); /* 16–18px */
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -55,7 +64,7 @@
 /* Chips */
 .font-kapital-chips {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(0.625rem, 1.5vw, 0.75rem); /* 10–12px */
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem);
   line-height: 1.25;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -65,14 +74,14 @@
 /* Big Button */
 .font-kapital-big-button {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(3rem, 6vw, 4rem); /* 48–64px */
+  font-size: clamp(1rem, 6vw, 2rem); 
   font-weight: 200;
 }
 
 /* Subheader */
 .font-kapital-subheader {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.25rem); /* 16–20px */
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.4;
   font-weight: 500;
   letter-spacing: 0.015em;
@@ -81,19 +90,17 @@
 /* Card Title */
 .font-card-title {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem); /* 32–48px */
+  font-size: clamp(1.25rem, 4vw, 2rem); 
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 /* Section Header */
-.font-kapital-section-header {
+.font-section-header {
   font-family: 'Kapital', sans-serif;
-  font-size: clamp(2.5rem, 5vw, 3rem); /* 40–48px */
-  line-height: 1.5;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: clamp(2rem, 4vw, 3.25rem); 
+  font-weight: 100;
 }
 
 

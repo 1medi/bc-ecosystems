@@ -14,18 +14,18 @@ export default function HeroSection() {
       />
 
       <div className="absolute inset-0  bg-opacity-40 flex flex-col justify-center items-center lg:items-start  text-center text-white px-4">
-        <div className="flex flex-col items-start justify-center lg:w-1/2">
-          <h1 className="font-hero-header tracking-wide text-4xl md:text-6xl font-bold m-auto">
-            Explore the Ecosystems of BC
+        <div className="flex flex-col items-start justify-center lg:w-3/5 p-8">
+          <h1 className="font-hero-header lg:text-left text-4xl md:text-6xl font-bold m-auto]">
+            EXPLORE THE ECOSYSTEMS OF BC
           </h1>
-          <motion.a
-            href="#explore"
-            whileHover={{ backgroundColor: "#5C7A50" }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            className="font-kapital-big-button flex p-6 bg-[#4C6440] rounded-xl text-white text-lg m-auto"
-          >
-            EXPLORE
-          </motion.a>
+            <motion.a
+              href="#explore"
+              whileHover={{ backgroundColor: "#5C7A50", scale: 1.25}}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="font-kapital-big-button flex p-2 bg-[#4C6440] rounded-xl text-white text-lg m-auto"
+            >
+              Explore
+            </motion.a>
         </div>
       </div>
     </section>
