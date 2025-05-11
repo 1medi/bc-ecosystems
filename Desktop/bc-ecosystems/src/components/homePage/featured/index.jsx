@@ -4,13 +4,13 @@ import PPFeatured from '../../../assets/cardImages/pp/ppFeatured.png'
 import ATFeatured from '../../../assets/cardImages/at/atFeatured.png'
 export default function FeaturedEcosystems() {
   const featured = [
-    { name: 'Coastal Western Hemlock', img: CWHFeatured , link: '/CWH' },
-    { name: 'Ponderosa Pine', img: PPFeatured , link: '/PP' },
-    { name: 'Alpine Tundra', img: ATFeatured, link: '/AT' },
+    { name: 'Coastal Western Hemlock', img: CWHFeatured , link: '/Coastal-Western-Hemlock' },
+    { name: 'Ponderosa Pine', img: PPFeatured , link: '/Ponderora-Pine' },
+    { name: 'Coastal Mountain Altai Fescue Alpine', img: ATFeatured, link: '/Coastal-Mountain-Altai-Fescue-Alpine' },
   ]
 
   return (
-    <section className="py-16 px-6 text-center">
+    <section className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-6 text-center">
       <h2 className="text-3xl font-semibold mb-10">FEATURED ECOSYSTEMS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {featured.map((eco) => (

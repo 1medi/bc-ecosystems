@@ -41,15 +41,15 @@ const sections = {
     { name: "Interior Mountain-heather Alpine (IMA)", color: "bg-[#008080]" },
   ],
   "Southern Interior": [
-    { name: "Bunchgrass (BG)", color: "bg-purple-500" },
-    { name: "Ponderosa Pine (PP)", color: "bg-purple-500" },
-    { name: "Engelmann Spruce Subalpine Fir (ESSF)", color: "bg-purple-500" },
+    { name: "Bunchgrass (BG)", color: "bg-[#6B5B95]" },
+    { name: "Ponderosa Pine (PP)", color: "bg-[#6B5B95]" },
+    { name: "Engelmann Spruce Subalpine Fir (ESSF)", color: "bg-[#6B5B95]" },
   ],
   Coastal: [
-    { name: "Coastal Douglas Fir (CDF)", color: "bg-pink-600" },
-    { name: "Coastal Western Hemlock (CWH)", color: "bg-pink-600" },
-    { name: "Mountain Hemlock (MH)", color: "bg-pink-600" },
-    { name: "Coastal Mountain-heather Alpine (CMHA)", color: "bg-pink-600" },
+    { name: "Coastal Douglas Fir (CDF)", color: "bg-[#7B9BD1]" },
+    { name: "Coastal Western Hemlock (CWH)", color: "bg-[#7B9BD1]" },
+    { name: "Mountain Hemlock (MH)", color: "bg-[#7B9BD1]" },
+    { name: "Coastal Mountain-heather Alpine (CMHA)", color: "bg-[#7B9BD1]" },
   ],
 };
 
@@ -97,7 +97,7 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <section className="bg-white py-16 px-4">
+    <section className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-4">
       <h2 className="text-center text-3xl font-semibold mb-6">
         EXPLORE BC'S ECOSYSTEMS
       </h2>

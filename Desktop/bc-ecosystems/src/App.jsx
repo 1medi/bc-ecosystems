@@ -15,7 +15,7 @@ import BAFA from './pages/northern/bafa/App.jsx'
 import BWBS from './pages/northern/bwbs/App.jsx'
 import ESSF from './pages/northern/essf/App.jsx'
 import SWB from './pages/northern/swb/App.jsx'
-import Map from './components/map/Map';
+import Map from './pages/map/App.jsx'
 
 import Home from "./Home.jsx"
 
@@ -23,7 +23,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/map" element={<Map />} />
       {/* Coastal */}
       <Route path="/Mountain-Hemlock" element={<MH />} />
       <Route path="/Coastal-Western-Hemlock" element={<CWH />} />
@@ -47,6 +46,9 @@ function App() {
       <Route path="/Boreal-White-and-Black-Spruce" element={<BWBS />} />
       <Route path="/Engelmann-Spruce-Subalpine-Fir" element={<ESSF />} />
       <Route path="/Spruce-Willow-Birch" element={<SWB />} />
+
+      {/* Interactive Map*/}
+      <Route path="Interactive-Map" element={<Map/>}/>
     </Routes>
   )
 }
