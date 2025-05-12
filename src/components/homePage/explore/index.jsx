@@ -5,7 +5,7 @@ export default function ExploreSection() {
     {
       title: "Interactive Maps",
       desc: "Discover BC’s ecosystems visually.",
-      link: "/pages/map/App.jsx",
+      link: "/Interactive-Map",
     },
     {
       title: "Ecosystem Gallery",

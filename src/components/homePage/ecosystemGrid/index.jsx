@@ -2,28 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import bgImage from "../../../assets/gridCard/bg.JPEG";
 
-const colorMap = {
-  "Boreal White and Black Spruce (BWBS)": "bg-[#556B2F]",
-  "Spruce Willow Birch (SWB)": "bg-[#556B2F]",
-  "Engelmann Spruce Subalpine Fir (ESSF)": "bg-[#556B2F]",
-  "Boreal Altai Fescue Alpine (BAFA)": "bg-[#556B2F]",
-
-  "Sub-Boreal Pine Spruce (SBPS)": "bg-[#008080]",
-  "Sub-Boreal Spruce (SBS)": "bg-[#008080]",
-  "Montane Spruce (MS)": "bg-[#008080]",
-  "Interior Cedar-Hemlock (ICH)": "bg-[#008080]",
-  "Interior Douglas-Fir (IDF)": "bg-[#008080]",
-  "Interior Mountain-heather Alpine (IMA)": "bg-[#008080]",
-
-  "Bunchgrass (BG)": "bg-purple-500",
-  "Ponderosa Pine (PP)": "bg-purple-500",
-
-  "Coastal Douglas Fir (CDF)": "bg-pink-600",
-  "Coastal Western Hemlock (CWH)": "bg-pink-600",
-  "Mountain Hemlock (MH)": "bg-pink-600",
-  "Coastal Mountain-heather Alpine (CMHA)": "bg-pink-600",
-};
-
 const sections = {
   Northern: [
     { name: "Boreal White and Black Spruce (BWBS)", color: "bg-[#556B2F]" },
@@ -38,7 +16,7 @@ const sections = {
     { name: "Interior Cedar-Hemlock (ICH)", color: "bg-[#008080]" },
     { name: "Interior Douglas-Fir (IDF)", color: "bg-[#008080]" },
     { name: "Engelmann Spruce Subalpine Fir (ESSF)", color: "bg-[#008080]" },
-    { name: "Interior Mountain-heather Alpine (IMA)", color: "bg-[#008080]" },
+    { name: "Interior Mountain-Heather Alpine (IMA)", color: "bg-[#008080]" },
   ],
   "Southern Interior": [
     { name: "Bunchgrass (BG)", color: "bg-[#6B5B95]" },
@@ -49,7 +27,7 @@ const sections = {
     { name: "Coastal Douglas Fir (CDF)", color: "bg-[#7B9BD1]" },
     { name: "Coastal Western Hemlock (CWH)", color: "bg-[#7B9BD1]" },
     { name: "Mountain Hemlock (MH)", color: "bg-[#7B9BD1]" },
-    { name: "Coastal Mountain-heather Alpine (CMHA)", color: "bg-[#7B9BD1]" },
+    { name: "Coastal Mountain-Heather Alpine (CMHA)", color: "bg-[#7B9BD1]" },
   ],
 };
 
@@ -64,7 +42,7 @@ const routeMap = {
   "Montane Spruce (MS)": "/Montane-Spruce",
   "Interior Cedar-Hemlock (ICH)": "/Interior-Cedar-Hemlock",
   "Interior Douglas-Fir (IDF)": "/Interior-Douglas-Fir",
-  "Interior Mountain-heather Alpine (IMA)": "/Interior-Mountain-Heather-Alpine",
+  "Interior Mountain-Heather Alpine (IMA)": "/Interior-Mountain-Heather-Alpine",
 
   "Bunchgrass (BG)": "/Bunchgrass",
   "Ponderosa Pine (PP)": "/Ponderora-Pine",
@@ -72,7 +50,7 @@ const routeMap = {
   "Coastal Douglas Fir (CDF)": "/Coastal-Douglas-Fir",
   "Coastal Western Hemlock (CWH)": "/Coastal-Western-Hemlock",
   "Mountain Hemlock (MH)": "/Mountain-Hemlock",
-  "Coastal Mountain-heather Alpine (CMHA)":
+  "Coastal Mountain-Heather Alpine (CMHA)":
     "/Coastal-Mountain-Altai-Fescue-Alpine",
 };
 
@@ -86,13 +64,13 @@ const imageMap = {
   "Montane Spruce (MS)": bgImage,
   "Interior Cedar-Hemlock (ICH)": bgImage,
   "Interior Douglas-Fir (IDF)": bgImage,
-  "Interior Mountain-heather Alpine (IMA)": bgImage,
+  "Interior Mountain-Heather Alpine (IMA)": bgImage,
   "Bunchgrass (BG)": bgImage,
   "Ponderosa Pine (PP)": bgImage,
   "Coastal Douglas Fir (CDF)": bgImage,
   "Coastal Western Hemlock (CWH)": bgImage,
   "Mountain Hemlock (MH)": bgImage,
-  "Coastal Mountain-heather Alpine (CMHA)": bgImage,
+  "Coastal Mountain-Heather Alpine (CMHA)": bgImage,
 };
 
 export default function EcosystemGrid() {

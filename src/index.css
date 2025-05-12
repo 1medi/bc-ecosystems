@@ -2,20 +2,16 @@
 
 @font-face {
   font-family: 'Kapital';
-  src: url('./assets/fonts/kapital/kapitalLight.otf') format('otf');
-}
-@font-face {
-  font-family: 'Kapital-Light';
-  src: url('./assets/fonts/kapital/kapitalLight.otf') format('otf');
+  src: url('./assets/fonts/kapital/kapitalLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Kapital-Demi';
-  src: url('./assets/fonts/kapital/kapitalDemi.otf') format('otf');
+  src: url('./assets/fonts/kapital/kapitalDemi.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'Work-Sans';
   src: url('./assets/fonts/workSans') format('ttf');
 }
 
@@ -28,7 +24,7 @@
 
 /* Body Copy */
 .font-body-copy {
-  font-family: 'Kapital', sans-serif;
+  font-family: 'Work-Sans', sans-serif;
   font-size: clamp(0.875rem, 1.5vw, 1rem); 
   line-height: 1.5;
   font-weight: 400;
@@ -98,11 +94,14 @@
 
 /* Section Header */
 .font-section-header {
-  font-family: 'Kapital', sans-serif;
+  font-family: 'Kapital-Demi', sans-serif;
   font-size: clamp(2rem, 4vw, 3.25rem); 
-  font-weight: 100;
 }
 
+.font-featured-title {
+  font-family: Kapital, sans-serif;
+  font-size: 24pt;
+}
 
 html {
   scroll-behavior: smooth;
