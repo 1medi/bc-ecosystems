@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'Work-Sans';
-  src: url('./assets/fonts/workSans') format('ttf');
+  src: url('./assets/fonts/workSans.woff2') format('woff2');
 }
 
 /* Hero Header */
