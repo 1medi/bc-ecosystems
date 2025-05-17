@@ -16,12 +16,12 @@ import BWBS from './pages/northern/bwbs/App.jsx'
 import ESSF from './pages/northern/essf/App.jsx'
 import SWB from './pages/northern/swb/App.jsx'
 import Map from './pages/map/App.jsx'
-
 import Home from "./Home.jsx"
 
 function App() {
   return (
     <Routes>
+      
       <Route path="/" element={<Home />} />
       {/* Coastal */}
       <Route path="/Mountain-Hemlock" element={<MH />} />
@@ -31,7 +31,7 @@ function App() {
       
       {/* Southern Interior */}
       <Route path="/Bunchgrass" element={<BG />} />
-      <Route path="/Ponderora-Pine" element={<PP />} />
+      <Route path="/Ponderosa-Pine" element={<PP />} />
 
       {/* Central Interior */}
       <Route path="/Interior-Cedar-Hemlock" element={<ICH />} />
