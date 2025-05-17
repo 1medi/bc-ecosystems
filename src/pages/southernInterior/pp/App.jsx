@@ -17,9 +17,7 @@ export default function PPPage() {
         ]}
       />
       <div >
-        <div className=" m-auto w-[500px]">
-        <Test />
-        </div>
+
 
       </div>
     </>

@@ -13,7 +13,6 @@ export default function EcosystemPage({
 }) {
   return (
     <>
-      <Header />
       <div className="bg-white text-gray-800">
         {/* Hero Section */}
         <section className="relative h-[60vh] w-full overflow-hidden">

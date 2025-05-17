@@ -22,11 +22,11 @@ export default function Header() {
           <a href="/ecosystems" className="hover:text-green-700">
             Ecosystems
           </a>
-          <a href="/resources" className="hover:text-green-700">
-            Resources
+          <a href="/Gallery" className="hover:text-green-700">
+            Gallery
           </a>
           <a href="/about" className="hover:text-green-700">
-            About Us
+            FAQ
           </a>
           <a href="/contact" className="hover:text-green-700">
             Contact
