@@ -31,7 +31,7 @@ export default function ExploreSection() {
             className="bg-white shadow rounded p-6 w-72 cursor-pointer"
           >
             <h3 className="font-card-title">{item.title}</h3>
-            <p className="mt-2 text-gray-600">{item.desc}</p>
+            <p className="mt-2 text-gray-600 font-body-copy">{item.desc}</p>
             <motion.a
               href={item.link}
               whileHover={{ backgroundColor: "#5C7A50"}}

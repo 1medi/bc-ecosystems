@@ -1,21 +1,21 @@
 import { useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import BEC from "/BEC.png";
-import BG from "/BG.png";
-import BWBS from "/BWBS.png";
-import CDF from "/CDF.png";
-import CWH from "/CWH.png";
-import ESSF from "/ESSF.png";
-import IDF from "/IDF.png";
-import ICH from "/ICH.png";
-import PP from "/PP.png";
-import MS from "/MS.png";
-import MH from "/MH.png";
-import IMA from "/IMA_CMA_BAFA.png";
-import SBPS from "/SBPS.png";
-import SBS from "/SBS.png";
-import SWB from "/SWB.png";
+import BEC from "/BEC.webp";
+import BG from "/BG.webp";
+import BWBS from "/BWBS.webp";
+import CDF from "/CDF.webp";
+import CWH from "/CWH.webp";
+import ESSF from "/ESSF.webp";
+import IDF from "/IDF.webp";
+import ICH from "/ICH.webp";
+import PP from "/PP.webp";
+import MS from "/MS.webp";
+import MH from "/MH.webp";
+import IMA from "/IMA_CMA_BAFA.webp";
+import SBPS from "/SBPS.webp";
+import SBS from "/SBS.webp";
+import SWB from "/SWB.webp";
 import { motion, AnimatePresence } from "framer-motion";
 import PageWrapper from "../../components/pageWrapper";
 
@@ -52,7 +52,6 @@ export default function InteractiveMapSidebar() {
   return (
     <>
       <PageWrapper>
-        <Header />
         <div className="flex flex-col md:flex-row justify-center items-center p-8 gap-4 max-w-screen-lg mx-auto">
           <div className="w-full md:w-2/3 max-w-[650px]  bg-white flex items-center justify-center">
             <AnimatePresence mode="wait">
@@ -112,7 +111,6 @@ export default function InteractiveMapSidebar() {
             </div>
           </div>
         </div>
-        <Footer />
       </PageWrapper>
     </>
   );

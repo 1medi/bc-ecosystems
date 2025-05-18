@@ -16,9 +16,6 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="hidden font-body-copy md:flex space-x-8 text-sm font-medium text-gray-700 uppercase tracking-widest">
-          <a href="/" className="hover:text-green-700">
-            Home
-          </a>
           <a href="/ecosystems" className="hover:text-green-700">
             Ecosystems
           </a>

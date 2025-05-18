@@ -14,8 +14,8 @@ export default function HeroSection() {
       />
 
       <div className="absolute inset-0  bg-opacity-40 flex flex-col justify-center items-center lg:items-start  text-center text-white px-4">
-        <div className="flex flex-col items-start justify-center lg:w-3/5 p-8">
-          <h1 className="font-hero-header lg:text-left text-4xl md:text-6xl font-bold m-auto]">
+        <div className="flex flex-col items-start justify-center lg:w-3/5 xl:w-2/5 p-8">
+          <h1 className="font-hero-header lg:text-left text-4xl md:text-6xl font-bold m-auto">
             EXPLORE THE ECOSYSTEMS OF BC
           </h1>
             <motion.a
