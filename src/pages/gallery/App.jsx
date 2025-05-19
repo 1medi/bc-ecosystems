@@ -68,7 +68,7 @@ const Gallery = () => {
     { value: "Coastal", label: "Coastal" },
   ];
 
-  // Filter images based on selected category
+
   const filteredImages = selectedCategory
     ? galleryImages.filter((image) =>
         image.categories.includes(selectedCategory)

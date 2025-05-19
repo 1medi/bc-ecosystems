@@ -1,11 +1,11 @@
 import React from "react";
 
-const AboutZoneCard = ({ title, description, image, caption }) => {
+const AboutZoneCard = ({ title, description, image, caption, background }) => {
   return (
     <div className="relative w-full overflow-hidden">
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <img
-          src="/about.png"
+          src={background}
           alt="Background"
           className="w-full h-full object-cover"
         />

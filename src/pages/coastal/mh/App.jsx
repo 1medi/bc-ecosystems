@@ -4,6 +4,8 @@ import MHPieChart from "../../../components/mhPie";
 import AboutZoneCard from "../../../components/aboutZoneCard";
 import MHChart from "../../../components/mhChart/index";
 import PageWrapper from "../../../components/pageWrapper";
+import Krumm from "../../../assets/mh/krumhotz.png"
+import MHCover from "../../../assets/mh/mhcover.png"
 
 export default function MountainHemlockPage() {
   return (
@@ -23,7 +25,8 @@ export default function MountainHemlockPage() {
         <AboutZoneCard
           title="About this zone"
           description="The Mountain Hemlock Biogeoclimatic zone (or MH zone) gets its name from the abundance of mountain hemlock present in the higher elevation areas across the Pacific coast region. Mountain hemlock is also known as Tsuga mertensiana and is well adapted to the colder and snowier conditions found at higher elevations. Deep snow and a shorter growing season play a large role in the MH zone ecosystem. At higher elevations the forest transitions into subalpine parklands where trees are found grouped together. These “islands” are microsites where the snow melts a little bit earlier. At these upper edges, trees can be small, misshapen, but older than you might think as they are slow to grow. These are known as Krummholz trees, a German word meaning “crooked wood”. These forests are rarely disturbed by events like fires, so trees can become old growth forests in this zone. More typical disturbance agents are avalanches or rock slides."
-          image="/krumhotz.png"
+          image={Krumm}
+          background={MHCover}
           caption="A Krummholz tree"
         />
         {/* Distribution Section */}
