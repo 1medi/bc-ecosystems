@@ -82,7 +82,7 @@ export default function CDFPage() {
         />
       </div>
 
-      <h2 className="text-3xl font-bold text-green-900 text-center mb-8">Life in the CDF zone</h2>
+      <h2 className="text-3xl font-bold text-green-900 text-center mt-15 mb-15">Life in the CDF zone</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 max-w-screen-lg mx-auto">
         <div>
@@ -97,13 +97,12 @@ export default function CDFPage() {
             The CDF zone's mild, wet winters and warm, dry summers largely dictate its animal inhabitants. Receiving the least snowfall of any BC zone, the CDF supports a rich and diverse wildlife population. Birdlife includes seabirds like ancient murrelets and cormorants along the coast, songbirds such as song sparrows and yellow-rumped warblers throughout, and larger birds like great blue herons and bald eagles. Mammals inhabiting the CDF include black-tailed deer (forest edges and grasslands), harbour seals and sea lions (coastal waters), North American river otters (aquatic burrows), European and Alaska rabbits (grasslands and meadows), black bears (forests and shorelines), northern raccoons (varied habitats), mink (Pacific Northwest coast), red squirrels (coniferous/mixed forests and urban areas), and cougars (mountainous forests). Species of concern in the CDF include the threatened Western Screech-Owl and endangered Little Brown Myotis, along with the Western Toad, Common Sharp-tailed Snake, and Northern Red-legged Frog (all Special Concern).
           </p>
         </div>
-        <div className="flex">
-        <img
-          src="/forest.png"
-          alt="forest"
-          className="w-full h-200 "
-        />
-      </div>
+        <div className="flex justify-center items-center w-full">
+  <img
+    src="/forest.png"
+    alt="forest"
+  />
+</div>
       </div>
     </div>
   );

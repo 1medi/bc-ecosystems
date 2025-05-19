@@ -64,7 +64,7 @@ Due to its shallow root system, Western Hemlock is vulnerable to being uprooted 
             className="rounded-lg w-full h-auto"
           />
         </div>
-          <h2 className="text-2xl font-bold text-green-900 mb-4 text-center">Ecological Conditions</h2>
+          <h2 className="text-2xl font-bold text-green-900 mt-10 mb-4 text-center">Ecological Conditions</h2>
           <p className="text-base text-gray-800 leading-relaxed">
           The Coastal Western Hemlock (CWH) zone has the wettest climate in British Columbia, receiving between 1000 and 4400 mm of precipitation annually. In the south, most of this falls as rain, while in the north, up to 50% can fall as snow.
 The climate is cool and wet, with mild winters and cool summers. Although hot spells can occur in summer, they are usually short. The mean annual temperature is around 8°C, with 4 to 6 months above 10°C. The coldest month averages around 0.2°C, though colder temperatures are possible in the northern parts.
@@ -78,14 +78,14 @@ These cool, moist conditions support lush forests, dense moss layers, and high b
         The Coastal Western Hemlock (CWH) zone contains a wide variety of forest types that change depending on moisture levels and proximity to the coast. In hypermaritime areas, forests are dominated by western hemlock, western redcedar, Sitka spruce, and sometimes yellow cedar, with highly productive stands occurring on well-drained slopes and peatlands common on the outer coast. Wetter maritime subzones feature forests dominated by western hemlock and amabilis fir, often forming even-aged stands due to windthrow, with redcedar more common on long-undisturbed sites. The typical vegetation includes a rich moss layer and ericaceous shrubs like Alaskan blueberry and salal. Drier maritime forests contain more Douglas-fir and have well-developed salal and Oregon grape in the understory, while submaritime forests—located farther inland—lack typical coastal species and instead include interior species like queen’s cup, red-stemmed feathermoss, and false azalea, reflecting a transition toward continental ecosystems.
         </p>
       </section>
-      <div className="flex-1]">
+      <div className="flex-1 mt-10">
           <img
             src="zone.png"
             alt="zone"
             className="rounded-lg w-full h-250"
           />
         </div>
-        <h2 className="text-2xl font-bold text-green-900 mb-4 text-center">CWH Subzone Climate Table</h2>
+        <h2 className="text-2xl font-bold text-green-900  mt-10 mb-4 text-center">CWH Subzone Climate Table</h2>
         <section className="flex flex-nowrap gap-8 p-8 max-w-screen-lg mx-auto">
   <div className="basis-1/3">
     <h2 className="text-2xl font-bold text-green-900 mb-4 text-center">Precipitation:</h2>
