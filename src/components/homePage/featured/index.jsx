@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import CWHFeatured from "../../../assets/cardImages/cwh/cwhFeatured.png";
 import PPFeatured from "../../../assets/cardImages/pp/ppFeatured.png";
 import ATFeatured from "../../../assets/cardImages/at/atFeatured.png";
+import { useNavigate } from "react-router-dom";
+
 export default function FeaturedEcosystems() {
+  const navigate = useNavigate();
+
   const featured = [
     {
       name: "Coastal Western Hemlock",
@@ -16,7 +20,7 @@ export default function FeaturedEcosystems() {
       description:
         "These semi-arid regions support unique plant and animal species adapted to dry conditions and extreme temperature variations.",
       img: PPFeatured,
-      link: "/Ponderora-Pine",
+      link: "/Ponderosa-Pine",
     },
     {
       name: "Coastal Mountain Altai Fescue Alpine",
@@ -47,13 +51,13 @@ export default function FeaturedEcosystems() {
             <div className="p-4">
               <h3 className="font-featured-title mb-2">{eco.name}</h3>
               <p className="font-body-copy">{eco.description}</p>
-              <motion.a
-                href={eco.link}
+              <motion.button
+                onClick={() => navigate(eco.link)}
                 whileHover={{ backgroundColor: "#5C7A50" }}
                 className="mt-4 inline-block text-white bg-[#16A34A] p-2 rounded-xl"
               >
                 Learn More
-              </motion.a>
+              </motion.button>
             </div>
           </motion.a>
         ))}

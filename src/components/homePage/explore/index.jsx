@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function ExploreSection() {
+    const navigate = useNavigate();
   const items = [
     {
       title: "Interactive Maps",
@@ -20,7 +22,10 @@ export default function ExploreSection() {
   ];
 
   return (
-    <section id="explore" className="bg-amber-50 rounded-xl shadow-lg m-12 py-12 text-center">
+    <section
+      id="explore"
+      className="bg-amber-50 rounded-xl shadow-lg m-12 py-12 text-center"
+    >
       <h2 className="font-section-header mb-6">COME EXPLORE!</h2>
       <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
         {items.map((item) => (
@@ -32,13 +37,13 @@ export default function ExploreSection() {
           >
             <h3 className="font-card-title">{item.title}</h3>
             <p className="mt-2 text-gray-600 font-body-copy">{item.desc}</p>
-            <motion.a
-              href={item.link}
-              whileHover={{ backgroundColor: "#5C7A50"}}
+            <motion.button
+              onClick={() => navigate(item.link)}
+              whileHover={{ backgroundColor: "#5C7A50" }}
               className="mt-4 inline-block text-white bg-[#16A34A] p-2 rounded-xl"
             >
               Learn More
-            </motion.a>
+            </motion.button>
           </motion.div>
         ))}
       </div>

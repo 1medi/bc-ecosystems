@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 // import bgHero from "@/assets/images/bg-hero.jpg"
-import Test from "../../../components/comp/index";
+
 export default function PPPage() {
   return (
     <>

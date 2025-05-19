@@ -3,64 +3,13 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { useState } from "react";
 import PageWrapper from "../../components/pageWrapper";
+import galleryImages from "../../data/galleryImages";
+import Image360View from "../../components/360Images/index.jsx";
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Updated gallery data with ecosystem regions
-  const galleryImages = [
-    {
-      id: 1,
-      src: "https://source.unsplash.com/random/800x600?north",
-      alt: "Northern landscape with conifer forest",
-      categories: ["Northern"],
-    },
-    {
-      id: 2,
-      src: "https://source.unsplash.com/random/800x600?interior",
-      alt: "Mountain ridges in Central Interior",
-      categories: ["Central Interior"],
-    },
-    {
-      id: 3,
-      src: "https://source.unsplash.com/random/800x600?coast",
-      alt: "Lush rainforest near coastal mountains",
-      categories: ["Coastal"],
-    },
-    {
-      id: 4,
-      src: "https://source.unsplash.com/random/800x600?southern",
-      alt: "Dry grasslands in Southern Interior",
-      categories: ["Southern Interior"],
-    },
-    {
-      id: 5,
-      src: "https://source.unsplash.com/random/800x600?alpine",
-      alt: "Alpine peaks in the Northern zone",
-      categories: ["Northern"],
-    },
-    {
-      id: 6,
-      src: "https://source.unsplash.com/random/800x600?river",
-      alt: "River flowing through the Interior",
-      categories: ["Central Interior"],
-    },
-    {
-      id: 7,
-      src: "https://source.unsplash.com/random/800x600?coastal-forest",
-      alt: "Dense Coastal Western Hemlock forest",
-      categories: ["Coastal"],
-    },
-    {
-      id: 8,
-      src: "https://source.unsplash.com/random/800x600?desert",
-      alt: "Southern Interior desert plateau",
-      categories: ["Southern Interior"],
-    },
-  ];
-
-  // Ecosystem section categories
   const categories = [
     { value: "Northern", label: "Northern" },
     { value: "Central Interior", label: "Central Interior" },
@@ -68,22 +17,21 @@ const Gallery = () => {
     { value: "Coastal", label: "Coastal" },
   ];
 
+  const extendedImages = [...galleryImages];
 
   const filteredImages = selectedCategory
-    ? galleryImages.filter((image) =>
+    ? extendedImages.filter((image) =>
         image.categories.includes(selectedCategory)
       )
-    : galleryImages;
+    : extendedImages;
 
   return (
-    <>
     <PageWrapper>
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
+        <h1 className="font-section-header text-center mb-8">
           Photo Gallery
         </h1>
 
-        {/* Category filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           <button
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
@@ -110,7 +58,6 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Gallery grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredImages.map((image) => (
             <div
@@ -134,7 +81,6 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Empty state */}
         {filteredImages.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500 italic">
@@ -143,7 +89,6 @@ const Gallery = () => {
           </div>
         )}
 
-        {/* Lightbox */}
         {selectedImage && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
@@ -198,10 +143,25 @@ const Gallery = () => {
             </div>
           </div>
         )}
+
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-center mb-6">
+            Explore in 360°
+          </h2>
+          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg group"
+              title="Click and drag to explore in 360°"
+            >
+              <Image360View />
+              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                Click and drag to explore
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </PageWrapper>
-    </>
-
   );
 };
 
