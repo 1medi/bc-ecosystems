@@ -4,15 +4,16 @@ import FeaturedEcosystems from '../src/components/homePage/featured/index'
 import EcosystemGrid from '../src/components/homePage/ecosystemGrid/index'
 import Footer from '../src/components/footer/index'
 import Header from './components/header'
-import PageWrapper from "./components/pageWrapper/index"
+
 export default function Home() {
   return (
-    <PageWrapper>
+    <main className="font-sans">
+      <Header/>
       <HeroSection />
       <ExploreSection />
       <FeaturedEcosystems />
       <EcosystemGrid />
-    </PageWrapper>
-  
+      <Footer />
+    </main>
   )
 }

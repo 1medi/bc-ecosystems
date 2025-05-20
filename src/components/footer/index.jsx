@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="bg-gray-100 py-10 px-6">
+      <footer className="bg-gray-100 py-10 px-6 mt-10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
           <div>
             <h4 className="font-bold mb-2">Quick Links</h4>

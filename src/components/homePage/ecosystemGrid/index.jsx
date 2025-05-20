@@ -1,20 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import BWBS from "../../../assets/regionHighlights/BWBS.webp";
-import SWB from "../../../assets/regionHighlights/SWB.webp";
-import ESSF from "../../../assets/regionHighlights/ESSF.webp";
-import BG from "../../../assets/regionHighlights/BG.webp";
-import CDF from "../../../assets/regionHighlights/CDF.webp";
-import CWH from "../../../assets/regionHighlights/CWH.webp";
-import ICH from "../../../assets/regionHighlights/ICH.webp";
-import IDF from "../../../assets/regionHighlights/IDF.webp";
-import MH from "../../../assets/regionHighlights/MH.webp";
-import IMA from "../../../assets/regionHighlights/IMA_CMA_BAFA.webp";
-import MS from "../../../assets/regionHighlights/MS.webp";
-import PP from "../../../assets/regionHighlights/PP.webp";
-import SBPS from "../../../assets/regionHighlights/SBPS.webp";
-import SBS from "../../../assets/regionHighlights/SBS.webp";
-
+import bgImage from "../../../assets/gridCard/bg.JPEG";
 
 const sections = {
   Northern: [
@@ -69,22 +55,22 @@ const routeMap = {
 };
 
 const imageMap = {
-  "Boreal White and Black Spruce (BWBS)": BWBS,
-  "Spruce Willow Birch (SWB)": SWB,
-  "Engelmann Spruce Subalpine Fir (ESSF)": ESSF,
-  "Boreal Altai Fescue Alpine (BAFA)": IMA,
-  "Sub-Boreal Pine Spruce (SBPS)": SBPS,
-  "Sub-Boreal Spruce (SBS)": SBS,
-  "Montane Spruce (MS)": MS,
-  "Interior Cedar-Hemlock (ICH)": ICH,
-  "Interior Douglas-Fir (IDF)": IDF,
-  "Interior Mountain-Heather Alpine (IMA)": IMA,
-  "Bunchgrass (BG)": BG,
-  "Ponderosa Pine (PP)": PP,
-  "Coastal Douglas Fir (CDF)": CDF,
-  "Coastal Western Hemlock (CWH)": CWH,
-  "Mountain Hemlock (MH)": MH,
-  "Coastal Mountain-Heather Alpine (CMHA)": IMA,
+  "Boreal White and Black Spruce (BWBS)": bgImage,
+  "Spruce Willow Birch (SWB)": bgImage,
+  "Engelmann Spruce Subalpine Fir (ESSF)": bgImage,
+  "Boreal Altai Fescue Alpine (BAFA)": bgImage,
+  "Sub-Boreal Pine Spruce (SBPS)": bgImage,
+  "Sub-Boreal Spruce (SBS)": bgImage,
+  "Montane Spruce (MS)": bgImage,
+  "Interior Cedar-Hemlock (ICH)": bgImage,
+  "Interior Douglas-Fir (IDF)": bgImage,
+  "Interior Mountain-Heather Alpine (IMA)": bgImage,
+  "Bunchgrass (BG)": bgImage,
+  "Ponderosa Pine (PP)": bgImage,
+  "Coastal Douglas Fir (CDF)": bgImage,
+  "Coastal Western Hemlock (CWH)": bgImage,
+  "Mountain Hemlock (MH)": bgImage,
+  "Coastal Mountain-Heather Alpine (CMHA)": bgImage,
 };
 
 export default function EcosystemGrid() {
