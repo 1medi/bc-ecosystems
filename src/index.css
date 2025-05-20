@@ -15,6 +15,10 @@
   src: url('/fonts/workSans/workSans.woff2') format('woff2');
 }
 
+p {
+  font-family: var(--font-body-copy); /* If using CSS variable */
+}
+
 /* Hero Header */
 .font-hero-header {
   font-family: 'Kapital-Demi', sans-serif;
@@ -32,7 +36,7 @@
 
 /* Regular Header */
 .font-regular-header {
-  font-family: 'Kapital', sans-serif;
+  font-family: 'Work-Sans', sans-serif;
   font-size: clamp(1.5rem, 3vw, 2rem); 
   line-height: 1.25;
   font-weight: 400;
@@ -75,12 +79,11 @@
 }
 
 /* Subheader */
-.font-kapital-subheader {
-  font-family: 'Kapital', sans-serif;
+.font-subheader {
+  font-family: 'Work-Sans', sans-serif;
   font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.4;
   font-weight: 500;
-  letter-spacing: 0.015em;
 }
 
 /* Card Title */

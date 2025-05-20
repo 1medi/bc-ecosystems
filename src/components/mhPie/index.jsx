@@ -1,5 +1,6 @@
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import MH from "../../../src/assets/pieImages/mh.png"
+import { useState, useEffect } from 'react'
 
 const imageMap = {
     'Mountain hemlock': MH,
@@ -46,32 +47,46 @@ const CustomTooltip = ({ active, payload }) => {
 
   
 export default function MHPieChart() {
+  const [radius, setRadius] = useState(180);
+
+  useEffect(() => {
+    const updateRadius = () => {
+      setRadius(window.innerWidth < 768 ? 100 : 180);
+    };
+    updateRadius();
+    window.addEventListener('resize', updateRadius);
+    return () => window.removeEventListener('resize', updateRadius);
+  }, []);
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 max-w-3xl mx-auto mt-12">
-      <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">MH Zone Species Composition</h2>
+    <div className="bg-white rounded-lg shadow-md p-6">
+      <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
+        MH Zone Species Composition
+      </h2>
 
-      <ResponsiveContainer width="100%" height={360}>
-        <PieChart>
-          <Pie
-            data={data}
-            dataKey="value"
-            nameKey="name"
-            cx="50%"
-            cy="50%"
-            outerRadius={120}
-            innerRadius={40}
-            paddingAngle={3}
-            label={({ name }) => name}
-            isAnimationActive={true}
-          >
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-          <Tooltip content={<CustomTooltip />} />
-
-        </PieChart>
-      </ResponsiveContainer>
+      <div className="relative w-full h-[50vw] max-h-[500px] min-h-[250px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={radius}
+              innerRadius={40}
+              paddingAngle={3}
+              label={({ name }) => name}
+              isAnimationActive={true}
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+            <Tooltip content={<CustomTooltip />} />
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
-}
+};

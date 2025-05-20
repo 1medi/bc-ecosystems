@@ -49,14 +49,14 @@ const routeMap = {
   "Boreal White and Black Spruce (BWBS)": "/Boreal-White-and-Black-Spruce",
   "Spruce Willow Birch (SWB)": "/Spruce-Willow-Birch",
   "Engelmann Spruce Subalpine Fir (ESSF)": "/Engelmann-Spruce-Subalpine-Fir",
-  "Boreal Altai Fescue Alpine (BAFA)": "/Boreal-Altai-Fescue-Alpine",
+  "Boreal Altai Fescue Alpine (BAFA)": "/Alpine-Tundra",
 
   "Sub-Boreal Pine Spruce (SBPS)": "/Sub-Boreal-Pine-Spruce",
   "Sub-Boreal Spruce (SBS)": "/Sub-Boreal-Spruce",
   "Montane Spruce (MS)": "/Montane-Spruce",
   "Interior Cedar-Hemlock (ICH)": "/Interior-Cedar-Hemlock",
   "Interior Douglas-Fir (IDF)": "/Interior-Douglas-Fir",
-  "Interior Mountain-Heather Alpine (IMA)": "/Interior-Mountain-Heather-Alpine",
+  "Interior Mountain-Heather Alpine (IMA)": "/Alpine-Tundra",
 
   "Bunchgrass (BG)": "/Bunchgrass",
   "Ponderosa Pine (PP)": "/Ponderora-Pine",
@@ -65,7 +65,7 @@ const routeMap = {
   "Coastal Western Hemlock (CWH)": "/Coastal-Western-Hemlock",
   "Mountain Hemlock (MH)": "/Mountain-Hemlock",
   "Coastal Mountain-Heather Alpine (CMHA)":
-    "/Coastal-Mountain-Altai-Fescue-Alpine",
+    "/Alpine-Tundra",
 };
 
 const imageMap = {
