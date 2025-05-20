@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: 'Kapital';
-  src: url('./assets/fonts/kapital/kapitalLight.woff2') format('woff2');
+  src: url('/fonts/kapital/kapitalLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Kapital-Demi';
-  src: url('./assets/fonts/kapital/kapitalDemi.woff2') format('woff2');
+  src: url('/fonts/kapital/kapitalDemi.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Work-Sans';
-  src: url('./assets/fonts/workSans.woff2') format('woff2');
+  src: url('/fonts/workSans/workSans.woff2') format('woff2');
 }
 
 /* Hero Header */
