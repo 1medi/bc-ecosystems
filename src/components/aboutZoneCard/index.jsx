@@ -3,13 +3,13 @@ import React from "react";
 const AboutZoneCard = ({ title, description, image, caption, background, bgColor = "bg-white" }) => {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+      {/* <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <img
           src={background}
           alt="Background"
           className="w-screen h-full object-cover"
         />
-      </div>
+      </div> */}
       <div className="relative py-12 z-10">
         <div className="flex justify-center">
           <div className={`w-full max-w-screen-lg ${bgColor} rounded-xl shadow-xl p-12 max-xl:p-4`}>

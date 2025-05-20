@@ -17,7 +17,7 @@ import MHLand1 from "../../../assets/mh/mhLand1.png";
 export default function MountainHemlockPage() {
   return (
     <>
-      <PageWrapper bgGradient="bg-gradient-to-br from-[#BBD4FF] to-[#7B9BD1]">
+      <PageWrapper>
         <EcosystemPage
           title="Mountain Hemlock Zone"
           heroVideo={MHHeader}
@@ -39,233 +39,137 @@ export default function MountainHemlockPage() {
           caption="A Krummholz tree"
         />
         {/* Distribution Section */}
-        <div className="p-12 md:px-8">
-          <div className="flex flex-col md:flex-row md:space-x-12 items-start ">
-            <div className="md:w-1/3 mb-6 md:mb-0 bg-[#C5D6F5] p-4 rounded-xl shadow-xl">
-              <h2 className="font-section-header">Distribution</h2>
-              <p className="font-body-copy">
+        <section className="p-8 max-w-screen-lg mx-auto">
+          <div className="flex flex-col md:flex-row gap-12 items-start">
+            <div className="md:w-1/3">
+              <h2 className="text-2xl font-bold text-green-900 mb-4">
+                Distribution
+              </h2>
+              <p className="text-base leading-relaxed">
                 The Mountain Hemlock zone covers much of the mid to high
                 elevations along the Pacific coast, including Vancouver Island,
                 Haida Gwaii and the Coast Mountains within BC. The MH zone also
                 extends north into Alaska, and south into Washington and Oregon.
                 It occupies elevations from 900–1800 m above sea level in the
-                southern part of the zone, and 400–1000 m above sea level in the
-                northern extent of the zone. At lower elevations below the MH
-                zone, the ecosystem transitions into the Coastal Western Hemlock
-                zone, where mountain hemlock is replaced by western hemlock. In
-                areas where the mountains are high enough, the MH zone
-                transitions into the treeless alpine meadows of the Coastal
-                Mountain Heather Alpine zone.
+                southern part of the zone, and 400–1000 m in the northern
+                extent. At lower elevations it transitions into the Coastal
+                Western Hemlock zone. Higher up, it becomes treeless alpine
+                meadows.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
-              <div className="flex flex-col items-center text-center">
-                <p className="font-semibold mb-1">SEA LEVEL</p>
-                <img
-                  src={Coastal}
-                  alt="Coastal Western Hemlock"
-                  className="w-full max-w-[600px] object-contain"
-                />
-                <p className="mt-2 text-sm font-medium">
-                  Coastal Western Hemlock reside here!
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <p className="font-semibold mb-1">400–1000 METERS</p>
-                <img
-                  src={Western}
-                  alt="Mountain Hemlock"
-                  className="w-full max-w-[600px] object-contain"
-                />
-                <p className="mt-2 text-sm font-medium">
-                  Mountain Hemlock reside here!
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <p className="font-semibold mb-1">900–1800 METERS</p>
-                <img
-                  src={Hemlock}
-                  alt="Coastal Mountain Heather Alpine"
-                  className="w-full max-w-[600px] object-contain"
-                />
-                <p className="mt-2 text-sm font-medium">
-                  Coastal Mountain Heather Alpine reside here!
-                </p>
-              </div>
+            <div className="md:w-2/3 flex flex-col md:flex-row justify-between gap-6">
+              {[
+                {
+                  label: "SEA LEVEL",
+                  img:{Coastal},
+                  alt: "Coastal Western Hemlock",
+                  caption: "Coastal Western Hemlock reside here!",
+                },
+                {
+                  label: "400–1000 METERS",
+                  img: {Hemlock},
+                  alt: "Mountain Hemlock",
+                  caption: "Mountain Hemlock reside here!",
+                },
+                {
+                  label: "900–1800 METERS",
+                  img: {Western},
+                  alt: "Coastal Mountain Heather Alpine",
+                  caption: "Coastal Mountain Heather Alpine reside here!",
+                },
+              ].map(({ label, img, alt, caption }) => (
+                <div
+                  key={label}
+                  className="flex flex-col items-center text-center"
+                >
+                  <p className="font-semibold mb-1">{label}</p>
+                  <img
+                    src={img}
+                    alt={alt}
+                    className="w-[200px] h-[200px] object-contain"
+                  />
+                  <p className="mt-2 text-sm font-medium">{caption}</p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Climate Section */}
-        <div className="px-4 py-12 md:px-8 flex flex-col md:flex-row ">
-          <h2 className="font-section-header m-auto">Climate</h2>
-          <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row gap-8 bg-[#C5D6F5] p-4 rounded-xl shadow-xl">
-            <div className="md:w-1/2 ">
-              <p className="text-[16px] leading-relaxed">
-                The Mountain Hemlock zone is one of Canada’s wettest ecosystems
-                with annual precipitation of 1700-5000 mm. The majority of the
-                precipitation falls as snow, and the snowpack can reach up to 6m
-                in depth. The snow is usually wet and heavy, which can cause
-                trees to bend or break. You will often see mountain hemlock
-                trees with broken branches and a very “rugged” appearance! The
-                summers are short and cool and the winters are long, cool and
-                wet. The mean annual temperature in the MH zone ranges from 0 to
-                5°C. The snow melts slowly, so the growing season is relatively
-                short; only 1-3 months long. The thick snow provides good
-                insulation, which means the ground rarely freezes.
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#C5D6F5]">
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="md:w-1/2">
+              <h2 className="text-2xl font-bold text-green-900 mb-4">
+                Climate
+              </h2>
+              <p className="text-base leading-relaxed">
+                Mountain Hemlock zones experience heavy snowfall and cool
+                summers. Climate is a key driver of the vegetation distribution,
+                as shown in the seasonal temperature and precipitation graph
+                below.
               </p>
             </div>
             <div className="md:w-[80%] flex items-center justify-center">
               <MHChart />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Subzones Section */}
-        <div className="px-4 py-12 md:px-8 ">
-          <h2 className="font-section-header text-center mb-6">
+        <section className="p-8 max-w-screen-lg mx-auto">
+          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Subzones in the Mountain Hemlock Zone
           </h2>
-          <div className="flex flex-col md:flex-row justify-around items-center m-4">
-            <div className=" bg-[#C5D6F5] p-4 rounded-xl shadow-xl max-w-[500px]">
-              <p className="font-body-copy">
-                The Mountain Hemlock (MH) zone is a unique ecological region
-                deeply influenced by the Pacific Ocean and the surrounding
-                mountain ranges. This combination of oceanic proximity,
-                elevation, and high precipitation gives rise to four distinct
-                subzones within the MH zone, each supporting different plant
-                communities and soil conditions. These subzones are named based
-                on their distance from the ocean and the moisture they receive.
-                The hypermaritime subzones—the wettest and most coastal—are
-                found along the outer mainland coast, as well as the western
-                edges of Vancouver Island and Haida Gwaii. Moving inland, the
-                conditions shift slightly to what are known as maritime and
-                submaritime subzones, where ocean influence still plays a role
-                but is less dominant. These subzones each form their own
-                micro-ecosystems, from dense conifer forests to open subalpine
-                meadows.
-              </p>
-            </div>
-            <div className="flex flex-col justify-center ">
-              <p className="font-body-copy">
-                Moisture levels are categorized simply as either moist or wet,
-                and vegetation is further divided into two types:
-              </p>
-
-              <div className="m-auto flex flex-col md:flex-row ">
+          <div className="flex flex-col md:flex-row justify-center gap-8">
+            {["/subzone-1.png", "/subzone-2.png"].map((src, i) => (
+              <div key={src} className="w-full md:w-1/3">
                 <img
-                  src={Forested}
-                  alt="a forested subzone"
-                  className="rounded-lg w-full max-w-screen md:max-w-[1000px] p-4"
+                  src={src}
+                  alt={`Subzone ${i + 1}`}
+                  className="rounded-lg"
                 />
                 <p className="mt-2 text-sm text-center italic">
-                  Forested subzones, found at lower elevations.
+                  {i === 0 ? "Windward Moist Subzone" : "Leeward Drier Subzone"}
                 </p>
               </div>
-
-              <div className="m-auto flex flex-row-reverse">
-                <img
-                  src={Parkland}
-                  alt="a parkland subzone"
-                  className="rounded-lg  w-full max-w-screen md:max-w-[1000px] p-4"
-                />
-                <p className="mt-2 text-sm text-center italic">
-                  Parkland subzones, which occur higher up where conditions
-                  become harsher.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
-        </div>
+        </section>
 
         {/* Forests and Meadows Section */}
-        <div className="px-4 py-12 md:px-8 ">
-          <h2 className="font-section-header text-center mb-6">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#C5D6F5]">
+          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Forests and Meadows
           </h2>
-          <div className="flex flex-col items-center justify-center gap-8">
-            <div className="flex flex-row">
-              <div className="w-1/2">
-                <MHPieChart />
-              </div>
-              <div className="flex flex-row w-1/2">
-                <div className="flex flex-col w-1/2 p-2">
-                  <p className="font-body-copy">
-                    The MH zone is rich with species like mountain hemlock,
-                    yellow cedar, and amabilis fir. Meadows are often
-                    interspersed among forests.
-                  </p>
-                  <img
-                    src={MHLand1}
-                    alt="Species Pie Chart"
-                    className="w-full max-w-screen md:max-w-[600px]"
-                  />
-                </div>
-                <div className="flex w-1/2 p-2">
-                  <p className="font-body-copy">
-                    In the lower forested regions, you'll also find species like
-                    Western hemlock, Western redcedar, Douglas-fir, Sitka
-                    spruce, and Western white pine, varying by location and
-                    elevation. Higher up, near the timberline, Subalpine fir and
-                    Whitebark pine make appearances, particularly where the MH
-                    zone begins to transition into the Engelmann
-                    Spruce–Subalpine Fir zone as you move from the coastal
-                    ecosystems to the interior ecosystems.  The understory is
-                    rich with shrubs, including various species of blueberry
-                    (oval-leaved, Alaska, and black huckleberry), false azalea,
-                    white-flowered rhododendron, and copperbush. Mosses form
-                    thick carpets, such as pipecleaner moss, red-stemmed
-                    feathermoss, and fan moss. Herbs and low-growing plants are
-                    fewer, but species like queen’s cup, skunk cabbage, and
-                    twisted stalk can be found.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row">
-              <p className="font-body-copy">
-                In the parkland subzones, the forest canopy becomes more sparse.
-                Trees grow in clusters, separated by lush meadows or low-lying
-                heath vegetation. These meadows are home to colorful herbs like
-                false hellebore, Sitka valerian, paintbrush species, and white
-                marsh marigold. Subalpine heaths support mountain heather
-                species—pink, white, and yellow—as well as partridgefoot,
-                running clubmoss, and crowberry. Wet subalpine basins may host
-                species like black alpine sedge, thriving in cold, wet
-                conditions.
+          <div className="flex flex-col md:flex-row justify-center gap-8">
+            <MHPieChart />
+            <div className="md:w-1/2">
+              <img
+                src="/species-pie.png"
+                alt="Species Pie Chart"
+                className="mb-4"
+              />
+              <p className="text-base leading-relaxed">
+                The MH zone is rich with species like mountain hemlock, yellow
+                cedar, and amabilis fir. Meadows are often interspersed among
+                forests.
               </p>
-              <div className="items-center justify-center m-auto grid grid-cols-2 gap-4">
-                <img src="/meadow-1.png" alt="Meadow" className="rounded-lg" />
-                <img src="/meadow-2.png" alt="Plants" className="rounded-lg" />
-              </div>
+            </div>
+            <div className="md:w-1/2 grid grid-cols-2 gap-4">
+              <img src="/meadow-1.png" alt="Meadow" className="rounded-lg" />
+              <img src="/meadow-2.png" alt="Plants" className="rounded-lg" />
             </div>
           </div>
-        </div>
-        {/* Cultural connections of the MH Ecosystem */}
-        <div className="px-4 py-12 md:px-8">
-          <h2 className="font-section-header text-center">
-            Cultural Connections of MH
-          </h2>
-          <div className="flex flex-col md:flex-row gap-8">
-            <p className="font-body-copy">
-              Culturally, the MH zone is part of the traditional territory of
-              many Indigenous communities. One significant species is the Yellow
-              cedar, prized for its durability, spiritual importance, and use in
-              carving and canoe building. Visitors can deepen their
-              understanding of Indigenous land stewardship at the Squamish
-              Lil’wat Cultural Centre in Whistler, which showcases the enduring
-              connection between people and the land.
-            </p>
-          </div>
-        </div>
+        </section>
+
         {/* Glacial Landscape and Soils Section */}
-        <div className="px-4 py-12 md:px-8">
-          <h2 className="font-section-header text-center mb-6">
-            Glacial Landscape and Soils
+        <section className="p-8 max-w-screen-lg mx-auto">
+          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+            Glacial Landscape, Soils, and Cultural Connections
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
-              <p className="font-body-copy">
+              <p className="text-base leading-relaxed mb-4">
                 The MH zone is shaped by glacial activity, which has left behind
                 rocky and nutrient-poor soils. Cultural connections to this land
                 are strong among Indigenous communities who rely on traditional
@@ -285,7 +189,7 @@ export default function MountainHemlockPage() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
       </PageWrapper>
     </>
   );
