@@ -23,11 +23,11 @@ export default function FeaturedEcosystems() {
       link: "/Ponderosa-Pine",
     },
     {
-      name: "Coastal Mountain Altai Fescue Alpine",
+      name: "Coastal Mountain Heather Alpine",
       description:
         "These high-altitude ecosystems feature stunning wildflower displays during summer months and provide crucial habitat for mountain wildlife.",
       img: ATFeatured,
-      link: "/Coastal-Mountain-Altai-Fescue-Alpine",
+      link: "/Alpine-Tundra",
     },
   ];
 

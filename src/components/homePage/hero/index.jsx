@@ -16,7 +16,7 @@ export default function HeroSection() {
   }, [index, fullText]);
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden">
       <video
         src={HeroVideo}
         autoPlay
@@ -27,18 +27,25 @@ export default function HeroSection() {
       />
 
       <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center lg:items-start text-center text-white px-4">
-        <div className="flex flex-col items-start justify-center lg:w-3/5 xl:w-2/5 p-8">
-          <h1 className="font-hero-header lg:text-left text-4xl md:text-6xl font-bold m-auto whitespace-nowrap">
-            {fullText.slice(0, index).split("").map((char, idx) => (
-              <motion.span
-                key={idx}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.05, delay: idx * 0.01 }}
-              >
-                {char}
-              </motion.span>
-            ))}
+        <div className="flex flex-col items-center justify-center lg:items-start lg:w-3/5 xl:w-2/5 p-8 text-center lg:text-left">
+          <h1
+            className="font-hero-header text-center lg:text-left 
+ sm:text-5xl md:text-6xl lg:text-7xl xl:text-[108pt]
+  font-bold m-auto leading-tight text-balance"
+          >
+            {fullText
+              .slice(0, index)
+              .split("")
+              .map((char, idx) => (
+                <motion.span
+                  key={idx}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.05, delay: idx * 0.01 }}
+                >
+                  {char}
+                </motion.span>
+              ))}
             <motion.span
               className="inline-block"
               animate={{ opacity: [0, 1] }}
@@ -53,10 +60,8 @@ export default function HeroSection() {
           </h1>
 
           <motion.a
-            href="#explore"
-            whileHover={{ backgroundColor: "#5C7A50", scale: 1.25 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            className="font-kapital-big-button flex p-2 bg-[#4C6440] rounded-xl text-white text-lg m-auto mt-6"
+            className="font-kapital-big-button px-6 py-3 bg-[#4C6440] rounded-xl 
+    text-white text-sm sm:text-base md:text-lg xl:text-xl mt-6"
           >
             Explore
           </motion.a>

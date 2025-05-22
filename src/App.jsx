@@ -19,8 +19,12 @@ import SWB from "./pages/northern/swb/App.jsx";
 import Map from "./pages/map/App.jsx";
 import Home from "./Home.jsx";
 import Gallery from "./pages/gallery/App.jsx";
+
+
 function App() {
   const location = useLocation();
+
+
   return (
     <>
       <AnimatePresence>

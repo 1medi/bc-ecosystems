@@ -75,37 +75,43 @@ export default function InteractiveMapSidebar() {
             </h2>
             <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2">
               <div>
-                <li
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
                   onClick={() => setSelectedZone(null)}
-                  className={`px-4 py-2 mb-2 rounded cursor-pointer transition-colors duration-200 border 
-                ${
-                  !selectedZone
-                    ? "bg-green-100 text-green-900 border-green-400"
-                    : "bg-white text-blue-700 hover:bg-blue-50 border-gray-200"
-                }`}
+                  className={`cursor-pointer p-3 rounded-lg border transition-colors text-sm font-medium text-center mb-4
+    ${
+      !selectedZone
+        ? "bg-green-100 text-green-900 border-green-400"
+        : "bg-white text-blue-700 hover:bg-blue-50 border-gray-200"
+    }`}
                 >
                   BEC Map
-                </li>
+                </motion.div>
               </div>
               {Object.entries(groupedZones).map(([region, zones]) => (
-                <div key={region}>
-                  <h3 className="text-lg font-bold text-gray-700">{region}</h3>
-                  <ul className="space-y-1 mt-1">
+                <div key={region} className="mb-6">
+                  <h3 className="text-lg font-bold text-gray-700 mb-2">
+                    {region}
+                  </h3>
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 lg:grid-cols-3">
                     {zones.map((zone) => (
-                      <li
+                      <motion.div
                         key={zone.name}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.97 }}
                         onClick={() => setSelectedZone(zone)}
-                        className={`px-4 py-2 rounded cursor-pointer transition-colors duration-200 border 
-                      ${
-                        selectedZone?.name === zone.name
-                          ? "bg-green-100 text-green-900 border-green-400"
-                          : "bg-white text-blue-700 hover:bg-blue-50 border-gray-200"
-                      }`}
+                        className={`cursor-pointer p-3 rounded-lg border transition-colors text-sm font-medium text-center 
+            ${
+              selectedZone?.name === zone.name
+                ? "bg-green-100 text-green-900 border-green-400"
+                : "bg-white text-blue-700 hover:bg-blue-50 border-gray-200"
+            }`}
                       >
                         {zone.name}
-                      </li>
+                      </motion.div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>
