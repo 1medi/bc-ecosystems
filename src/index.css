@@ -106,6 +106,9 @@ p {
   font-size: 24pt;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  height: auto;
+  overflow-x: hidden;
+  scroll-behavior: auto;
 }
