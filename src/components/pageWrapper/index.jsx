@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
-import Intro from "../Parallax/Intro";
-import Description from "../Parallax/Description";
-import Section from "../Parallax/Section";
+
 import { useEffect } from "react";
 import Lenis from "lenis";
 
@@ -27,9 +25,9 @@ export default function PageWrapper({
       {/* Lenis scroll container */}
       <main>
         <Header />
-        <Intro />
+        {/* <Intro />
         <Description />
-        <Section />
+        <Section /> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
