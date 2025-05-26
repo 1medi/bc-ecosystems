@@ -19,6 +19,7 @@ import SWB from "./pages/northern/swb/App.jsx";
 import Map from "./pages/map/App.jsx";
 import Home from "./Home.jsx";
 import Gallery from "./pages/gallery/App.jsx";
+import FAQPage from "./pages/faq/App.jsx";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <AnimatePresence>
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
+          <Route path="/FAQ" element={<FAQPage />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Alpine-Tundra" element={<AT />} />
 

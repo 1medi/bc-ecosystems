@@ -51,13 +51,13 @@ export default function Header() {
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <nav className="md:hidden mt-4 space-y-4 text-sm font-medium text-gray-700 uppercase tracking-widest pb-4 border-t pt-4">
-            <a href="/ecosystems" className="block hover:text-green-700">
+            <a href="/Interactive-Map" className="block hover:text-green-700">
               Ecosystems
             </a>
             <a href="/Gallery" className="block hover:text-green-700">
               Gallery
             </a>
-            <a href="/about" className="block hover:text-green-700">
+            <a href="/FAQ" className="block hover:text-green-700">
               FAQ
             </a>
             <a
