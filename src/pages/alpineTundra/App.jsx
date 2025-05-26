@@ -3,7 +3,7 @@
 import EcosystemPage from "../../components/ecosystemTemplate";
 import AboutZoneCard from "../../components/aboutZoneCard";
 import PageWrapper from "../../components/pageWrapper"
-
+import ATVideo from "../../assets/videos/alpineTundra.mp4"
 
 export default function AlpineTundraPage() {
   return (
@@ -12,6 +12,7 @@ export default function AlpineTundraPage() {
         title="Alpine Tundra Complex"
         subtitle="High-elevation ecosystems above the treeline shaped by snow, wind, and resilience"
         description="Located above the treeline, the Alpine Tundra Complex endures extreme conditions, supporting a tapestry of hardy plants and subdivided into three biogeoclimatic zones."
+        heroVideo={ATVideo}
         stats={[
           { label: "Elevation", value: "Above treeline" },
           { label: "Zones", value: "BAFA, IMA, CMA" },

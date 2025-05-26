@@ -31,12 +31,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-<main className="relative w-full">
-  {/* Parallax Content BELOW the hero */}
-  <Intro />
-  <Description />
-  <Section />
-</main>
-
+    <main className="relative w-full">
+      <Intro />
+      <Description />
+      {/* <Section /> */}
+    </main>
   );
 }

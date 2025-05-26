@@ -115,7 +115,14 @@ export default function EcosystemGrid() {
                         rest: { scale: 1 },
                         hover: { scale: 1.05 },
                       }}
-                      className={`relative overflow-hidden text-white px-6 py-4 rounded shadow text-center sm:min-w-[145px] lg:min-w-[345px] min-h-[500px] cursor-pointer`}
+                      className={`relative overflow-hidden text-white px-6 py-4 rounded shadow text-center 
+                        sm:min-w-[180px] 
+                        md:min-w-[220px] 
+                        lg:min-w-[280px] 
+                        xl:min-w-[320px] 
+                        min-h-[420px] 
+                        cursor-pointer`}
+                      
                     >
                       {/* Background Image */}
                       <motion.div
