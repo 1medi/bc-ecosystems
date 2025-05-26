@@ -1,5 +1,5 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import bgHero from "../../../assets/cdf/cdf.png"
 import PageWrapper from "../../../components/pageWrapper";
 export default function CDFPage() {
   return (
@@ -8,7 +8,7 @@ export default function CDFPage() {
         <EcosystemPage
           title="Coastal Douglas-fir Zone"
           subtitle="A dry coastal forest with a Mediterranean-like climate"
-          //   heroImage={bgHero}
+          heroImage={bgHero}
           description="This rare coastal ecosystem has warm, dry summers and supports open forests of Douglas-fir and Garry oak. It’s among BC’s most threatened zones."
           stats={[
             { label: "Mean Annual Temp", value: "9°C" },

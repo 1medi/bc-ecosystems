@@ -35,6 +35,15 @@ export default function EcosystemPage({
           )}
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+            <motion.a
+              href="/#ecosystems"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+              className="absolute top-6 left-6 flex items-center gap-2 text-white bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full px-3 py-1 text-sm transition"
+            >
+              ← Back to Ecosystems
+            </motion.a>
             <motion.h1
               className="font-hero-header"
               initial={{ opacity: 0, y: 30 }}

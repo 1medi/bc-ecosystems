@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import bgHero from "../../../assets/ich/ich.png"
 export default function ICHPage() {
   return (
     <>
@@ -8,7 +8,7 @@ export default function ICHPage() {
         <EcosystemPage
           title="Interior Cedar–Hemlock Zone"
           subtitle="A wet, productive forest zone with diverse flora"
-          //   heroImage={bgHero}
+          heroImage={bgHero}
           description="This lush interior rainforest supports redcedar, hemlock, ferns, and mosses. It's one of the most biodiverse zones in BC’s interior."
           stats={[
             { label: "Mean Annual Temp", value: "6°C" },

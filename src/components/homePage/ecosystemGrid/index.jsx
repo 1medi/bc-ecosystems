@@ -59,7 +59,7 @@ const routeMap = {
   "Interior Mountain-Heather Alpine (IMA)": "/Alpine-Tundra",
 
   "Bunchgrass (BG)": "/Bunchgrass",
-  "Ponderosa Pine (PP)": "/Ponderora-Pine",
+  "Ponderosa Pine (PP)": "/Ponderosa-Pine",
 
   "Coastal Douglas Fir (CDF)": "/Coastal-Douglas-Fir",
   "Coastal Western Hemlock (CWH)": "/Coastal-Western-Hemlock",
@@ -89,7 +89,7 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <section className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-4">
+    <section id="ecosystems" className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-4">
       <h2 className="text-center text-3xl font-semibold mb-6">
         EXPLORE BC'S ECOSYSTEMS
       </h2>

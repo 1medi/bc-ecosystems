@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-
+import BGHero from "../../../assets/videos/idf.mp4"
 export default function IDFPage() {
   return (
     <>
@@ -8,6 +8,7 @@ export default function IDFPage() {
         <EcosystemPage
           title="Interior Douglas-fir"
           subtitle="A dry forested ecosystem with Douglas-fir dominance"
+          heroVideo={BGHero}
           description="Found in valleys and low-elevation slopes, this zone is known for its dry conditions, grassy understories, and fire-adapted species."
           stats={[
             { label: "Mean Annual Temp", value: "7°C" },

@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-// import bgHero from "@/assets/images/bg-hero.jpg";
+import bgHero from "../../../assets/videos/bg.mp4"
 
 export default function BGPage() {
   return (
@@ -8,7 +8,7 @@ export default function BGPage() {
       <EcosystemPage
         title="Bunchgrass Zone"
         subtitle="A dry, rare grassland ecosystem home to unique wildlife, cryptogamic crusts, and limited forest cover"
-        // heroImage={bgHero}
+        heroVideo={bgHero}
         description="Covering less than 1% of BC, the Bunchgrass (BG) zone features bunchgrass-dominated ecosystems, rare flora and fauna, and a climate prone to summer drought. It's ecologically vital and underrepresented in protected areas."
         stats={[
           { label: "Mean Annual Temp", value: "5.9°C" },

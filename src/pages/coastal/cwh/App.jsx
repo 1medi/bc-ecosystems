@@ -164,9 +164,9 @@ export default function CWHPage() {
         </div>
       </section>
 
-      <div className="flex-1">
+      {/* <div className="flex-1">
           <CWHGraph/>
-      </div>
+      </div> */}
       </PageWrapper>
     </>
   );
