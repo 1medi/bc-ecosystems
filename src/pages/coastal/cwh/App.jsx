@@ -66,7 +66,7 @@ export default function CWHPage() {
         </div>
         <div className="flex-1 min-w-[300px]">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/12bc7980fd4c054d833d9ed319fe443c22492607?placeholderIfAbsent=true&apiKey=94b7261367d24d688c3ad267da8a7587"
+            src="/wh.png"
             alt="Vegetation image"
             className="rounded-lg w-full h-auto"
           />

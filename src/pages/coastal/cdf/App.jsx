@@ -125,7 +125,7 @@ export default function CDFPage() {
       </section>
 
       <div className="w-full flex justify-center items-center">
-        <img src="/CDF-zone.png" alt="Life in CDF" className="w-200 h-200 " />
+        <img src="/cdf-life.png" alt="Life in CDF" className="w-200 h-200 " />
       </div>
 
       <h2 className="text-3xl font-bold text-green-900 text-center mt-15 mb-15">
