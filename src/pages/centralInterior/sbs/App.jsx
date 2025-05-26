@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import bgHero from "../../../assets/sbs/sbs.png"
 export default function SBSPage() {
   return (
     <>
@@ -8,7 +8,7 @@ export default function SBSPage() {
         <EcosystemPage
           title="Sub-Boreal Spruce Zone"
           subtitle="A moist, cool forested zone important for forestry and wildlife"
-          //   heroImage={bgHero}
+          heroImage={bgHero}
           description="This zone includes dense forests and wetlands, supporting moose, bears, and other northern wildlife."
           stats={[
             { label: "Mean Annual Temp", value: "4°C" },

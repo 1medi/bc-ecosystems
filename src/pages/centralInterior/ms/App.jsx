@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import bgHero from "../../../assets/ms/ms.png"
 export default function MSPage() {
   return (
     <>
@@ -8,7 +8,7 @@ export default function MSPage() {
         <EcosystemPage
           title="Montane Spruce Zone"
           subtitle="Found at mid to high elevations, dominated by Engelmann spruce and subalpine fir"
-          //   heroImage={bgHero}
+          heroImage={bgHero}
           description="This transitional forest zone bridges lower interior forests and alpine areas. It’s important for snowpack storage and mountain wildlife."
           stats={[
             { label: "Mean Annual Temp", value: "2°C" },

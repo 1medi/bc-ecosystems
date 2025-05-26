@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function EcosystemPage({
   title,
   subtitle,
@@ -33,8 +35,24 @@ export default function EcosystemPage({
           )}
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
-            <h1 className="font-hero-header">{title}</h1>
-            {subtitle && <p className="mt-4 text-lg max-w-xl">{subtitle}</p>}
+            <motion.h1
+              className="font-hero-header"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              {title}
+            </motion.h1>
+            {subtitle && (
+              <motion.p
+                className="mt-4 text-lg max-w-xl"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+              >
+                {subtitle}
+              </motion.p>
+            )}
           </div>
         </section>
 
@@ -63,22 +81,3 @@ export default function EcosystemPage({
     </>
   );
 }
-
-
-        {/* Stats Grid
-        {stats && stats.length > 0 && (
-          <section className="py-8 px-6 max-w-5xl mx-auto">
-            <h2 className="text-lg font-semibold mb-4">Key Stats</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {stats.map((stat, i) => (
-                <div
-                  key={i}
-                  className="bg-gray-100 p-4 rounded shadow text-center"
-                >
-                  <div className="text-2xl font-bold">{stat.value}</div>
-                  <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )} */}

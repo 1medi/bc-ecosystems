@@ -1,7 +1,8 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 // import bgHero from "@/assets/images/bg-hero.jpg"
 import PageWrapper from "../../../components/pageWrapper";
-import CWHHero from "../../../assets/cwh/cwhHero.mp4"
+import CWHHero from "../../../assets/videos/cwhHero.mp4"
+import CWHGraph from "../../../components/interactiveElements/cwhGraph"
 export default function CWHPage() {
   return (
     <>
@@ -163,15 +164,12 @@ export default function CWHPage() {
         </div>
       </section>
 
-      <div className="flex-1]">
-        <img
-          src="subzone.png"
-          alt="subzone"
-          className="rounded-lg w-full h-250"
-        />
+      <div className="flex-1">
+          <CWHGraph/>
       </div>
       </PageWrapper>
     </>
   );
 }
   
+"../../../assets/heh.png";

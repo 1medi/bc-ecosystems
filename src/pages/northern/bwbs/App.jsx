@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import BWBSHero from "../../../assets/bwbs/bwbsHero.JPEG"
 
 export default function BWBSPage() {
   return (
@@ -8,7 +8,7 @@ export default function BWBSPage() {
       <EcosystemPage
         title="Boreal White and Black Spruce Zone"
         subtitle="Part of the vast boreal forest that spans across northern continents, characterized by cool, moist conditions and spruce-dominated forests."
-        // heroImage={bgHero}
+        heroImage={BWBSHero}
         description="Covering much of northeastern British Columbia, this zone represents the southern extent of Canada’s boreal biome. With its distinctive spruce forests, long winters, and fire-influenced ecology, it plays a critical role in carbon storage and forest succession."
         stats={[
           { label: "Mean Annual Temp", value: "0.5°C" },
@@ -57,4 +57,3 @@ export default function BWBSPage() {
     </PageWrapper>
   );
 }
-  

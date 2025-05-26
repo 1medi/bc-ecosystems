@@ -1,5 +1,5 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
-// import bgHero from "@/assets/images/bg-hero.jpg"
+import SWB from "../../../../src/assets/swb/dempsterHighway.png"
 import PageWrapper from "../../../components/pageWrapper";
 export default function SWBPage() {
   return (
@@ -8,7 +8,7 @@ export default function SWBPage() {
         <EcosystemPage
           title="Spruce Willow Birch Zone"
           subtitle="A transitional zone between boreal forests and alpine tundra"
-          //   heroImage={bgHero}
+          heroImage={SWB}
           description="Located at mid to high elevations, this zone supports mixed forests and shrublands and plays a vital role in wildlife migration corridors."
           stats={[
             { label: "Mean Annual Temp", value: "0°C" },
