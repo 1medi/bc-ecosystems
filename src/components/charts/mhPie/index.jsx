@@ -1,5 +1,5 @@
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
-import MH from "../../../src/assets/pieImages/mh.png"
+import MH from "../../../../src/assets/pieImages/mh.png"
 import { useState, useEffect } from 'react'
 
 const imageMap = {

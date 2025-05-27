@@ -14,7 +14,8 @@ import MS from "../../../assets/regionHighlights/MS.webp";
 import PP from "../../../assets/regionHighlights/PP.webp";
 import SBPS from "../../../assets/regionHighlights/SBPS.webp";
 import SBS from "../../../assets/regionHighlights/SBS.webp";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const sections = {
   Northern: [
@@ -89,7 +90,7 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <section id="ecosystems" className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-4">
+    <section id="ecosystems" className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4">
       <h2 className="text-center text-3xl font-semibold mb-6">
         EXPLORE BC'S ECOSYSTEMS
       </h2>

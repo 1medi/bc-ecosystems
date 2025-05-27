@@ -1,8 +1,8 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
-import MHPieChart from "../../../components/mhPie";
+import MHPieChart from "../../../components/charts/mhPie";
 // import bgHero from "@/assets/images/bg-hero.jpg"
 import AboutZoneCard from "../../../components/aboutZoneCard";
-import MHChart from "../../../components/mhChart/index";
+import MHChart from "../../../components/charts/mhChart/index";
 import PageWrapper from "../../../components/pageWrapper";
 import Krumm from "../../../assets/mh/krumhotz.png";
 import MHCover from "../../../assets/mh/mhcover.png";

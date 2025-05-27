@@ -34,7 +34,6 @@ export default function HeroSection() {
     <main className="relative w-full">
       <Intro />
       <Description />
-      {/* <Section /> */}
     </main>
   );
 }
