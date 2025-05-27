@@ -41,7 +41,7 @@ export default function SWBPage() {
           </div>
         </section>
 
-        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#E6EDF3] bg-[#FCF5EE] rounded-xl drop-shadow-xl">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl drop-shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Ecological Characteristics
           </h2>
