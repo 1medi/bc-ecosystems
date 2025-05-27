@@ -4,8 +4,8 @@ import BWBSHero from "../../../assets/bwbs/bwbsHero.JPEG";
 import BWBSLandscape1 from "../../../assets/bwbs/bwbsLandscape1.JPEG";
 import Slideshow from "../../../components/slideshow";
 import BWBSLandscape2 from "../../../assets/bwbs/bwbsLandscape2.JPG";
-import BWBSSpruce from "../../../assets/bwbs/bwbsSpruce.jpeg";
-import BWBSTrees from "../../../assets/bwbs/bwbsTrees1.jpeg";
+import BWBSSpruce from "../../../assets/bwbs/bwbsSpruce.JPEG";
+import BWBSTrees from "../../../assets/bwbs/bwbsTrees1.JPEG";
 
 const slides = [
   {
