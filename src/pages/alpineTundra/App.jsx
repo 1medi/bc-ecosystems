@@ -4,7 +4,7 @@ import EcosystemPage from "../../components/ecosystemTemplate";
 import AboutZoneCard from "../../components/aboutZoneCard";
 import PageWrapper from "../../components/pageWrapper";
 import ATVideo from "../../assets/videos/alpineTundra.mp4";
-import Skypilot from "../../assets/at/skypilot.jpg"
+import Skypilot from "../../assets/at/skypilot.JPG"
 
 export default function AlpineTundraPage() {
   return (
