@@ -11,7 +11,7 @@ export default function SBPSPage() {
           subtitle="A dry, cool interior forest dominated by lodgepole pine and hybrid white spruce"
           heroImage={bgHero}
         />
-        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#E6E1DA] rounded-xl shadow-xl">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#008080]/25  rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2">
               <h2 className="font-regular-header text-green-900 mb-4">
@@ -42,7 +42,7 @@ export default function SBPSPage() {
           </div>
         </section>
 
-        <section className="p-8 max-w-screen-lg m-auto rounded-xl bg-[#E6E1DA] shadow-xl mb-8 ">
+        <section className="p-8 max-w-screen-lg m-auto rounded-xl bg-[#008080]/25  shadow-xl mb-8 ">
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Ecological Characteristics
           </h2>
@@ -61,7 +61,7 @@ export default function SBPSPage() {
                 ranching, providing areas for summer grazing and haying, as well
                 as supporting furbearer and other wildlife populations.
               </p>
-              <ul className="font-body-copy list-disc list-inside text-sm text-gray-700 space-y-1">
+              <ul className="font-body-copy list-disc list-inside  space-y-1">
                 <li>Cold air drainage → extreme winter cold</li>
                 <li>Patchy lodgepole pine forests</li>
                 <li>“Wild hay meadows” (fens)</li>

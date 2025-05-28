@@ -34,7 +34,7 @@ export default function EcosystemPage({
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
             <HashLink
               smooth
-              to="/#ecosystems"
+              to="/"
               className="absolute top-6 left-6"
             >
               <motion.div

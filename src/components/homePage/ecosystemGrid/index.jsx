@@ -89,9 +89,9 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <div id="ecosystems" className="scroll-mt-32">
+    <div  className="scroll-mt-32">
       <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4">
-        <h2 className="text-center text-3xl font-semibold mb-6">
+        <h2  className="text-center text-3xl font-semibold mb-6">
           EXPLORE BC'S ECOSYSTEMS
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">

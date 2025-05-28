@@ -15,7 +15,7 @@ export default function SBSPage() {
           description="This zone includes dense forests and wetlands, supporting moose, bears, and other northern wildlife."
         />
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8" >
           <h2 className="font-regular-header text-green-900 mb-4">Overview</h2>
           <p className="font-body-copy">
             The Sub-Boreal Spruce zone (SBS) is the third largest forested zone
@@ -35,7 +35,7 @@ export default function SBSPage() {
           </p>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">
             Distribution
           </h2>
@@ -58,7 +58,7 @@ export default function SBSPage() {
           </p>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">Climate</h2>
           <p className="font-body-copy">
             Climate varies across the SBS due to its broad range. Annual
@@ -88,7 +88,7 @@ export default function SBSPage() {
           </Link>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">
             Geology & Soils
           </h2>
@@ -106,7 +106,7 @@ export default function SBSPage() {
           </p>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">
             Vegetation
           </h2>
@@ -131,7 +131,7 @@ export default function SBSPage() {
           </ul>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">Wildlife</h2>
           <p className="font-body-copy">
             Moose thrive in the SBS due to dense cover and plentiful wetlands.
@@ -148,7 +148,7 @@ export default function SBSPage() {
           </p>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">
             Indigenous Communities & Land Management
           </h2>
