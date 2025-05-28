@@ -30,7 +30,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <main className="relative w-full">
+    <main className="relative w-full min-h-screen">
       <Intro />
       <Description />
     </main>

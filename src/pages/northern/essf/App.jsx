@@ -13,7 +13,7 @@ export default function ESSFPage() {
           subtitle="A high-elevation forested ecosystem characterized by cold, snowy winters"
           heroVideo={ESSF}
         />
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="flex flex-col m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4">
             Engelmann Spruce Subalpine Fir Zone (ESSF)
           </h2>
@@ -35,7 +35,7 @@ export default function ESSFPage() {
           </p>
         </section>
 
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="flex flex-col p-8 max-w-screen-lg  m-8 mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Distribution
           </h2>
@@ -61,7 +61,7 @@ export default function ESSFPage() {
           </p>
         </section>
 
-        <section className="flex flex-wrap gap-8 p-8 max-w-screen-lg mx-auto">
+        <section className="flex flex-col flex-wrap gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
           <div className="flex-1 min-w-[300px]">
             <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
               Climate
@@ -95,7 +95,7 @@ export default function ESSFPage() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-8 p-8 max-w-screen-lg mx-auto">
+        <section className="flex flex-col md:flex-row gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
           {/* Left column: Geology and Soils */}
           <div className="flex-1 min-w-[300px] space-y-4">
             <h2 className="text-2xl font-regular-header text-green-900 text-center">
@@ -148,7 +148,7 @@ export default function ESSFPage() {
             <ESSFSpecies />
           </div>
         </section>
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="flex flex-col p-8 m-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Wildlife in the ESSF
           </h2>
@@ -167,60 +167,63 @@ export default function ESSFPage() {
           </p>
           <WildlifeTable />
         </section>
-        <section className="flex flex-wrap gap-8 p-8 max-w-screen-lg mx-auto">
-          <div className="flex-1 min-w-[300px]">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+
+          <div>
             <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
               Subzones and Variation
             </h2>
-            <div className="space-y-6">
-              <p className="font-body-copy">
-                The ESSF zone's vast distribution, diverse climate (spanning all
-                wetness and temperature codes), and rich biodiversity result in
-                significant internal variation. This is reflected in the
-                classification of subzones as forested, woodland ('w' suffix),
-                or parkland ('p' suffix), totaling 47 distinct units. These
-                designations, not variants, indicate differences in timber
-                value, canopy closure, and understory vegetation. Initially
-                mapped as forested or parkland based on timber operability, a
-                transitional 'woodland' zone with an open but continuous canopy
-                and parkland-like understory was later recognized. Woodland
-                subzone mapping is ongoing.
-              </p>
-
-              <div className="bg-emerald-50 border border-emerald-700 rounded-md p-4 italic text-emerald-900 shadow-sm">
-                This diagram illustrates the elevational layering of the ESSF
-                zone: forested areas lie lowest, followed by woodlands with open
-                canopy, then parklands with scattered tree clusters, and finally
-                the alpine BAFA zone at the highest elevation.
-              </div>
-
-              <p className="font-body-copy">
-                Woodlands feature an open canopy, while parklands have tree
-                clusters interspersed with meadows or heather snowbeds, often
-                with stunted (krummholz) trees. Branches of subalpine trees
-                under the snow of winter are lush (woodland), while those
-                exposed to winds are thin and sparse (parkland). Woodland
-                understories include indicators like pink or white
-                mountain-heather, partridge-foot, and mountain sagewort, with
-                specific bryophytes like heron’s-bill mosses and leafy
-                liverworts. Species distribution also varies: black huckleberry
-                is less vigorous in woodlands, while aspen, false azalea, and
-                bunchberry may occur on warmer aspects. Forested areas contain
-                species like black cottonwood and devil's club, absent in
-                woodlands. Forested areas also contain a higher abundance of
-                feathermosses.
-              </p>
-            </div>
+            <p className="font-body-copy">
+              The ESSF zone's vast distribution, diverse climate (spanning all
+              wetness and temperature codes), and rich biodiversity result in
+              significant internal variation. This is reflected in the
+              classification of subzones as forested, woodland ('w' suffix), or
+              parkland ('p' suffix), totaling 47 distinct units. These
+              designations, not variants, indicate differences in timber value,
+              canopy closure, and understory vegetation. Initially mapped as
+              forested or parkland based on timber operability, a transitional
+              'woodland' zone with an open but continuous canopy and
+              parkland-like understory was later recognized. Woodland subzone
+              mapping is ongoing.
+            </p>
           </div>
-          <div className="flex-1 min-w-[300px]">
+
+
+          <div className="bg-emerald-50 m-auto border border-emerald-700 rounded-md p-4 italic text-emerald-900 shadow-sm h-fit self-start">
+            This diagram illustrates the elevational layering of the ESSF zone:
+            forested areas lie lowest, followed by woodlands with open canopy,
+            then parklands with scattered tree clusters, and finally the alpine
+            BAFA zone at the highest elevation.
+          </div>
+
+          <div>
             <img
               src="essf-Subzones and Variation.png"
               alt="Vegetation image"
               className="rounded-lg w-full h-auto"
             />
           </div>
+
+
+          <div>
+            <p className="font-body-copy">
+              Woodlands feature an open canopy, while parklands have tree
+              clusters interspersed with meadows or heather snowbeds, often with
+              stunted (krummholz) trees. Branches of subalpine trees under the
+              snow of winter are lush (woodland), while those exposed to winds
+              are thin and sparse (parkland). Woodland understories include
+              indicators like pink or white mountain-heather, partridge-foot,
+              and mountain sagewort, with specific bryophytes like heron’s-bill
+              mosses and leafy liverworts. Species distribution also varies:
+              black huckleberry is less vigorous in woodlands, while aspen,
+              false azalea, and bunchberry may occur on warmer aspects. Forested
+              areas contain species like black cottonwood and devil's club,
+              absent in woodlands. Forested areas also contain a higher
+              abundance of feathermosses.
+            </p>
+          </div>
         </section>
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl m-8">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Indigenous Peoples and Land Management in the ESSF
           </h2>

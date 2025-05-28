@@ -24,7 +24,7 @@ export default function AlpineTundraPage() {
         caption="A skypliot plant"
       />
 
-      <section className="p-8 m-8 max-w-screen-lg mx-auto">
+      <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
         <h2 className="font-regular-header text-green-900 text-center mb-6">
           Alpine Tundra Subzones
         </h2>

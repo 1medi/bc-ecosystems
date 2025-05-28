@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 export default function EcosystemPage({
   title,
   subtitle,
@@ -31,19 +32,23 @@ export default function EcosystemPage({
           )}
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
-            <Link to="/#ecosystems">
+            <HashLink
+              smooth
+              to="/#ecosystems"
+              className="absolute top-6 left-6"
+            >
               <motion.div
                 whileHover={{
-                scale: 1.05,
-                backgroundColor: "#14532d", 
-                color: "#ffffff",
-                transition: { duration: 0.2 },
-              }}
-              className="absolute top-6 left-6 font-button bg-green-800/20 text-green-900 border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
+                  scale: 1.05,
+                  backgroundColor: "#14532d",
+                  color: "#ffffff",
+                  transition: { duration: 0.2 },
+                }}
+                className="font-button bg-green-800/20 text-black border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
               >
                 ← Back to Homepage
               </motion.div>
-            </Link>
+            </HashLink>
 
             <motion.h1
               className="font-hero-header"
