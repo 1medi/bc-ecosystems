@@ -1,6 +1,7 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-import bgHero from "../../../assets/sbps/sbps.png"
+import bgHero from "../../../assets/sbps/sbps.png";
+import Chilcotin from "../../../assets/sbps/chilcotinAmpitheatre.jpg";
 export default function SBPSPage() {
   return (
     <>
@@ -9,49 +10,68 @@ export default function SBPSPage() {
           title="Sub-Boreal Pine Spruce Zone"
           subtitle="A dry, cool interior forest dominated by lodgepole pine and hybrid white spruce"
           heroImage={bgHero}
-          description="This zone has open forests with grassy understories, and it's highly valued for timber and habitat."
-          stats={[
-            { label: "Mean Annual Temp", value: "3°C" },
-            { label: "Annual Precipitation", value: "300–600 mm" },
-            { label: "Dominant Tree", value: "Lodgepole Pine & White Spruce" },
-            { label: "Zone Code", value: "SBPS" },
-          ]}
         />
-         <section className="p-8 max-w-screen-lg mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 items-start">
-          <div className="md:w-1/2">
-            <h2 className="text-2xl font-bold text-green-900 mb-4">Distribution & Landscape</h2>
-            <p className="text-base leading-relaxed">
-              The SBPS zone spans portions of the Cariboo Forest Region and includes lands from earlier classifications like the Cariboo Aspen-Lodgepole Pine-Douglas Fir zone. It features a rolling terrain with morainal and organic parent materials and a patchwork of lodgepole pine forest and "wild hay meadows" (fens).
-            </p>
+        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#008080]/25  rounded-xl shadow-xl">
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="md:w-1/2">
+              <h2 className="font-regular-header text-green-900 mb-4">
+                Distribution & Landscape
+              </h2>
+              <p className="font-body-copy">
+                The Sub-boreal Pine-Spruce (SBPS) biogeoclimatic zone is
+                situated in the west-central interior of British Columbia,
+                specifically in the Chilcotin region. This zone was established
+                based on Forest Service classification work conducted in the
+                Cariboo Forest Region during the mid-1970s. It encompasses
+                portions of Krajina's former Cariboo Aspen-Lodgepole
+                Pine-Douglas Fir zone, as well as previous areas classified
+                within the Sub-boreal Spruce (SBS) zone. The SBPS is
+                characterized by extreme cold during the winter months due to
+                cold air drainage and is comparatively colder and drier than the
+                adjacent SBS zone. It is further divided into four subzones:
+                SBPSxc, SBPSdc, SBPSmk, and SBPSmc.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src={Chilcotin}
+                alt="chilcotin ampitheatre"
+                className="rounded-lg"
+              />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            {/* <img src={SBPSMap} alt="SBPS zone map" className="rounded-lg" /> */}
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="p-8 max-w-screen-lg mx-auto bg-[#E6E1DA]">
-        <h2 className="text-2xl font-bold text-green-900 text-center mb-6">Ecological Characteristics</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <p className="text-base leading-relaxed mb-4">
-              The White Spruce–Scrub Birch–Feathermoss site association dominates zonal plant communities. Luvisolic and Brunisolic soils with mor humus forms are widespread. While timber productivity is low, the zone is actively managed for lodgepole pine and offers valuable ranching land for grazing and haying. Wildlife habitat and fur resources are also significant.
-            </p>
-            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-              <li>Cold air drainage → extreme winter cold</li>
-              <li>Patchy lodgepole pine forests</li>
-              <li>“Wild hay meadows” (fens)</li>
-              <li>Scrub birch and feathermoss understory</li>
-              <li>Low forest productivity</li>
-              <li>Grazing, haying, furbearer habitat</li>
-            </ul>
+        <section className="p-8 max-w-screen-lg m-auto rounded-xl bg-[#008080]/25  shadow-xl mb-8 ">
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
+            Ecological Characteristics
+          </h2>
+          <div className="flex flex-col gap-8">
+            <div>
+              <p className="font-body-copy mb-4">
+                The landscape of the SBPS is a mosaic of forest patches
+                interspersed with "wild hay meadows," which are essentially
+                fens. The zonal plant community is classified as the White
+                Spruce-Scrub Birch-Feathermoss Site Association. The terrain is
+                mostly rolling, with morainal and organic parent materials being
+                common. Luvisolic and Brunisolic soils with mor humus forms are
+                prevalent in this zone. While forest productivity is relatively
+                low, the SBPS has been utilized for lodgepole pine timber
+                harvesting. Other significant resources within the zone include
+                ranching, providing areas for summer grazing and haying, as well
+                as supporting furbearer and other wildlife populations.
+              </p>
+              <ul className="font-body-copy list-disc list-inside  space-y-1">
+                <li>Cold air drainage → extreme winter cold</li>
+                <li>Patchy lodgepole pine forests</li>
+                <li>“Wild hay meadows” (fens)</li>
+                <li>Scrub birch and feathermoss understory</li>
+                <li>Low forest productivity</li>
+                <li>Grazing, haying, furbearer habitat</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            {/* <img src={Ranching} alt="Ranching in SBPS" className="rounded-lg" /> */}
-          </div>
-        </div>
-      </section>
+        </section>
       </PageWrapper>
     </>
   );

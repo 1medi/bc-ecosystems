@@ -20,7 +20,7 @@ export default function MSPage() {
             { label: "Zone Code", value: "MS" },
           ]}
         />
-          <section className="p-8 max-w-screen-lg mx-auto">
+          <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold text-green-900 mb-4">History and Classification</h2>
@@ -34,7 +34,7 @@ export default function MSPage() {
         </div>
       </section>
 
-      <section className="p-8 max-w-screen-lg mx-auto bg-[#F0EAD6]">
+      <section className="p-8 max-w-screen-lg mx-auto  bg-[#008080]/25 rounded-xl shadow-xl m-8">
         <h2 className="text-2xl font-bold text-green-900 text-center mb-6">Ecological Characteristics</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>

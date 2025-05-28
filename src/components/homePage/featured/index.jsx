@@ -32,7 +32,7 @@ export default function FeaturedEcosystems() {
   ];
 
   return (
-    <section className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-6 text-center">
+    <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-6 text-center">
       <h2 className="font-section-header mb-10">FEATURED ECOSYSTEMS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {featured.map((eco) => (

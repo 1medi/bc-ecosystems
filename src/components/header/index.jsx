@@ -25,7 +25,7 @@ export default function Header() {
             <a href="/Gallery" className="hover:text-green-700">
               Gallery
             </a>
-            <a href="/about" className="hover:text-green-700">
+            <a href="/FAQ" className="hover:text-green-700">
               FAQ
             </a>
             <a
