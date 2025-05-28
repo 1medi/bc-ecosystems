@@ -1,14 +1,20 @@
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
-import MH from "../../../../src/assets/pieImages/mh.png"
+import MH from "../../../../src/assets/mh/pieImages/mountainHemlock.webp"
+import AF from "../../../../src/assets/mh/pieImages/amabilisFir.webp"
+import WH from "../../../../src/assets/mh/pieImages/westernHemlock.webp"
+import YC from "../../../../src/assets/mh/pieImages/yellowCedar.webp"
+import SA from "../../../../src/assets/mh/pieImages/sitkaAlder.webp"
+import SF from "../../../../src/assets/mh/pieImages/subalpineFir.webp"
+
 import { useState, useEffect } from 'react'
 
 const imageMap = {
     'Mountain hemlock': MH,
-    'Amabilis fir': '/images/amabilis-fir.jpg',
-    'Western hemlock': '/images/western-hemlock.jpg',
-    'Yellow-cedar': '/images/yellow-cedar.jpg',
-    'Sitka alder': '/images/sitka-alder.jpg',
-    'Subalpine fir': '/images/subalpine-fir.jpg',
+    'Amabilis fir': AF,
+    'Western hemlock': WH,
+    'Yellow-cedar': YC,
+    'Sitka alder': SA,
+    'Subalpine fir': SF,
   }
 
 const data = [

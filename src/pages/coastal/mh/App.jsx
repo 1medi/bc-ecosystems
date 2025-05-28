@@ -3,20 +3,20 @@ import MHPieChart from "../../../components/charts/mhPie";
 import AboutZoneCard from "../../../components/aboutZoneCard";
 import MHChart from "../../../components/charts/mhChart/index";
 import PageWrapper from "../../../components/pageWrapper";
-import Krumm from "../../../assets/mh/krumhotz.png";
-import MHCover from "../../../assets/mh/mhcover.png";
+import Krumm from "../../../assets/mh/krumhotz.webp";
+import MHCover from "../../../assets/mh/mhcover.webp";
 import Coastal from "../../../assets/mh/diagram/coastalMountain.webp";
 import Western from "../../../assets/mh/diagram/coastalWestern.webp";
 import Hemlock from "../../../assets/mh/diagram/mountainHemlock.webp";
 import Forested from "../../../assets/mh/subzones/forestedSubzone.webp";
 import Parkland from "../../../assets/mh/subzones/parklandSubzone.webp";
 import MHHeader from "../../../assets/videos/mhHeader.mp4";
-import MHLand1 from "../../../assets/mh/mhLand1.png";
-import Forest1 from "../../../assets/mh/forestMeadows1.png";
-import Forest2 from "../../../assets/mh/forestMeadows2.png";
-import Roadcut from "../../../assets/mh/roadCut.png";
-import Veg1 from "../../../assets/mh/mhVeg2.png";
-import Veg2 from "../../../assets/mh/mhVeg3.png";
+import MHLand1 from "../../../assets/mh/mhLand1.webp";
+import Forest1 from "../../../assets/mh/forestMeadows1.webp";
+import Forest2 from "../../../assets/mh/forestMeadows2.webp";
+import Roadcut from "../../../assets/mh/roadCut.webp";
+import Veg1 from "../../../assets/mh/mhVeg2.webp";
+import Veg2 from "../../../assets/mh/mhVeg3.webp";
 export default function MountainHemlockPage() {
   return (
     <>
@@ -26,12 +26,6 @@ export default function MountainHemlockPage() {
           heroVideo={MHHeader}
           subtitle="Cool, wet mountain forests above coastal zones"
           description="Located at high elevations, the MH zone features heavy snowpack, cold temperatures, and mountain-adapted forests dominated by mountain hemlock."
-          stats={[
-            { label: "Mean Annual Temp", value: "3°C" },
-            { label: "Annual Precipitation", value: "1400–2500 mm" },
-            { label: "Dominant Tree", value: "Mountain Hemlock" },
-            { label: "Zone Code", value: "MH" },
-          ]}
         />
         <AboutZoneCard
           bgColor="bg-[#C5D6F5]/75"
@@ -44,7 +38,7 @@ export default function MountainHemlockPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-12 items-start">
             <div className="md:w-1/3">
-              <h2 className="text-2xl font-bold text-green-900 mb-4">
+              <h2 className="font-regular-header text-green-900 mb-4">
                 Distribution
               </h2>
               <p className="font-body-copy">
@@ -68,13 +62,13 @@ export default function MountainHemlockPage() {
                   caption: "Coastal Western Hemlock reside here!",
                 },
                 {
-                  label: "400–1000 METERS",
+                  label: "400-1000 METERS",
                   img: Hemlock,
                   alt: "Mountain Hemlock",
                   caption: "Mountain Hemlock reside here!",
                 },
                 {
-                  label: "900–1800 METERS",
+                  label: "900-1800 METERS",
                   img: Western,
                   alt: "Coastal Mountain Heather Alpine",
                   caption: "Coastal Mountain Heather Alpine reside here!",
@@ -100,16 +94,16 @@ export default function MountainHemlockPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
-              <h2 className="text-2xl font-bold text-green-900 mb-4">
+              <h2 className="font-regular-header text-green-900 mb-4">
                 Climate
               </h2>
               <p className="font-body-copy">
-                The Mountain Hemlock zone is one of Canada’s wettest ecosystems
+                The Mountain Hemlock zone is one of Canada's wettest ecosystems
                 with annual precipitation of 1700-5000 mm. The majority of the
                 precipitation falls as snow, and the snowpack can reach up to 6m
                 in depth. The snow is usually wet and heavy, which can cause
                 trees to bend or break. You will often see mountain hemlock
-                trees with broken branches and a very “rugged” appearance! The
+                trees with broken branches and a very “rugged” appearance! The
                 summers are short and cool and the winters are long, cool and
                 wet. The mean annual temperature in the MH zone ranges from 0 to
                 5°C. The snow melts slowly, so the growing season is relatively
@@ -124,7 +118,7 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
             Subzones in the Mountain Hemlock Zone
           </h2>
           <div className="flex flex-col justify-center gap-8">
@@ -149,7 +143,7 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
             Forests and Meadows
           </h2>
           <div className="relative w-full h-[100vw] max-h-[600px] p-4 m-auto mb-6">
@@ -208,8 +202,8 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
-            Life in the MH zone.
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
+            Life in the MH zone
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <p className="font-body-copy">
@@ -229,7 +223,7 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
             Cultural Connections of MH
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
@@ -246,7 +240,7 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center mb-6">
             Glacial Landscape and Soils
           </h2>
           <div className="flex flex-col gap-8">
