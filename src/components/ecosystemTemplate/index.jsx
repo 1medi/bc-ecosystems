@@ -33,10 +33,13 @@ export default function EcosystemPage({
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
             <Link to="/#ecosystems">
               <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="font-button font-bold absolute top-6 left-6 flex items-center gap-2 text-white bg-[#4C6440] bg-opacity-30 hover:bg-opacity-50 rounded-full px-3 py-1 text-sm transition"
+                whileHover={{
+                scale: 1.05,
+                backgroundColor: "#14532d", 
+                color: "#ffffff",
+                transition: { duration: 0.2 },
+              }}
+              className="absolute top-6 left-6 font-button bg-green-800/20 text-green-900 border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
               >
                 ← Back to Homepage
               </motion.div>

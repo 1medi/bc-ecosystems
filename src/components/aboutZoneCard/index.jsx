@@ -8,8 +8,8 @@ const AboutZoneCard = ({
   bgColor = "bg-white",
 }) => {
   return (
-    <div className="m-auto w-full overflow-hidden m-8">
-      <div className="relative py-12 z-10">
+    <div className="m-auto w-full overflow-hidden">
+      <div className="relative p-8 z-10">
         <div className="flex justify-center">
           <div
             className={`w-full max-w-screen-lg ${bgColor} rounded-xl shadow-xl p-12 max-xl:p-4`}

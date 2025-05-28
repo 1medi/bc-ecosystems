@@ -1,6 +1,5 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import MHPieChart from "../../../components/charts/mhPie";
-// import bgHero from "@/assets/images/bg-hero.jpg"
 import AboutZoneCard from "../../../components/aboutZoneCard";
 import MHChart from "../../../components/charts/mhChart/index";
 import PageWrapper from "../../../components/pageWrapper";
@@ -16,8 +15,8 @@ import MHLand1 from "../../../assets/mh/mhLand1.png";
 import Forest1 from "../../../assets/mh/forestMeadows1.png";
 import Forest2 from "../../../assets/mh/forestMeadows2.png";
 import Roadcut from "../../../assets/mh/roadCut.png";
-import Veg1 from "../../../assets/mh/mhVeg2.png"
-import Veg2 from "../../../assets/mh/mhVeg3.png"
+import Veg1 from "../../../assets/mh/mhVeg2.png";
+import Veg2 from "../../../assets/mh/mhVeg3.png";
 export default function MountainHemlockPage() {
   return (
     <>
@@ -33,17 +32,16 @@ export default function MountainHemlockPage() {
             { label: "Dominant Tree", value: "Mountain Hemlock" },
             { label: "Zone Code", value: "MH" },
           ]}
-        ></EcosystemPage>
+        />
         <AboutZoneCard
           bgColor="bg-[#C5D6F5]/75"
           title="About this zone"
           description="The Mountain Hemlock Biogeoclimatic zone (or MH zone) gets its name from the abundance of mountain hemlock present in the higher elevation areas across the Pacific coast region. Mountain hemlock is also known as Tsuga mertensiana and is well adapted to the colder and snowier conditions found at higher elevations. Deep snow and a shorter growing season play a large role in the MH zone ecosystem. At higher elevations the forest transitions into subalpine parklands where trees are found grouped together. These “islands” are microsites where the snow melts a little bit earlier. At these upper edges, trees can be small, misshapen, but older than you might think as they are slow to grow. These are known as Krummholz trees, a German word meaning “crooked wood”. These forests are rarely disturbed by events like fires, so trees can become old growth forests in this zone. More typical disturbance agents are avalanches or rock slides."
           image={Krumm}
-          // background={MHCover}
           caption="A Krummholz tree"
         />
-        {/* Distribution Section */}
-        <section className="p-8 max-w-screen-lg mx-auto">
+
+        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-12 items-start">
             <div className="md:w-1/3">
               <h2 className="text-2xl font-bold text-green-900 mb-4">
@@ -99,8 +97,7 @@ export default function MountainHemlockPage() {
           </div>
         </section>
 
-        {/* Climate Section */}
-        <section className="p-8 max-w-screen-lg mx-auto bg-[#C5D6F5] rounded-xl">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
               <h2 className="text-2xl font-bold text-green-900 mb-4">
@@ -126,8 +123,7 @@ export default function MountainHemlockPage() {
           </div>
         </section>
 
-        {/* Subzones Section */}
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Subzones in the Mountain Hemlock Zone
           </h2>
@@ -152,8 +148,7 @@ export default function MountainHemlockPage() {
           </div>
         </section>
 
-        {/* Forests and Meadows Section */}
-        <section className="p-8 max-w-screen-lg mx-auto bg-[#C5D6F5]">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Forests and Meadows
           </h2>
@@ -211,14 +206,14 @@ export default function MountainHemlockPage() {
             </div>
           </div>
         </section>
-        {/* Life in the MH Ecosystem */}
-        <section className="p-8 max-w-screen-lg mx-auto">
+
+        <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Life in the MH zone.
           </h2>
           <div className="flex flex-col md:flex-row gap-8">
             <p className="font-body-copy">
-              "Few animals reside year-round in the MH zone due to its climate.
+              Few animals reside year-round in the MH zone due to its climate.
               Instead, many species utilize it seasonally. Black and grizzly
               bears move to higher elevations for late-summer berries, and some
               den there. Mountain goats migrate between high summer slopes and
@@ -228,13 +223,12 @@ export default function MountainHemlockPage() {
               Clark's nutcracker, raven, pileated woodpecker, chestnut-backed
               chickadee, Townsend's warbler, and golden crowned kinglet to name
               a few. While subalpine areas host golden eagles, white-tailed
-              ptarmigan, willow ptarmigan and blue grouse
+              ptarmigan, willow ptarmigan and blue grouse.
             </p>
           </div>
         </section>
 
-        {/* Cultural connections of the MH Ecosystem */}
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Cultural Connections of MH
           </h2>
@@ -251,8 +245,7 @@ export default function MountainHemlockPage() {
           </div>
         </section>
 
-        {/* Glacial Landscape and Soils Section */}
-        <section className="p-8 max-w-screen-lg mx-auto">
+        <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Glacial Landscape and Soils
           </h2>
@@ -286,28 +279,22 @@ export default function MountainHemlockPage() {
             </div>
 
             <div className="flex flex-col">
-              <h3 className="font-regular-header text-center">Two primary soil types define the area</h3>
+              <h3 className="font-regular-header text-center">
+                Two primary soil types define the area
+              </h3>
               <div>
                 <p className="font-subheader text-center bg-[#7C9885] p-4 m-4 rounded-xl text-white">
                   Organic Soils (e.g., Fibrisols, Mesisols): found in
                   waterlogged areas.
                 </p>
-                <img
-                  src={Veg2}
-                  alt="Soil 2"
-                  className="rounded-lg mb-4"
-                />
+                <img src={Veg2} alt="Soil 2" className="rounded-lg mb-4" />
               </div>
               <div>
                 <p className="font-subheader text-center bg-[#7C9885] p-4 m-4 rounded-xl text-white">
                   Podzolic Soils (e.g., Ferro-Humic Podzols): formed by water
                   leaching in well-drained sites.
                 </p>
-                <img
-                  src={Veg2}
-                  alt="Soil 2"
-                  className="rounded-lg mb-4"
-                />
+                <img src={Veg2} alt="Soil 2" className="rounded-lg mb-4" />
               </div>
             </div>
           </div>

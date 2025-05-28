@@ -85,6 +85,25 @@ const faqData = [
       </span>
     ),
   },
+  {
+    question:
+      "Are there any other resources to learn more about BC Ecosystems?",
+    answer: (
+      <span>
+        YES!
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/QLoAQa89xkQ?si=bd9sVHmczODlkHwV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </span>
+    ),
+  },
 ];
 
 export default function FAQPage() {
