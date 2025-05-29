@@ -8,12 +8,11 @@ import {
 } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { TextureLoader, BackSide } from "three";
-import Test from "../../assets/cma-whistler.jpg";
 
 extend({ OrbitControls });
 
-function Scene() {
-  const texture = useLoader(TextureLoader, Test);
+function Scene({ src }) {
+  const texture = useLoader(TextureLoader, src);
   return (
     <mesh>
       <sphereGeometry args={[500, 64, 64]} />
@@ -27,28 +26,28 @@ function Controls() {
   const controls = useRef();
   useFrame(() => controls.current?.update());
   return (
-<orbitControls
-  ref={controls}
-  args={[camera, gl.domElement]}
-  enableZoom={false}
-  enablePan={false}
-  enableDamping
-  dampingFactor={0.05}
-  maxPolarAngle={Math.PI} 
-  minPolarAngle={0}     
-  rotateSpeed={0.3}
-/>
+    <orbitControls
+      ref={controls}
+      args={[camera, gl.domElement]}
+      enableZoom={false}
+      enablePan={false}
+      enableDamping
+      dampingFactor={0.05}
+      maxPolarAngle={Math.PI}
+      minPolarAngle={0}
+      rotateSpeed={0.3}
+    />
   );
 }
 
-export default function ViewerWithOverlay() {
+export default function ViewerWithOverlay({ src }) {
   return (
     <div className="w-full aspect-video">
       <Canvas camera={{ position: [0, 0, 1], fov: 75 }}>
         <Suspense fallback={null}>
           <ambientLight intensity={1} />
           <Controls />
-          <Scene />
+          <Scene src={src} />
         </Suspense>
       </Canvas>
     </div>
