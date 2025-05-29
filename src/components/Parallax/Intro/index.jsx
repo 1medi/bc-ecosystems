@@ -12,7 +12,7 @@ export default function Intro() {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
-    const handleScrollToSection = () => {
+  const handleScrollToSection = () => {
     const target = document.getElementById("ecosystems");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
@@ -59,6 +59,7 @@ export default function Intro() {
             autoPlay
             muted
             loop
+            preload="auto"
             playsInline
             className="min-w-screen h-full object-cover"
           />
