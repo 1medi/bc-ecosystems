@@ -1,11 +1,9 @@
 "use client";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import { useState } from "react";
 import PageWrapper from "../../components/pageWrapper";
 import galleryImages from "../../data/galleryImages";
-import Image360View from "../../components/360Images/index.jsx";
-
+import ViewerWithOverlay from "../../components/360Images/index.jsx";
+import Image1 from "../../assets/360image.jpg";
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -15,22 +13,29 @@ const Gallery = () => {
     { value: "Central Interior", label: "Central Interior" },
     { value: "Southern Interior", label: "Southern Interior" },
     { value: "Coastal", label: "Coastal" },
+    { value: "360 Images", label: "360" },
   ];
 
   const extendedImages = [...galleryImages];
 
-  const filteredImages = selectedCategory
-    ? extendedImages.filter((image) =>
-        image.categories.includes(selectedCategory)
-      )
-    : extendedImages;
+  const filteredImages =
+    selectedCategory && selectedCategory !== "360 Images"
+      ? extendedImages.filter((image) =>
+          image.categories.includes(selectedCategory)
+        )
+      : extendedImages;
+
+  const image360List = [
+    { label: "Mountain", value: "mountain", src: Image1 },
+    // { label: "Forest", value: "forest", src: "/360/forest.jpg" },
+    // { label: "Coastal", value: "coastal", src: "/360/coastal.jpg" },
+  ];
+  const [selected360, setSelected360] = useState("mountain");
 
   return (
     <PageWrapper>
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        <h1 className="font-section-header text-center mb-8">
-          Photo Gallery
-        </h1>
+        <h1 className="font-section-header text-center mb-8">Photo Gallery</h1>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           <button
@@ -58,28 +63,30 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredImages.map((image) => (
-            <div
-              key={image.id}
-              className="group relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg"
-              onClick={() => setSelectedImage(image)}
-            >
-              <img
-                src={image.src || "/placeholder.svg"}
-                alt={image.alt}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white text-sm font-medium truncate">
-                    {image.alt}
-                  </p>
+        {selectedCategory !== "360 Images" && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {filteredImages.map((image) => (
+              <div
+                key={image.id}
+                className="group relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white text-sm font-medium truncate">
+                      {image.alt}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
 
         {filteredImages.length === 0 && (
           <div className="text-center py-12">
@@ -144,22 +151,46 @@ const Gallery = () => {
           </div>
         )}
 
-        <div className="mt-16">
-          <h2 className="text-2xl font-bold text-center mb-6">
-            Explore in 360°
-          </h2>
-          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-              className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg group"
-              title="Click and drag to explore in 360°"
-            >
-              <Image360View />
-              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                Click and drag to explore
+        {selectedCategory === "360 Images" && (
+          <div className="mt-16">
+            <h2 className="text-2xl font-bold text-center mb-6">
+              Explore in 360°
+            </h2>
+
+            <div className="flex justify-center gap-2 mb-6 flex-wrap">
+              {image360List.map((img) => (
+                <button
+                  key={img.value}
+                  className={`px-4 py-1 rounded-full text-sm font-medium transition-colors ${
+                    selected360 === img.value
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
+                  onClick={() => setSelected360(img.value)}
+                >
+                  {img.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div
+                className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg group"
+                title="Click and drag to explore in 360°"
+              >
+                <ViewerWithOverlay
+                  src={
+                    image360List.find((img) => img.value === selected360)?.src
+                  }
+                />
+
+                <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  Click and drag to explore
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </PageWrapper>
   );

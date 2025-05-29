@@ -35,6 +35,7 @@ export default function Intro() {
             autoPlay
             muted
             loop
+            preload="auto"
             playsInline
             className="min-w-screen h-full object-cover"
           />
