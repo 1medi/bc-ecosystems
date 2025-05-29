@@ -58,7 +58,7 @@ function App() {
           <Route path="/Spruce-Willow-Birch" element={<SWB />} />
 
           {/* Interactive Map*/}
-          <Route path="Interactive-Map" element={<Map />} />
+          <Route path="/Interactive-Map" element={<Map />} />
         </Routes>
       </AnimatePresence>
     </>
