@@ -24,8 +24,6 @@ import FAQPage from "./pages/faq/App.jsx";
 
 function App() {
   const location = useLocation();
-
-
   return (
     <>
       <AnimatePresence>
