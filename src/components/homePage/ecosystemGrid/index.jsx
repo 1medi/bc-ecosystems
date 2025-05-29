@@ -89,9 +89,9 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <div  className="scroll-mt-32">
+    <div className="scroll-mt-32">
       <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4">
-        <h2  className="text-center text-3xl font-semibold mb-6">
+        <h2 className="text-center text-3xl font-semibold mb-6">
           EXPLORE BC'S ECOSYSTEMS
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -101,8 +101,13 @@ export default function EcosystemGrid() {
         </p>
         <div className="max-w-[1600px] mx-auto space-y-12">
           {Object.entries(sections).map(([region, ecosystems]) => (
-            <div key={region}>
+            <div
+              key={region}
+              id={region.toLowerCase().replace(/\s+/g, "-")} // Add this
+              className="scroll-mt-32"
+            >
               <h3 className="font-regular-header mb-4">{region}</h3>
+
               <div className="flex flex-wrap gap-4 justify-center items-center">
                 {ecosystems.map(({ name, color }) => {
                   const path = routeMap[name];

@@ -1,19 +1,17 @@
+// EcosystemSelector.jsx
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import {
-  motion,
-  useMotionValue,
-  useSpring,
-} from "framer-motion";
-import MHVEG1 from "../../assets/mh/mhVeg2.webp";
-import MHVEG3 from "../../assets/mh/mhVeg3.webp";
-import ICH from "../../assets/ich/ich.png";
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import CDFBubble from "../../assets/bubbleImages/cdfBubble.webp";
+import BWBS from "../../assets/bwbs/bwbsHero.webp";
+import ICH from "../../assets/bubbleImages/ichBubble.webp";
+import PP from "../../assets/bubbleImages/ppBubble.webp";
 
 const ecosystems = [
   {
     name: "Coastal",
     id: "coastal",
-    images: [MHVEG1, MHVEG3],
+    images: [CDFBubble],
     ringColor: "ring-blue-400",
   },
   {
@@ -25,16 +23,23 @@ const ecosystems = [
   {
     name: "Northern",
     id: "northern",
-    images: [MHVEG1],
+    images: [BWBS],
     ringColor: "ring-purple-400",
   },
   {
     name: "Southern Interior",
-    id: "Southern-Interior",
-    images: [MHVEG1],
+    id: "southern-interior",
+    images: [PP],
     ringColor: "ring-green-400",
   },
 ];
+
+const scrollToId = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 export default function EcosystemSelector() {
   const [hovered, setHovered] = useState(null);
@@ -57,15 +62,20 @@ export default function EcosystemSelector() {
   const bubble =
     isHovering && hovered ? (
       <motion.div
-        className={`fixed -top-30 -left-200 z-[99999] w-96 h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl scale-105 backdrop-blur-md ring-4 ${hovered.ringColor}`}
+        className={`fixed -top-40 -left-125 lg:-top-30 lg:-left-150 z-[99999] w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl scale-105 backdrop-blur-md ring-4 ${hovered.ringColor}`}
         style={{ translateX: springX, translateY: springY }}
         animate={{ scale: [1, 1.05, 1], opacity: 1 }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
       >
+        <div className="absolute inset-0 bg-black/20 flex items-center justify-center z-10">
+          <p className="font-button text-white text-sm font-semibold">
+            See more!
+          </p>
+        </div>
         <img
           src={hovered.images[0]}
           alt={hovered.name}
-          className="w-full h-full object-cover scale-110"
+          className="z-0 w-full h-full object-cover scale-110"
         />
       </motion.div>
     ) : null;
@@ -84,12 +94,12 @@ export default function EcosystemSelector() {
             setIsHovering(false);
           }}
         >
-          <a
-            href={`#${eco.id}`}
-            className="font-hero-header font-semibold text-white hover:text-green-300 transition-colors"
+          <button
+            onClick={() => scrollToId(eco.id)}
+            className="font-card-title lg:font-hero-header font-semibold text-white hover:text-green-300 transition-colors"
           >
             {eco.name}
-          </a>
+          </button>
         </div>
       ))}
 

@@ -1,11 +1,11 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-import BWBSHero from "../../../assets/bwbs/bwbsHero.JPEG";
-import BWBSLandscape1 from "../../../assets/bwbs/bwbsLandscape1.JPEG";
+import BWBSHero from "../../../assets/bwbs/bwbsHero.webp";
+import BWBSLandscape1 from "../../../assets/bwbs/bwbsLandscape1.webp";
 import Slideshow from "../../../components/slideshow";
-import BWBSLandscape2 from "../../../assets/bwbs/bwbsLandscape2.JPG";
-import BWBSSpruce from "../../../assets/bwbs/bwbsSpruce.JPEG";
-import BWBSTrees from "../../../assets/bwbs/bwbsTrees1.JPEG";
+import BWBSLandscape2 from "../../../assets/bwbs/bwbsLandscape2.webp";
+import BWBSSpruce from "../../../assets/bwbs/bwbsSpruce.webp";
+import BWBSTrees from "../../../assets/bwbs/bwbsTrees1.webp";
 
 const slides = [
   {
