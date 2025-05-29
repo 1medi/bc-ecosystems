@@ -1,6 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import HeroVideo from "../../../assets/videos/frontPage.mp4";
+import HeroVideo from "/frontPage.mp4";
 
 export default function Intro() {
   const fullText = "EXPLORE THE ECOSYSTEMS OF BC";
