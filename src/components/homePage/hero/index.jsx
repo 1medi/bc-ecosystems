@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Intro from "../../Parallax/Intro";
 import Description from "../../Parallax/Description";
-import Section from "../../Parallax/Section";
 import HeroVideo from "../../../assets/videos/frontPage.mp4";
 import Lenis from "lenis";
 
@@ -31,10 +30,9 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <main className="relative w-full">
+    <main className="relative w-full min-h-screen">
       <Intro />
       <Description />
-      {/* <Section /> */}
     </main>
   );
 }

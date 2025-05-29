@@ -21,28 +21,108 @@ import PageWrapper from "../../components/pageWrapper";
 
 const groupedZones = {
   "Northern BC": [
-    { name: "Boreal White and Black Spruce", img: BWBS },
-    { name: "Spruce–Willow–Birch", img: SWB },
-    { name: "Engelmann Spruce–Subalpine Fir", img: ESSF },
-    { name: "Alpine Tundra / CMA / BAFA", img: IMA },
+    {
+      name: "Boreal White and Black Spruce",
+      img: BWBS,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Spruce–Willow–Birch",
+      img: SWB,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Engelmann Spruce–Subalpine Fir",
+      img: ESSF,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Alpine Tundra / CMA / BAFA",
+      img: IMA,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
   ],
   "Central Interior": [
-    { name: "Sub-Boreal Pine–Spruce", img: SBPS },
-    { name: "Sub-Boreal Spruce", img: SBS },
-    { name: "Montane Spruce", img: MS },
-    { name: "Interior Cedar–Hemlock", img: ICH },
-    { name: "Interior Douglas-fir", img: IDF },
+    {
+      name: "Sub-Boreal Pine–Spruce",
+      img: SBPS,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Sub-Boreal Spruce",
+      img: SBS,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Montane Spruce",
+      img: MS,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Interior Cedar–Hemlock",
+      img: ICH,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Interior Douglas-fir",
+      img: IDF,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
   ],
   "Southern Interior": [
-    { name: "Bunchgrass", img: BG },
-    { name: "Ponderosa Pine", img: PP },
-    { name: "Engelmann Spruce–Subalpine Fir", img: ESSF },
+    {
+      name: "Bunchgrass",
+      img: BG,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Ponderosa Pine",
+      img: PP,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Engelmann Spruce–Subalpine Fir",
+      img: ESSF,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
   ],
   Coastal: [
-    { name: "Coastal Douglas-fir", img: CDF },
-    { name: "Coastal Western Hemlock", img: CWH },
-    { name: "Mountain Hemlock", img: MH },
-    { name: "Alpine Tundra / CMA / BAFA", img: IMA },
+    {
+      name: "Coastal Douglas-fir",
+      img: CDF,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Coastal Western Hemlock",
+      img: CWH,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Mountain Hemlock",
+      img: MH,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
+    {
+      name: "Alpine Tundra / CMA / BAFA",
+      img: IMA,
+      description:
+        "Dominated by spruce forests and cold winters, typical of northern boreal zones.",
+    },
   ],
 };
 
@@ -52,14 +132,28 @@ export default function InteractiveMapSidebar() {
   return (
     <>
       <PageWrapper>
-        <div className="flex flex-col md:flex-row justify-center items-center p-8 gap-4 max-w-screen-lg mx-auto">
-          <div className="w-full md:w-2/3 max-w-[650px]  bg-white flex items-center justify-center">
+        <h1 className="font-hero-header text-center">British Columbia Heatmap</h1>
+        <div className="flex flex-col md:flex-row justify-center items-center  gap-4 max-w-screen-lg  mx-auto">
+          
+          <div className="w-full md:w-2/3 max-w-[650px] bg-white flex flex-col items-center justify-center text-center">
+            {selectedZone && (
+              <>
+                <div className="mb-4 text-center px-4">
+                  <h1 className="text-2xl md:text-3xl font-semibold text-green-700 mb-2">
+                    {selectedZone.name}
+                  </h1>
+                  <p className="text-sm md:text-base text-gray-600 max-w-md mx-auto leading-relaxed">
+                    {selectedZone.description}
+                  </p>
+                </div>
+              </>
+            )}
             <AnimatePresence mode="wait">
               <motion.img
                 key={selectedZone ? selectedZone.name : "BEC Map"}
                 src={selectedZone ? selectedZone.img : BEC}
                 alt={selectedZone ? selectedZone.name : "BC Zones"}
-                className="max-w-full max-h-[500px] rounded-xl object-contain"
+                className="max-w-full max-h-[1200px] rounded-xl object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -71,9 +165,9 @@ export default function InteractiveMapSidebar() {
           {/* right grouped list */}
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-semibold text-green-900 mb-4">
-              Ecosystems of British Columbia
+              See Our Ecosystems
             </h2>
-            <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2">
+            <div className="space-y-4 max-h-[1500px] overflow-y-auto pr-2">
               <div>
                 <motion.div
                   whileHover={{ scale: 1.03 }}

@@ -34,12 +34,20 @@ p {
   font-weight: 400;
 }
 
+/* Body Copy */
+.font-body-bold {
+  font-family: 'Work-Sans', sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem); 
+  line-height: 1.5;
+  font-weight: bold;
+}
+
 /* Regular Header */
 .font-regular-header {
   font-family: 'Work-Sans', sans-serif;
   font-size: clamp(1.5rem, 3vw, 2rem); 
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 0.01em;
 }
 
@@ -53,7 +61,7 @@ p {
 }
 
 /* Button Text */
-.font-kapital-button {
+.font-button {
   font-family: 'Kapital', sans-serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.5;
@@ -86,6 +94,14 @@ p {
   font-weight: 500;
 }
 
+/* Subheader */
+.font-subheader-bold {
+  font-family: 'Work-Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.4;
+  font-weight: bold;
+}
+
 /* Card Title */
 .font-card-title {
   font-family: 'Kapital', sans-serif;
@@ -102,7 +118,7 @@ p {
 }
 
 .font-featured-title {
-  font-family: Kapital, sans-serif;
+  font-family: 'Kapital', sans-serif;
   font-size: 24pt;
 }
 

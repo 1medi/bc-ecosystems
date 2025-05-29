@@ -4,7 +4,7 @@ import HeroVideo from "../../../assets/videos/frontPage.mp4";
 
 export default function Intro() {
   const fullText = "EXPLORE THE ECOSYSTEMS OF BC";
-  const [index, setIndex] = useState(0);
+  const words = fullText.split(" ");
   const container = useRef();
   const { scrollYProgress } = useScroll({
     target: container,
@@ -12,53 +12,44 @@ export default function Intro() {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
-  useEffect(() => {
-    if (index < fullText.length) {
-      const timeout = setTimeout(() => {
-        setIndex((prev) => prev + 1);
-      }, 100);
-      return () => clearTimeout(timeout);
+    const handleScrollToSection = () => {
+    const target = document.getElementById("ecosystems");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
     }
-  }, [index, fullText]);
+  };
 
   return (
     <div
       ref={container}
-      className="relative flex items-center justify-center h-screen overflow-hidden"
+      className="relative flex items-center justify-center min-h-screen overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="absolute inset-0 z-10 bg-opacity-40 flex flex-col justify-center items-center lg:items-start text-center text-white px-4">
         <div className="flex flex-col items-center justify-center lg:items-start lg:w-3/5 xl:w-2/5 p-8 text-center lg:text-left">
           <h1 className="font-hero-header text-center lg:text-left sm:text-5xl md:text-6xl lg:text-7xl xl:text-[108pt] font-bold m-auto leading-tight text-balance">
-            {fullText
-              .slice(0, index)
-              .split("")
-              .map((char, idx) => (
-                <motion.span
-                  key={idx}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.05, delay: idx * 0.01 }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            <motion.span
-              className="inline-block"
-              animate={{ opacity: [0, 1] }}
-              transition={{
-                repeat: Infinity,
-                duration: 0.8,
-                ease: "easeInOut",
-              }}
-            >
-              |
-            </motion.span>
+            {words.map((word, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 40, rotateX: -90 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
+                className="inline-block mr-2"
+              >
+                {word}
+              </motion.span>
+            ))}
           </h1>
-          <motion.a className="font-kapital-big-button px-6 py-3 bg-[#4C6440] rounded-xl text-white text-sm sm:text-base md:text-lg xl:text-xl mt-6">
-            Explore
-          </motion.a>
         </div>
+        <motion.a
+          onClick={handleScrollToSection}
+          whileHover={{ scale: 1.08, rotate: 1 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="font-kapital-big-button mx-8 z-40 px-6 py-3 bg-[#4C6440] rounded-xl text-white text-sm sm:text-base md:text-lg xl:text-xl mt-6"
+        >
+          Explore
+        </motion.a>
       </div>
 
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">

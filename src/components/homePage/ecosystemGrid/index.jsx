@@ -14,7 +14,8 @@ import MS from "../../../assets/regionHighlights/MS.webp";
 import PP from "../../../assets/regionHighlights/PP.webp";
 import SBPS from "../../../assets/regionHighlights/SBPS.webp";
 import SBS from "../../../assets/regionHighlights/SBS.webp";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const sections = {
   Northern: [
@@ -64,8 +65,7 @@ const routeMap = {
   "Coastal Douglas Fir (CDF)": "/Coastal-Douglas-Fir",
   "Coastal Western Hemlock (CWH)": "/Coastal-Western-Hemlock",
   "Mountain Hemlock (MH)": "/Mountain-Hemlock",
-  "Coastal Mountain-Heather Alpine (CMHA)":
-    "/Alpine-Tundra",
+  "Coastal Mountain-Heather Alpine (CMHA)": "/Alpine-Tundra",
 };
 
 const imageMap = {
@@ -89,78 +89,79 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <section id="ecosystems" className="bg-amber-50 m-12 rounded-xl shadow-lg py-16 px-4">
-      <h2 className="text-center text-3xl font-semibold mb-6">
-        EXPLORE BC'S ECOSYSTEMS
-      </h2>
-      <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-        British Columbia is home to some of the most diverse ecosystems in the
-        world. Discover the unique flora, fauna, and landscapes that make each
-        region special.
-      </p>
-      <div className="max-w-[1600px] mx-auto space-y-12">
-        {Object.entries(sections).map(([region, ecosystems]) => (
-          <div key={region}>
-            <h3 className="font-regular-header mb-4">{region}</h3>
-            <div className="flex flex-wrap gap-4 justify-center items-center">
-              {ecosystems.map(({ name, color }) => {
-                const path = routeMap[name];
-                return (
-                  <Link to={path} key={name}>
-                    <motion.div
-                      whileHover="hover"
-                      initial="rest"
-                      animate="rest"
-                      variants={{
-                        rest: { scale: 1 },
-                        hover: { scale: 1.05 },
-                      }}
-                      className={`relative overflow-hidden text-white px-6 py-4 rounded shadow text-center 
+    <div  className="scroll-mt-32">
+      <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4">
+        <h2  className="text-center text-3xl font-semibold mb-6">
+          EXPLORE BC'S ECOSYSTEMS
+        </h2>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+          British Columbia is home to some of the most diverse ecosystems in the
+          world. Discover the unique flora, fauna, and landscapes that make each
+          region special.
+        </p>
+        <div className="max-w-[1600px] mx-auto space-y-12">
+          {Object.entries(sections).map(([region, ecosystems]) => (
+            <div key={region}>
+              <h3 className="font-regular-header mb-4">{region}</h3>
+              <div className="flex flex-wrap gap-4 justify-center items-center">
+                {ecosystems.map(({ name, color }) => {
+                  const path = routeMap[name];
+                  return (
+                    <Link to={path} key={name}>
+                      <motion.div
+                        whileHover="hover"
+                        initial="rest"
+                        animate="rest"
+                        variants={{
+                          rest: { scale: 1 },
+                          hover: { scale: 1.05 },
+                        }}
+                        className={`relative overflow-hidden text-white px-6 py-4 rounded shadow text-center 
                         sm:min-w-[180px] 
                         md:min-w-[220px] 
                         lg:min-w-[280px] 
                         xl:min-w-[320px] 
                         min-h-[420px] 
                         cursor-pointer`}
-                      
-                    >
-                      {/* Background Image */}
-                      <motion.div
-                        variants={{
-                          rest: { opacity: 0 },
-                          hover: { opacity: 0.9 },
-                        }}
-                        transition={{ duration: 0.4 }}
-                        className="absolute inset-0 z-0"
-                        style={{
-                          backgroundImage: `url(${imageMap[name]})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      />
+                      >
+                        {/* Background Image */}
+                        <motion.div
+                          variants={{
+                            rest: { opacity: 0 },
+                            hover: { opacity: 0.9 },
+                          }}
+                          transition={{ duration: 0.4 }}
+                          className="absolute inset-0 z-0"
+                          style={{
+                            backgroundImage: `url(${imageMap[name]})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        />
 
-                      {/* Semi-transparent Color Overlay */}
-                      <div
-                        className={`absolute inset-0 z-[1] ${color} opacity-70`}
-                      />
+                        {/* Semi-transparent Color Overlay */}
+                        <div
+                          className={`absolute inset-0 z-[1] ${color} opacity-70`}
+                        />
 
-                      {/* Foreground Text */}
-                      <div className="relative z-10">
-                        <div className="text-left font-card-title max-w-[200px]">
-                          {name.split(" (")[0]}
+                        {/* Foreground Text */}
+                        <div className="relative z-10">
+                          <div className="text-left font-card-title max-w-[200px]">
+                            {name.split(" (")[0]}
+                          </div>
+                          <div className="text-sm text-left opacity-80 mt-1 tracking-wider">
+                            ({name.split(" (")[1]}
+                          </div>
                         </div>
-                        <div className="text-sm text-left opacity-80 mt-1 tracking-wider">
-                          ({name.split(" (")[1]}
-                        </div>
-                      </div>
-                    </motion.div>
-                  </Link>
-                );
-              })}
+                      </motion.div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

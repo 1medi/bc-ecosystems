@@ -24,7 +24,7 @@ export default function ExploreSection() {
   return (
     <section
       id="explore"
-      className="bg-amber-50 rounded-xl shadow-lg m-12 py-12 text-center"
+      className="bg-[#FCF5EE] rounded-xl shadow-lg m-12 py-12 text-center"
     >
       <h2 className="font-section-header mb-6">COME EXPLORE!</h2>
       <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
