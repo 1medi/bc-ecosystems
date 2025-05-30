@@ -5,7 +5,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import HeroVideo from "../../../../public/frontPage.mp4";
+import HeroVideo from "/frontPage.mp4";
 import EcosystemSelector from "../../ecosystemSelector";
 
 export default function Intro() {
