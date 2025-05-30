@@ -37,13 +37,13 @@ export default function Description() {
   ];
 
   return (
-    <section className="w-full max-w-6xl m-auto px-4">
+    <section className="w-full max-w-5xl m-auto px-4 bg-[#FCF5EE] rounded-xl shadow-xl overflow-hidden p-8 m-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="p-8 m-8 bg-gray-100 rounded-xl shadow-xl overflow-hidden"
+        className=""
       >
         <div className="w-full h-[240px] lg:h-120">
           <Slideshow slides={slides} />

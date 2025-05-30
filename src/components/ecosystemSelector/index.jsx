@@ -80,7 +80,7 @@ export default function EcosystemSelector() {
     ) : null;
 
   return (
-    <div className="relative flex flex-col gap-4 text-right">
+    <div className="relative flex flex-col gap-12 text-right m-8">
       {ecosystems.map((eco) => (
         <div
           key={eco.id}
@@ -94,8 +94,12 @@ export default function EcosystemSelector() {
           }}
         >
           <button
-            onClick={() => scrollToId(eco.id)}
-            className="font-card-title md:font-regular-header font-semibold text-white hover:text-green-300 transition-colors"
+            onClick={() => {
+              setHovered(null);
+              setIsHovering(false);
+              scrollToId(eco.id);
+            }}
+            className="font-card-title font-semibold text-white hover:text-green-300 transition-colors text-base sm:text-lg md:text-xl lg:text-2xl xl:text-5xl cursor-pointer"
           >
             {eco.name}
           </button>

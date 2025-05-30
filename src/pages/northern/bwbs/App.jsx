@@ -52,7 +52,7 @@ export default function BWBSPage() {
         heroImage={BWBSHero}
       />
 
-      <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/25 rounded-xl drop-shadow-xl">
+      <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold font-regular-header text-green-900 mb-4">
@@ -81,7 +81,7 @@ export default function BWBSPage() {
         </div>
       </section>
 
-      <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/25 rounded-xl drop-shadow-xl">
+      <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
         <h2 className="text-2xl font-bold font-regular-header text-green-900 text-center mb-6">
           Ecological Characteristics
         </h2>

@@ -11,7 +11,7 @@ export default function ExploreSection() {
     },
     {
       title: "Ecosystem Gallery",
-      desc: "View our ecosystem cards.",
+      desc: "View the life within our ecosystems!.",
       link: "/Gallery",
     },
     {

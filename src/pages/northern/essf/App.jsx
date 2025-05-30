@@ -15,7 +15,7 @@ export default function ESSFPage() {
           subtitle="A high-elevation forested ecosystem characterized by cold, snowy winters"
           heroVideo={ESSF}
         />
-        <section className="flex flex-col m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="flex flex-col m-8 p-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4">
             Engelmann Spruce Subalpine Fir Zone (ESSF)
           </h2>
@@ -37,7 +37,7 @@ export default function ESSFPage() {
           </p>
         </section>
 
-        <section className="flex flex-col p-8 max-w-screen-lg  m-8 mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="flex flex-col p-8 max-w-screen-lg  m-8 mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Distribution
           </h2>
@@ -63,7 +63,7 @@ export default function ESSFPage() {
           </p>
         </section>
 
-        <section className="flex flex-col flex-wrap gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="flex flex-col flex-wrap gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
           <div className="flex-1 min-w-[300px]">
             <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
               Climate
@@ -97,7 +97,7 @@ export default function ESSFPage() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="flex flex-col md:flex-row gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
           {/* Left column: Geology and Soils */}
           <div className="flex-1 min-w-[300px] space-y-4">
             <h2 className="text-2xl font-regular-header text-green-900 text-center">
@@ -150,7 +150,7 @@ export default function ESSFPage() {
             <ESSFSpecies />
           </div>
         </section>
-        <section className="flex flex-col p-8 m-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="flex flex-col p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Wildlife in the ESSF
           </h2>
@@ -169,7 +169,7 @@ export default function ESSFPage() {
           </p>
           <WildlifeTable />
         </section>
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8 p-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl">
 
           <div>
             <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
@@ -225,7 +225,7 @@ export default function ESSFPage() {
             </p>
           </div>
         </section>
-        <section className="p-8 max-w-screen-lg mx-auto bg-[#FCF5EE] rounded-xl shadow-xl m-8">
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl shadow-xl m-8">
           <h2 className="text-2xl font-regular-header text-green-900 mb-4 text-center">
             Indigenous Peoples and Land Management in the ESSF
           </h2>

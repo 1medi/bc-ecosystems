@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
-
+import BKG from "../../assets/bkgSubtle.webp";
 export default function PageWrapper({ children }) {
   return (
     <>
@@ -15,9 +15,10 @@ export default function PageWrapper({ children }) {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className={`min-h-screen flex flex-col`}
           style={{
-            backgroundColor: "#dedbcf",
-            backgroundImage:
-              "https://www.transparenttextures.com/patterns/absurdity.png",
+            backgroundColor: "#E9E1D8",
+            backgroundImage: `url(${BKG})`,
+            backgroundRepeat: "repeat",
+            backgroundSize: "auto", 
           }}
         >
           {children}
