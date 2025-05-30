@@ -1,6 +1,9 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
-import bgHero from "../../../assets/cdf/cdf.png";
+import bgHero from "../../../assets/cdf/cdf.webp";
 import PageWrapper from "../../../components/pageWrapper";
+import CDFTemp from "../../../assets/otherImages/cdfTemperature.webp";
+import CDFVeg from "../../../assets/otherImages/cdfVegetation.webp";
+import CDFForest from "../../../assets/otherImages/forest.webp";
 export default function CDFPage() {
   return (
     <>
@@ -79,7 +82,7 @@ export default function CDFPage() {
           </div>
           <div className="flex-1 min-w-[300px]">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/11246cabf0fb30a7577a3581d1e6bbffa3ca6f9e?placeholderIfAbsent=true&apiKey=94b7261367d24d688c3ad267da8a7587"
+              src={CDFTemp}
               alt="Climate image"
               className="rounded-lg w-full h-auto"
             />
@@ -120,16 +123,12 @@ export default function CDFPage() {
           </div>
           <div className="flex-1 min-w-[300px]">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/12bc7980fd4c054d833d9ed319fe443c22492607?placeholderIfAbsent=true&apiKey=94b7261367d24d688c3ad267da8a7587"
+              src={CDFVeg}
               alt="Vegetation image"
               className="rounded-lg w-full h-auto"
             />
           </div>
         </section>
-
-        <div className="w-full flex justify-center items-center">
-          <img src="/cdf-life.png" alt="Life in CDF" className="w-200 h-150 " />
-        </div>
 
         <section className="flex flex-col gap-8 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <h2 className="font-regular-header text-green-900 text-center ">
@@ -186,7 +185,7 @@ export default function CDFPage() {
             </div>
           </div>
           <div className="flex m-auto justify-center items-center w-full">
-            <img src="/forest.png" alt="forest" className="rounded-xl" />
+            <img src={CDFForest} alt="forest" className="rounded-xl" />
           </div>
         </section>
       </PageWrapper>

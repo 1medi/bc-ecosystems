@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-import bgHero from "../../../assets/ms/ms.png"
+import bgHero from "../../../assets/ms/ms.webp"
 export default function MSPage() {
   return (
     <>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import PageWrapper from "../../components/pageWrapper";
 import galleryImages from "../../data/galleryImages";
 import ViewerWithOverlay from "../../components/360Images/index.jsx";
-import Image1 from "../../assets/360image.jpg";
+import Image1 from "../../assets/360/cmaWhistler.webp"
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);

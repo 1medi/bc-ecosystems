@@ -12,12 +12,12 @@ export default function ExploreSection() {
     {
       title: "Ecosystem Gallery",
       desc: "View our ecosystem cards.",
-      link: "#",
+      link: "/Gallery",
     },
     {
-      title: "View Our Color Guide",
-      desc: "Understand ecosystem colors.",
-      link: "#",
+      title: "View Our FAQ'S",
+      desc: "Learn why these ecosystems are grouped as such and MORE!",
+      link: "/FAQ",
     },
   ];
 

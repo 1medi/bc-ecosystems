@@ -1,6 +1,10 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
 import BGHero from "../../../assets/videos/idf.mp4";
+import IDF1 from "../../../assets/otherImages/idf.webp"
+import IDFClimate from "../../../assets/otherImages/idfClimate.webp"
+import IDFLand from "../../../assets/otherImages/idfLand.webp"
+import IDFVegetation from "../../../assets/otherImages/idfVegetation.webp"
 export default function IDFPage() {
   return (
     <>
@@ -40,7 +44,7 @@ export default function IDFPage() {
               near or following small streams and drainage channels.
             </p>
             <img
-              src="idf.png"
+              src={IDF1}
               alt="IDF vegetation"
               className="rounded-lg w-full h-auto"
             />
@@ -93,7 +97,7 @@ export default function IDFPage() {
               deficits are common, and frosts can occur at any time.
             </p>
             <img
-              src="idf-climate.png"
+              src={IDFClimate}
               alt="Climate chart"
               className="rounded-lg w-full h-auto"
             />
@@ -222,7 +226,7 @@ export default function IDFPage() {
               meadow wetlands can also be found in the IDF.
             </p>
             <img
-              src="idf-Vegetation.png"
+              src={IDFVegetation}
               alt="IDF vegetation"
               className="rounded-lg p-4"
             />
@@ -302,7 +306,7 @@ export default function IDFPage() {
               has created more intense fires throughout this BEC zone.
             </p>
             <img
-              src="idf-land.png"
+              src={IDFLand}
               alt="IDF vegetation"
               className="rounded-lg w-full h-auto p-4"
             />

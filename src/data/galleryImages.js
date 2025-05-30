@@ -1,17 +1,15 @@
-import AlaskanBlueberry from "../assets/galleryImages/alaskanBlueberry.png";
-import CarexNigricans from "../assets/galleryImages/carexNigricans.png";
-import FoolsHuckleberry from "../assets/galleryImages/foolsHuckleberry.png";
-import Huckleberry from "../assets/galleryImages/huckleberry.png";
-import LeafBramble from "../assets/galleryImages/leafBramble.png";
-import MhVeg1 from "../assets/galleryImages/mhVeg1.png";
-import PartridgeFoot from "../assets/galleryImages/partridgeFoot.png";
-import PipecleanerMoss from "../assets/galleryImages/pipecleanerMoss.png";
-import QueensCup from "../assets/galleryImages/queensCup.png";
-import SitkaValerian from "../assets/galleryImages/sitkaValerian.png";
-import YellowMtnHeather from "../assets/galleryImages/yellowMtnHeather.png";
+import AlaskanBlueberry from "../assets/galleryImages/alaskanBlueberry.webp";
+import CarexNigricans from "../assets/galleryImages/carexNigricans.webp";
+import FoolsHuckleberry from "../assets/galleryImages/foolsHuckleberry.webp";
+import Huckleberry from "../assets/galleryImages/huckleberry.webp";
+import LeafBramble from "../assets/galleryImages/leafBramble.webp";
+import MhVeg1 from "../assets/galleryImages/mhVeg1.webp";
+import PartridgeFoot from "../assets/galleryImages/partridgeFoot.webp";
+import PipecleanerMoss from "../assets/galleryImages/pipecleanerMoss.webp";
+import QueensCup from "../assets/galleryImages/queensCup.webp";
+import SitkaValerian from "../assets/galleryImages/sitkaValerian.webp";
+import YellowMtnHeather from "../assets/galleryImages/yellowMtnHeather.webp";
 
-// Do NOT import JSX in a plain module like this. Instead, just export metadata.
-// You'll import and use <Image360View /> directly in your Gallery.jsx later.
 
 const galleryImages = [
   { id: 1, src: AlaskanBlueberry, alt: "Alaskan Blueberry", categories: ["Coastal"] },

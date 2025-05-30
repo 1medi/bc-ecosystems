@@ -1,7 +1,7 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
 import bgHero from "../../../assets/sbps/sbps.webp";
-import Chilcotin from "../../../assets/sbps/chilcotinAmpitheatre.jpg";
+import Chilcotin from "../../../assets/sbps/chilcotinAmpitheatre.webp";
 export default function SBPSPage() {
   return (
     <>

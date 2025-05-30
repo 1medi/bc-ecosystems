@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import CWHFeatured from "../../../assets/cardImages/cwh/cwhFeatured.png";
-import PPFeatured from "../../../assets/cardImages/pp/ppFeatured.png";
-import ATFeatured from "../../../assets/cardImages/at/atFeatured.png";
+import CWHFeatured from "../../../assets/cardImages/cwh/cwhFeatured.webp";
+import PPFeatured from "../../../assets/cardImages/pp/ppFeatured.webp";
+import ATFeatured from "../../../assets/cardImages/at/atFeatured.webp";
 import { useNavigate } from "react-router-dom";
 
 export default function FeaturedEcosystems() {

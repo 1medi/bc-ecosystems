@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-import bgHero from "../../../assets/sbs/sbs.png";
+import bgHero from "../../../assets/sbs/sbs.webp";
 import SBSClimate from "../../../components/charts/sbsTemp/index.jsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

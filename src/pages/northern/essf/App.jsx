@@ -4,6 +4,8 @@ import PageWrapper from "../../../components/pageWrapper";
 import WildlifeTable from "../../../components/tables/essf/habitat";
 import ESSFSpecies from "../../../components/charts/essfSpecies";
 import ESSFRocks from "../../../components/charts/essfRock";
+import ESSFClimate from "../../../assets/otherImages/essfClimate.webp";
+import ESSFSubzones from "../../../assets/otherImages/essfsubzones.webp";
 export default function ESSFPage() {
   return (
     <>
@@ -88,7 +90,7 @@ export default function ESSFPage() {
           </div>
           <div className="flex-1 min-w-[300px]">
             <img
-              src="essf-climate.png"
+              src={ESSFClimate}
               alt="Climate image"
               className="rounded-lg w-full h-auto"
             />
@@ -198,7 +200,7 @@ export default function ESSFPage() {
 
           <div>
             <img
-              src="essf-Subzones and Variation.png"
+              src={ESSFSubzones}
               alt="Vegetation image"
               className="rounded-lg w-full h-auto"
             />

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Intro from "../../Parallax/Intro";
 import Description from "../../Parallax/Description";
 import Lenis from "lenis";

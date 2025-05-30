@@ -45,7 +45,7 @@ export default function Description() {
         viewport={{ once: true }}
         className="p-8 m-8 bg-gray-100 rounded-xl shadow-xl overflow-hidden"
       >
-        <div className="w-full h-120">
+        <div className="w-full h-[240px] lg:h-120">
           <Slideshow slides={slides} />
         </div>
         <div className="p-6">

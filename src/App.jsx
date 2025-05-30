@@ -2,13 +2,11 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import CWH from "./pages/coastal/cwh/App.jsx";
 import MH from "./pages/coastal/mh/App.jsx";
-import CMHA from "./pages/coastal/cmha/App.jsx";
 import CDF from "./pages/coastal/cdf/App.jsx";
 import BG from "./pages/southernInterior/bg/App.jsx";
 import PP from "./pages/southernInterior/pp/App.jsx";
 import ICH from "./pages/centralInterior/ich/App.jsx";
 import IDF from "./pages/centralInterior/idf/App.jsx";
-import IMA from "./pages/centralInterior/ima/App.jsx";
 import MS from "./pages/centralInterior/ms/App.jsx";
 import SBPS from "./pages/centralInterior/sbps/App.jsx";
 import SBS from "./pages/centralInterior/sbs/App.jsx";
@@ -20,13 +18,13 @@ import Map from "./pages/map/App.jsx";
 import Home from "./Home.jsx";
 import Gallery from "./pages/gallery/App.jsx";
 import FAQPage from "./pages/faq/App.jsx";
-
+import ScrollToTop from "./utils/scroll.js";
 
 function App() {
   const location = useLocation();
   return (
     <>
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/FAQ" element={<FAQPage />} />
@@ -58,6 +56,7 @@ function App() {
           {/* Interactive Map*/}
           <Route path="/Interactive-Map" element={<Map />} />
         </Routes>
+        <ScrollToTop />
       </AnimatePresence>
     </>
   );

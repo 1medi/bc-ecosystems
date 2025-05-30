@@ -1,7 +1,7 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
-import SWB from "../../../../src/assets/swb/dempsterHighway.png";
+import SWB from "../../../../src/assets/swb/dempsterHighway.webp";
 import PageWrapper from "../../../components/pageWrapper";
-import SWB2 from "../../../assets/swb/swb.png";
+import SWB2 from "../../../assets/swb/swb.webp";
 
 export default function SWBPage() {
   return (

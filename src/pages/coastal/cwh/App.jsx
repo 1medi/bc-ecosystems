@@ -2,7 +2,9 @@ import EcosystemPage from "../../../components/ecosystemTemplate";
 // import bgHero from "@/assets/images/bg-hero.jpg"
 import PageWrapper from "../../../components/pageWrapper";
 import CWHHero from "../../../assets/videos/cwhHero.mp4";
-import CWHGraph from "../../../components/interactiveElements/cwhGraph";
+import CWHConditions from "../../../assets/otherImages/ecologicalConditions.webp";
+import CWH from "../../../assets/otherImages/cwh.webp";
+import CWHZone from "../../../assets/otherImages/zone.webp";
 export default function CWHPage() {
   return (
     <>
@@ -60,7 +62,7 @@ export default function CWHPage() {
           </div>
           <div className="flex-1 min-w-[300px]">
             <img
-              src="/wh.png"
+              src={CWH}
               alt="Vegetation image"
               className="rounded-lg w-full h-auto"
             />
@@ -70,7 +72,7 @@ export default function CWHPage() {
           <div className="flex-1 min-w-[300px]">
             <div className="flex-1 min-w-[300px]">
               <img
-                src="Ecological Conditions.png"
+                src={CWHConditions}
                 alt="Ecological Conditions"
                 className="rounded-lg w-full h-auto"
               />
@@ -117,7 +119,7 @@ export default function CWHPage() {
             transition toward continental ecosystems.
           </p>
           <div className="flex-1 mt-10">
-            <img src="zone.png" alt="zone" className="rounded-lg w-full" />
+            <img src={CWHZone} alt="zone" className="rounded-lg w-full" />
           </div>
         </section>
 
@@ -153,7 +155,9 @@ export default function CWHPage() {
                 Temperature:
               </h2>
               <ul className="list-disc pl-6 text-base text-gray-800 leading-relaxed space-y-1">
-                <li className="font-body-copy">Average annual temperatures range from 5.5°C to 9.8°C.</li>
+                <li className="font-body-copy">
+                  Average annual temperatures range from 5.5°C to 9.8°C.
+                </li>
                 <li className="font-body-copy">Warmest month: 13.9-17.6°C</li>
                 <li className="font-body-copy">
                   Coldest month: as low as -6.0°C in interior subzones like
