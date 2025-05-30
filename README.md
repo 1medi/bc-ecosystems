@@ -39,8 +39,7 @@ BC Ecosystems Explorer is a responsive, animated web app designed to educate use
 * Southern Interior (BG, PP)
 * Central Interior (ICH, IDF, MS, SBPS, SBS)
 * Northern BC (BWBS, SWB, ESSF)
-* Alpine (AT)
-* Special Zones (IMA/CMA/BAFA)
+* Alpine Tundra (IMA/CMA/BAFA)
 
 ## 👥 Contributors
 
