@@ -164,7 +164,7 @@ export default function Footer() {
           </span>
           <span className="md:ml-2">
             in collaboration with the{" "}
-            <strong>BCIT School of Renewable Resources</strong>.
+            <strong>BCIT's Forest and Natural Resources Management Program</strong>.
           </span>
         </div>
       </footer>

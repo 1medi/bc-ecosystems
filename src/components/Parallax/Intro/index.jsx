@@ -1,10 +1,5 @@
-import {
-  useScroll,
-  useTransform,
-  motion,
-  AnimatePresence,
-} from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
 import HeroVideo from "/frontPage.mp4";
 import EcosystemSelector from "../../ecosystemSelector";
 
@@ -12,12 +7,6 @@ export default function Intro() {
   const fullText = "EXPLORE THE ECOSYSTEMS OF BC";
   const words = fullText.split(" ");
   const container = useRef();
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-
   const [showSelector, setShowSelector] = useState(false);
   const toggleSelector = () => setShowSelector((prev) => !prev);
 
@@ -28,8 +17,8 @@ export default function Intro() {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       {/* BACKGROUND VIDEO */}
-      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full z-0">
-        <motion.div style={{ y }} className="relative w-full h-full">
+      <div className="fixed top-0 left-0 h-screen w-full z-0">
+        <div className="relative w-full h-full">
           <video
             src={HeroVideo}
             autoPlay
@@ -39,7 +28,7 @@ export default function Intro() {
             playsInline
             className="min-w-screen h-full object-cover"
           />
-        </motion.div>
+        </div>
       </div>
 
       {/* OVERLAY CONTENT */}
