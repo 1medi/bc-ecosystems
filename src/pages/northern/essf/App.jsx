@@ -5,7 +5,7 @@ import WildlifeTable from "../../../components/tables/essf/habitat";
 import ESSFSpecies from "../../../components/charts/essfSpecies";
 import ESSFRocks from "../../../components/charts/essfRock";
 import ESSFClimate from "../../../assets/otherImages/essfClimate.webp";
-import ESSFSubzones from "../../../assets/otherImages/essfsubzones.webp";
+import ESSFSubzones from "../../../assets/otherImages/essfSubzones.webp";
 export default function ESSFPage() {
   return (
     <>
