@@ -96,7 +96,7 @@ export default function EcosystemSelector() {
         >
           <button
             onClick={() => scrollToId(eco.id)}
-            className="font-card-title lg:font-hero-header font-semibold text-white hover:text-green-300 transition-colors"
+            className="font-card-title md:font-regular-header font-semibold text-white hover:text-green-300 transition-colors"
           >
             {eco.name}
           </button>

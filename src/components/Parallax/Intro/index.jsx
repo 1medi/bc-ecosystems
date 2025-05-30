@@ -46,7 +46,7 @@ export default function Intro() {
       <div className="relative z-10 w-full px-4 text-white">
         <div className="flex flex-col lg:flex-row justify-around items-center w-full mx-auto gap-8">
           {/* LEFT: Welcome + Button */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2">
+          <div className="flex mx-8 flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2">
             <h1 className="font-hero-header sm:text-5xl md:text-6xl lg:text-7xl xl:text-[108pt] font-bold leading-tight text-balance">
               {words.map((word, i) => (
                 <motion.span

@@ -103,12 +103,11 @@ export default function EcosystemGrid() {
           {Object.entries(sections).map(([region, ecosystems]) => (
             <div
               key={region}
-              id={region.toLowerCase().replace(/\s+/g, "-")} // Add this
+              id={region.toLowerCase().replace(/\s+/g, "-")}
               className="scroll-mt-32"
             >
               <h3 className="font-regular-header mb-4">{region}</h3>
-
-              <div className="flex flex-wrap gap-4 justify-center items-center">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
                 {ecosystems.map(({ name, color }) => {
                   const path = routeMap[name];
                   return (
@@ -121,13 +120,9 @@ export default function EcosystemGrid() {
                           rest: { scale: 1 },
                           hover: { scale: 1.05 },
                         }}
-                        className={`relative overflow-hidden text-white px-6 py-4 rounded shadow text-center 
-                        sm:min-w-[180px] 
-                        md:min-w-[220px] 
-                        lg:min-w-[280px] 
-                        xl:min-w-[320px] 
-                        min-h-[420px] 
-                        cursor-pointer`}
+                        className={`relative overflow-hidden text-white px-4 py-4 rounded shadow 
+    w-full h-[240px] lg:h-[420px] 
+    flex flex-col justify-end cursor-pointer`}
                       >
                         {/* Background Image */}
                         <motion.div
@@ -151,10 +146,11 @@ export default function EcosystemGrid() {
 
                         {/* Foreground Text */}
                         <div className="relative z-10">
-                          <div className="text-left font-card-title max-w-[200px]">
+                          <div className="text-left font-card leading-tight break-words text-[clamp(0.85rem,3.5vw,2.125rem)] w-full">
                             {name.split(" (")[0]}
                           </div>
-                          <div className="text-sm text-left opacity-80 mt-1 tracking-wider">
+
+                          <div className="text-[clamp(0.75rem,3vw,0.9rem)] text-left opacity-80 mt-1 tracking-wider">
                             ({name.split(" (")[1]}
                           </div>
                         </div>
