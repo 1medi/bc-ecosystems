@@ -5,7 +5,8 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
   const [current, setCurrent] = useState(0);
 
   const next = () => setCurrent((prev) => (prev + 1) % slides.length);
-  const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const prev = () =>
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <div className="relative w-full h-full overflow-hidden rounded-xl">
@@ -27,12 +28,21 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
 
       {/* Controls */}
       <div className="absolute inset-y-0 left-0 flex items-center px-4">
-        <button onClick={prev} className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60">←</button>
+        <button
+          onClick={prev}
+          className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60"
+        >
+          ←
+        </button>
       </div>
       <div className="absolute inset-y-0 right-0 flex items-center px-4">
-        <button onClick={next} className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60">→</button>
+        <button
+          onClick={next}
+          className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60"
+        >
+          →
+        </button>
       </div>
     </div>
   );
 }
-

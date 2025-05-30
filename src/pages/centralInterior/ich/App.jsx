@@ -1,6 +1,6 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
-import bgHero from "../../../assets/ich/ich.webp"
+import bgHero from "../../../assets/ich/ich.webp";
 export default function ICHPage() {
   return (
     <>

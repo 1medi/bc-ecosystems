@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="absolute h-5 w-full z-10 bg-[#4C6440] rounded-br-xl rounded-bl-xl" />
       <footer className="bg-[#d4cbb8] py-10 px-6 text-gray-800">
         <div className="max-w-6xl flex flex-col lg:flex-row m-auto gap-10 items-start">
-          {/* Quick Links */}
+
           <div>
             <h4 className="font-bold mb-4 text-[#4C6440] text-sm uppercase tracking-widest">
               Quick Links

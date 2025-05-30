@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Intro from "../../Parallax/Intro";
 import Description from "../../Parallax/Description";
-import Lenis from "lenis";
 
 export default function HeroSection() {
   const fullText = "EXPLORE THE ECOSYSTEMS OF BC";
@@ -15,17 +14,6 @@ export default function HeroSection() {
       return () => clearTimeout(timeout);
     }
   }, [index, fullText]);
-
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
 
   return (
     <main className="relative w-full min-h-screen">

@@ -8,7 +8,6 @@ export default function Header() {
   return (
     <header className="w-full px-6 py-4 border-b border-gray-200 shadow-sm bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Top Bar: Logo + Nav + Hamburger */}
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="/">

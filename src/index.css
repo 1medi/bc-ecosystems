@@ -22,7 +22,6 @@ body {
   scroll-behavior: auto;
 }
 
-
 p {
   font-family: var(--font-body-copy); /* If using CSS variable */
 }
@@ -134,4 +133,3 @@ p {
   font-family: "Kapital", sans-serif;
   font-size: 24pt;
 }
-

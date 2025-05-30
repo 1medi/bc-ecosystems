@@ -53,7 +53,11 @@ export default function Intro() {
                   key={i}
                   initial={{ opacity: 0, y: 40, rotateX: -90 }}
                   animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                  transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
+                  transition={{
+                    delay: i * 0.2,
+                    duration: 0.6,
+                    ease: "easeOut",
+                  }}
                   className="inline-block mr-2"
                 >
                   {word}

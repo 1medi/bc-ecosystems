@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
 
-export default function PageWrapper({
-  children,
-}) {
-
+export default function PageWrapper({ children }) {
   return (
     <>
       <main>

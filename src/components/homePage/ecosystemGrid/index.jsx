@@ -14,8 +14,6 @@ import MS from "../../../assets/regionHighlights/MS.webp";
 import PP from "../../../assets/regionHighlights/PP.webp";
 import SBPS from "../../../assets/regionHighlights/SBPS.webp";
 import SBS from "../../../assets/regionHighlights/SBS.webp";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const sections = {
   Northern: [

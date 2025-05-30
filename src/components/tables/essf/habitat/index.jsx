@@ -47,7 +47,9 @@ export default function WildlifeTable() {
         <tbody>
           {data.map((row, i) => (
             <tr key={i} className="align-top">
-              <td className="border px-4 py-3 w-1/3 font-body-bold">{row.habitat}</td>
+              <td className="border px-4 py-3 w-1/3 font-body-bold">
+                {row.habitat}
+              </td>
               <td className="border px-4 py-3 whitespace-pre-line font-body-copy">
                 {row.species}
               </td>

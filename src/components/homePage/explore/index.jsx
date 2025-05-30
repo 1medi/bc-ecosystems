@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 export default function ExploreSection() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const items = [
     {
       title: "Interactive Maps",

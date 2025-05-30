@@ -1,4 +1,3 @@
-// EcosystemSelector.jsx
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, useMotionValue, useSpring } from "framer-motion";

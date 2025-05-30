@@ -1,10 +1,8 @@
-// Alpine Tundra Complex Layout
-
 import EcosystemPage from "../../components/ecosystemTemplate";
 import AboutZoneCard from "../../components/aboutZoneCard";
 import PageWrapper from "../../components/pageWrapper";
 import ATVideo from "../../assets/videos/alpineTundra.mp4";
-import Skypilot from "../../assets/at/skypilot.webp"
+import Skypilot from "../../assets/at/skypilot.webp";
 
 export default function AlpineTundraPage() {
   return (

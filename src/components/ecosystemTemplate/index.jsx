@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
-
 export default function EcosystemPage({
   title,
   subtitle,
@@ -12,7 +11,6 @@ export default function EcosystemPage({
   return (
     <>
       <div className="bg-white text-gray-800">
-        {/* Hero Section */}
         <section className="relative h-[100vh] w-full overflow-hidden">
           {heroVideo ? (
             <video
@@ -32,11 +30,7 @@ export default function EcosystemPage({
           )}
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
-            <HashLink
-              smooth
-              to="/"
-              className="absolute top-6 left-6"
-            >
+            <HashLink smooth to="/" className="absolute top-6 left-6">
               <motion.div
                 whileHover={{
                   scale: 1.05,
