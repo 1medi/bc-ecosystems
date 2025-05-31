@@ -1,17 +1,16 @@
 import { FaLinkedin } from "react-icons/fa";
-
+import BCITLogo from "/bcitLogo.svg";
 export default function Footer() {
   return (
     <>
       <div className="absolute h-5 w-full z-10 bg-[#4C6440] rounded-br-xl rounded-bl-xl" />
       <footer className="bg-[#d4cbb8] py-10 px-6 text-gray-800">
-        <div className="max-w-6xl flex flex-col lg:flex-row m-auto gap-10 items-start">
-
-          <div>
+        <div className="max-w-6xl flex flex-col text-center lg:text-left lg:flex-row m-auto gap-10 items-start">
+          <div className="m-auto">
             <h4 className="font-bold mb-4 text-[#4C6440] text-sm uppercase tracking-widest">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm font-medium uppercase tracking-widest text-gray-700">
+            <ul className="space-y-2 text-sm font-medium text-center lg:text-left uppercase tracking-widest text-gray-700">
               <li>
                 <a href="/" className="hover:text-green-700">
                   Home
@@ -42,6 +41,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <img className="w-32 lg:w-48 pl-2 pt-4" src={BCITLogo} />
           </div>
 
           {/* References */}
@@ -141,8 +141,14 @@ export default function Footer() {
         </div>
 
         {/* Attribution */}
-        <div className="mt-10 text-center text-xs text-gray-700 font-body-copy flex flex-col md:flex-row items-center justify-center gap-1">
-          <span>
+        <div className="mt-10 text-center text-xs text-gray-700 font-body-copy flex flex-col items-center justify-center gap-1">
+          <span className="">
+            In collaboration with{" "}
+            <strong>BCIT's Forest and Natural Resources Management</strong>{" "}&{" "}
+            <strong>Fish, Wildlife and Recreation Programs</strong>.
+          </span>
+
+          <span className="pt-4">
             Created by <strong>Yeongtaek Lee</strong>{" "}
             <a
               href="https://www.linkedin.com/in/yeongtaek-lee"
@@ -161,10 +167,6 @@ export default function Footer() {
             >
               <FaLinkedin className="inline-block" />
             </a>
-          </span>
-          <span className="md:ml-2">
-            in collaboration with the{" "}
-            <strong>BCIT's Forest and Natural Resources Management Program</strong>.
           </span>
         </div>
       </footer>
