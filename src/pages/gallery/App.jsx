@@ -72,6 +72,7 @@ const Gallery = () => {
                 onClick={() => setSelectedImage(image)}
               >
                 <img
+                loading="lazy"
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   className="w-full h-full object-cover"
