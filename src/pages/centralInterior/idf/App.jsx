@@ -1,10 +1,10 @@
 import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
 import BGHero from "../../../assets/videos/idf.mp4";
-import IDF1 from "../../../assets/otherImages/idf.webp"
-import IDFClimate from "../../../assets/otherImages/idfClimate.webp"
-import IDFLand from "../../../assets/otherImages/idfLand.webp"
-import IDFVegetation from "../../../assets/otherImages/idfVegetation.webp"
+import IDF1 from "../../../assets/otherImages/idf.webp";
+import IDFClimate from "../../../assets/otherImages/idfClimate.webp";
+import IDFLand from "../../../assets/otherImages/idfLand.webp";
+import IDFVegetation from "../../../assets/otherImages/idfVegetation.webp";
 export default function IDFPage() {
   return (
     <>
@@ -28,6 +28,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Overview
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy mb-6">
               The Interior Douglas-fir Biogeoclimatic zone (or the IDF BEC zone)
               is located in the central and southern interior regions of British
@@ -57,6 +58,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Distribution
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               In British Columbia, the Interior Douglas-fir zone occurs between
               the 49th and 52nd parallels and covers about 5% of the province.
@@ -80,6 +82,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Climate
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy mb-6">
               The IDF zone has a continental climate characterized by warm, dry
               summers, a fairly long growing season, and cool winters. The rain
@@ -110,6 +113,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 text-center mb-4">
               Geology and Soils
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               Ecosystems in the IDF occur on well to moderately well-drained
               sites on deposits derived from volcanic bedrock. Soils are
@@ -138,6 +142,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Life in the IDF zone
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               Due to the relatively short, cool winters and the variable canopy
               closure of the Douglas-fir forests, the IDF zone has a wide range
@@ -190,6 +195,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Vegetation
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               Douglas fir is the most common species in this zone, comprising
               over fifty percent of all other species. The thick bark of mature
@@ -225,11 +231,13 @@ export default function IDFPage() {
               sedge-dominated fens with canopies of shrubby willows. Saline
               meadow wetlands can also be found in the IDF.
             </p>
-            <img
-              src={IDFVegetation}
-              alt="IDF vegetation"
-              className="rounded-lg p-4"
-            />
+            <div className="m-auto flex justify-center items-center">
+              <img
+                src={IDFVegetation}
+                alt="IDF vegetation"
+                className="rounded-xl w-full p-4"
+              />
+            </div>
           </div>
         </section>
 
@@ -239,6 +247,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Resource Use
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               In the IDF zone, resource value is placed on forestry,
               agriculture, and recreation tourism. In the past, sawlog and
@@ -278,6 +287,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Indigenous Communities and Land Management{" "}
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               There are many Indigenous Communities that call the IDF region
               home. The Okanagan region, making up a large portion of the IDF
@@ -331,6 +341,7 @@ export default function IDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4 text-center">
               Subzones and Variants
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The IDF landscape ranges from open forest with grassy ground
               cover, to a closed forest with shrubs and mixed forb-grass-moss

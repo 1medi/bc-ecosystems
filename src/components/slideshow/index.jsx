@@ -9,7 +9,7 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-xl">
+    <div className="relative w-full h-full rounded-xl">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -19,15 +19,18 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
           transition={{ duration: 0.5 }}
           className="absolute inset-0 w-full h-full"
         >
-          {slides[current].image}
-          <div className="absolute bottom-0 left-0 w-full bg-[#4C6440] bg-opacity-50 font-body-copy text-white p-4 text-sm md:text-base">
-            {slides[current].description}
+          <div className="relative w-full h-full">
+            {slides[current].image}
+
+            <div className="absolute bottom-0 left-0 w-full bg-[#4C6440] bg-opacity-60 font-body-copy text-white p-2 text-sm md:text-base z-10">
+              {slides[current].description || "\u00A0"}
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>
 
       {/* Controls */}
-      <div className="absolute inset-y-0 left-0 flex items-center px-4">
+      <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
         <button
           onClick={prev}
           className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60"
@@ -35,7 +38,7 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
           ←
         </button>
       </div>
-      <div className="absolute inset-y-0 right-0 flex items-center px-4">
+      <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
         <button
           onClick={next}
           className="bg-black/40 text-white px-3 py-2 rounded hover:bg-black/60"

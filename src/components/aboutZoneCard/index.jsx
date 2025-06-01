@@ -17,9 +17,10 @@ const AboutZoneCard = ({
                 <h2 className="font-regular-header text-green-900 mb-2">
                   {title}
                 </h2>
+                <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
                 <p className="font-body-copy">{description}</p>
               </div>
-              <div className="md:w-1/3 flex flex-col items-start">
+              <div className="md:w-1/3 flex flex-col m-auto items-start">
                 <img
                   src={image}
                   alt={caption}

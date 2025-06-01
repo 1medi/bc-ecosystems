@@ -17,6 +17,7 @@ export default function SBPSPage() {
               <h2 className="font-regular-header text-green-900 mb-4">
                 Distribution & Landscape
               </h2>
+              <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
               <p className="font-body-copy">
                 The Sub-boreal Pine-Spruce (SBPS) biogeoclimatic zone is
                 situated in the west-central interior of British Columbia,
@@ -46,6 +47,7 @@ export default function SBPSPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Ecological Characteristics
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col gap-8">
             <div>
               <p className="font-body-copy mb-4">

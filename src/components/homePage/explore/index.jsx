@@ -33,7 +33,7 @@ export default function ExploreSection() {
             key={item.title}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="bg-white shadow rounded p-6 w-72 cursor-pointer"
+            className="bg-white shadow rounded p-2 w-72 cursor-pointer"
           >
             <h3 className="font-card-title">{item.title}</h3>
             <p className="mt-2 text-gray-600 font-body-copy">{item.desc}</p>

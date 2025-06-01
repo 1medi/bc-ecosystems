@@ -24,6 +24,7 @@ export default function CDFPage() {
           <h2 className="font-regular-header text-green-900 mb-4">
             What is the CDF Zone?
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The unique and biodiverse Coastal Douglas-fir (CDF) Biogeoclimatic
             zone of BC is home to numerous rare and threatened ecosystems and
@@ -48,6 +49,7 @@ export default function CDFPage() {
           <h2 className="font-regular-header text-green-900 mb-4">
             Distribution
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The CDF zone covers approximately 350,000 hectares, accounting for
             0.3% of British Columbia's territory. It spans from Eastern
@@ -61,6 +63,7 @@ export default function CDFPage() {
         <section className="flex flex-wrap gap-8 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <div className="flex-1 min-w-[300px]">
             <h2 className="font-regular-header text-green-900 mb-4">Climate</h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The Coastal Douglas-fir biogeoclimatic zone boasts an appealing
               climate characterized by warm, dry summers and mild, wet winters.
@@ -94,6 +97,7 @@ export default function CDFPage() {
             <h2 className="font-regular-header text-green-900 mb-4">
               Geology and Soils
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The bedrock geology consists primarily of undivided sedimentary
               rocks, known as the Nanaimo Group, consisting of conglomerate,
@@ -107,6 +111,7 @@ export default function CDFPage() {
             <h2 className="font-regular-header text-green-900 mt-8 mb-4">
               Vegetation
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The Coastal Douglas-fir zone is home to a variety of tree species,
               including Douglas-fir, Western redcedar, red alder, Grand fir, and
@@ -130,10 +135,11 @@ export default function CDFPage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-8 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
+        <section className="flex flex-col gap-4 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <h2 className="font-regular-header text-green-900 text-center ">
             Life in the CDF zone
           </h2>
+          <div className="border-b border-4 border-green-950  rounded-xl " />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 max-w-screen-lg mx-auto ">
             <div>
               <h3 className="font-subheader-bold text-green-900 mb-4">

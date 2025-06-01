@@ -99,7 +99,7 @@ export default function EcosystemSelector() {
               setIsHovering(false);
               scrollToId(eco.id);
             }}
-            className="font-card-title font-semibold text-white hover:text-green-300 transition-colors text-base sm:text-lg md:text-xl lg:text-2xl xl:text-5xl cursor-pointer"
+            className="font-selector font-semibold text-white hover:text-green-300 transition-colors text-base sm:text-lg md:text-xl lg:text-2xl xl:text-5xl cursor-pointer"
           >
             {eco.name}
           </button>

@@ -26,6 +26,7 @@ export default function AlpineTundraPage() {
         <h2 className="font-regular-header text-green-900 text-center mb-6">
           Alpine Tundra Subzones
         </h2>
+        <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
         <p className="font-body-copy m-8">
           Nestled at the highest elevations, above the comforting embrace of the
           tree line, lies this Alpine Tundra Complex, a realm sculpted by cold

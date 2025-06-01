@@ -26,6 +26,7 @@ export default function ICHPage() {
               <h2 className="text-2xl font-bold text-green-900 mb-4">
                 Distribution
               </h2>
+              <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
               <p className="text-base leading-relaxed">
                 The ICH zone is found at elevations of 400–1500 meters in
                 southeastern British Columbia, the Quesnel and Shuswap
@@ -49,6 +50,7 @@ export default function ICHPage() {
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Ecological Characteristics
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-base leading-relaxed mb-4">
@@ -82,6 +84,7 @@ export default function ICHPage() {
           <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
             Soils & Land Use
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2">
               <p className="text-base leading-relaxed mb-4">

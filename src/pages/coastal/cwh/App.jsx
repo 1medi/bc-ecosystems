@@ -20,6 +20,7 @@ export default function CWHPage() {
             <h2 className="font-regular-header text-green-900 mb-4">
               Where it grows
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               Western Hemlock is the most widespread and abundant tree species
               along the coast of British Columbia. It thrives from sea level to
@@ -40,6 +41,7 @@ export default function CWHPage() {
             <h2 className="font-regular-header text-green-900 mt-8 mb-4">
               Location & Distribution
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               <ul>
                 <li>
@@ -80,6 +82,7 @@ export default function CWHPage() {
             <h2 className="font-regular-header text-green-900 mt-10 mb-4 text-center">
               Ecological Conditions
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The Coastal Western Hemlock (CWH) zone has the wettest climate in
               British Columbia, receiving between 1000 and 4400 mm of
@@ -100,6 +103,7 @@ export default function CWHPage() {
           <h2 className="font-regular-header text-green-900 mb-4 text-center">
             Forest Variation Across the Coastal Western Hemlock Zone
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The Coastal Western Hemlock (CWH) zone contains a wide variety of
             forest types that change depending on moisture levels and proximity
@@ -127,6 +131,7 @@ export default function CWHPage() {
           <h2 className="font-regular-header text-green-900 text-center ">
             CWH Subzone Climate Table
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col md:flex-row">
             <div className="basis-1/3 p-2">
               <h2 className="font-subheader-bold text-green-900 mb-4 text-center">

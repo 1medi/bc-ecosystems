@@ -8,7 +8,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  ComposedChart
+  ComposedChart,
 } from "recharts";
 
 const data = [
@@ -28,26 +28,66 @@ const data = [
 
 export default function ClimateChart() {
   return (
-    <div className="w-full h-[500px] bg-white shadow p-8 rounded-lg">
-      <h3 className="text-center font-semibold mb-2">
+    <div className="w-full h-[70vw] max-h-[500px] min-h-[250px] sm:h-[500px] bg-white shadow p-4 sm:p-8 rounded-lg">
+      <h3 className="text-center font-semibold mb-2 text-sm sm:text-base">
         Temperature and Precipitation – Grouse Mountain (1981–2010)
       </h3>
+
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
-          <YAxis yAxisId="left" label={{ value: "°C", angle: -90, position: "insideLeft" }} />
+          <YAxis
+            yAxisId="left"
+            label={{ value: "°C", angle: -90, position: "insideLeft" }}
+          />
           <YAxis
             yAxisId="right"
             orientation="right"
             label={{ value: "mm", angle: 90, position: "insideRight" }}
           />
           <Tooltip />
-          <Legend />
-          <Bar yAxisId="right" dataKey="precip" fill="#90ee90" name="Precipitation (mm)" />
-          <Line yAxisId="left" type="monotone" dataKey="max" stroke="red" name="Max Temp (°C)" />
-          <Line yAxisId="left" type="monotone" dataKey="avg" stroke="black" name="Avg Temp (°C)" />
-          <Line yAxisId="left" type="monotone" dataKey="min" stroke="blue" name="Min Temp (°C)" />
+          <Legend
+            layout="horizontal"
+            verticalAlign="bottom"
+            align="center"
+            wrapperStyle={{
+              fontSize: "0.5rem",
+              paddingTop: 12,
+              lineHeight: "0.5 rem",
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          />
+
+          <Bar
+            yAxisId="right"
+            dataKey="precip"
+            fill="#90ee90"
+            name="Precipitation (mm)"
+          />
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="max"
+            stroke="red"
+            name="Max Temp (°C)"
+          />
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="avg"
+            stroke="black"
+            name="Avg Temp (°C)"
+          />
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="min"
+            stroke="blue"
+            name="Min Temp (°C)"
+          />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

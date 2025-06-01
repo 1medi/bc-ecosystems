@@ -5,7 +5,7 @@ import BKG from "../../assets/bkgSubtle.webp";
 export default function PageWrapper({ children }) {
   return (
     <>
-      <main>
+      <main >
         <Header />
 
         <motion.div
@@ -18,7 +18,7 @@ export default function PageWrapper({ children }) {
             backgroundColor: "#E9E1D8",
             backgroundImage: `url(${BKG})`,
             backgroundRepeat: "repeat",
-            backgroundSize: "auto", 
+            backgroundSize: "auto",
           }}
         >
           {children}

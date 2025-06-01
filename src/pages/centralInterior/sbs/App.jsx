@@ -15,8 +15,9 @@ export default function SBSPage() {
           description="This zone includes dense forests and wetlands, supporting moose, bears, and other northern wildlife."
         />
 
-        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8" >
+        <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">Overview</h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The Sub-Boreal Spruce zone (SBS) is the third largest forested zone
             in BC, covering an area of 10.31 million hectares. The zone features
@@ -39,6 +40,7 @@ export default function SBSPage() {
           <h2 className="font-regular-header text-green-900 mb-4">
             Distribution
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The SBS dominates BC’s central interior, extending from the Nechako
             and Fraser plateaus into adjacent mountain slopes. It spans areas
@@ -60,6 +62,7 @@ export default function SBSPage() {
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">Climate</h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             Climate varies across the SBS due to its broad range. Annual
             precipitation can range from 500 mm in the drier SBSdw subzones to
@@ -77,7 +80,7 @@ export default function SBSPage() {
             <motion.p
               whileHover={{
                 scale: 1.05,
-                backgroundColor: "#14532d", 
+                backgroundColor: "#14532d",
                 color: "#ffffff",
                 transition: { duration: 0.2 },
               }}
@@ -92,6 +95,7 @@ export default function SBSPage() {
           <h2 className="font-regular-header text-green-900 mb-4">
             Geology & Soils
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The geological foundation of the SBS zone dates back 250 million
             years with volcanic lava and deep-sea sediment origins. Glaciation
@@ -110,6 +114,7 @@ export default function SBSPage() {
           <h2 className="font-regular-header text-green-900 mb-4">
             Vegetation
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             Climax species include Hybrid White Spruce and Subalpine Fir. Early
             successional species like Lodgepole Pine, Trembling Aspen, and Paper
@@ -133,6 +138,7 @@ export default function SBSPage() {
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
           <h2 className="font-regular-header text-green-900 mb-4">Wildlife</h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             Moose thrive in the SBS due to dense cover and plentiful wetlands.
             Mule deer and caribou forage on shrubs and lichens. Small mammals
@@ -149,16 +155,58 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">
-            Indigenous Communities & Land Management
+          <h2 className="text-5xl md:text-7xl font-regular-header text-green-900 uppercase leading-none tracking-tight">
+            Indigenous Communities &<br />
+            Land Management
           </h2>
-          <p className="font-body-copy">
-            Eighteen First Nations from six language groups live within the SBS
-            zone. The Dakelh (ᑕᗸᒡ) are prominent, with deep ties to fishing,
-            hunting, and berry picking. Nations like the Natzko and Saik'uz
-            maintain cultural practices while developing forestry, tourism, and
-            language revitalization initiatives.
-          </p>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-base md:text-lg leading-relaxed space-y-0">
+            <p>
+              The Sub-Boreal Spruce zone is home to 18 First Nations from 6
+              different language groups, who have a long-standing history and
+              relationship with this area. The strongest language group in the
+              area is the nations that speak Dakelh (ᑕᗸᒡ). They live in and
+              around the Central Interior of British Columbia.
+            </p>
+            <p>
+              The families of the Dakelh are closely tied to the land and have
+              their own fishing and hunting territories. Camps are held by the
+              families for fishing, hunting and berry picking. Today many
+              families still rely on these traditional ways of preparing for the
+              winter and reconnect to the land through it. Two examples of
+              Dakelh Peoples are the Natzko First Nation and the Saik'uz First
+              Nation.
+            </p>
+            <p>
+              Natzko First Nations belongs to the Dakelh or Carrier First
+              Nations located in the north-central Interior of British Columbia,
+              approximately 120 km west of Quesnel. Ndazkoh means "river flowing
+              from the south". The Band has founded the Nazko Economic
+              Development Cooperation, which owns a number of logging companies,
+              a wood processing plant and the "Three Nations Store and Lodge", a
+              convenient store with associated lodge and restaurant.
+            </p>
+            <p>
+              The Saik'uz First Nation belongs to the family of Carrier or
+              Dakelh First Nations and speaks the Southern Carrier dialect.
+              Their name derives from the Dakelh word that means "on the sand",
+              referring to the sandy soil on which the main community is
+              located. The community is located at the east end of Nulki Lake,
+              14km south of Vanderhoof and has a rich culture of trapping,
+              hunting, fishing and medicine. The Saik'uz are currently working
+              to revitalize their language and develop sustainable cultural and
+              economic growth.
+            </p>
+            <p className="md:col-span-2">
+              Today many Nations are revitalizing their rich cultural and
+              traditional life while healing from the damage done through the
+              residential school system. Besides environmental stewardship, the
+              First Nations of the SBS zone are living off the rich resources
+              the area provides, including mining projects, timber trade, and
+              fishing. Many First Nations also support tourism and the education
+              of people from all backgrounds on Indigenous history.
+            </p>
+          </div>
         </section>
       </PageWrapper>
     </>

@@ -75,7 +75,7 @@ export default function BWBSPage() {
             <img
               src={BWBSLandscape1}
               alt="BWBS zone map"
-              className="rounded-lg"
+              className="rounded-lg w-full"
             />
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function BWBSPage() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="min-h-[500px]">
             <Slideshow slides={slides} />
           </div>
         </div>

@@ -122,6 +122,13 @@ p {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+/* Selector Text (Hero) */
+.font-selector{
+  font-family: "Kapital", sans-serif;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
 
 /* Card Title */
 .font-selector {

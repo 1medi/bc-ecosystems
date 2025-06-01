@@ -9,7 +9,7 @@ import Coastal from "../../../assets/mh/diagram/coastalMountain.webp";
 import Western from "../../../assets/mh/diagram/coastalWestern.webp";
 import Hemlock from "../../../assets/mh/diagram/mountainHemlock.webp";
 import Forested from "../../../assets/mh/subzones/forestedSubzone.webp";
-import Parkland from "../../../assets/mh/subzones/parklandSubzone.webp";
+import Parkland from "../../../assets/mh/parkland.webp";
 import MHHeader from "../../../assets/videos/mhHeader.mp4";
 import MHLand1 from "../../../assets/mh/mhLand1.webp";
 import Forest1 from "../../../assets/mh/forestMeadows1.webp";
@@ -17,6 +17,24 @@ import Forest2 from "../../../assets/mh/forestMeadows2.webp";
 import Roadcut from "../../../assets/mh/roadCut.webp";
 import Veg1 from "../../../assets/mh/mhVeg2.webp";
 import Veg2 from "../../../assets/mh/mhVeg3.webp";
+import Slideshow from "../../../components/slideshow";
+const soilSlides = [
+  {
+    image: (
+      <img src={Veg2} alt="Slide 1" className="w-full h-full object-fill" />
+    ),
+    description:
+      "Organic Soils (e.g., Fibrisols, Mesisols): found in waterlogged areas.",
+  },
+  {
+    image: (
+      <img src={Veg2} alt="Slide 1" className="w-full h-full object-fill" />
+    ),
+    description:
+      "Podzolic Soils (e.g., Ferro-Humic Podzols): formed by water leaching in well-drained sites.",
+  },
+];
+
 export default function MountainHemlockPage() {
   return (
     <>
@@ -41,6 +59,7 @@ export default function MountainHemlockPage() {
               <h2 className="font-regular-header text-green-900 mb-4">
                 Distribution
               </h2>
+              <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
               <p className="font-body-copy">
                 The Mountain Hemlock zone covers much of the mid to high
                 elevations along the Pacific coast, including Vancouver Island,
@@ -53,7 +72,7 @@ export default function MountainHemlockPage() {
                 meadows.
               </p>
             </div>
-            <div className="md:w-2/3 flex flex-col md:flex-row justify-between gap-6">
+            <div className="md:w-2/3 flex flex-col md:flex-row justify-between items-center m-auto gap-6">
               {[
                 {
                   label: "SEA LEVEL",
@@ -97,6 +116,7 @@ export default function MountainHemlockPage() {
               <h2 className="font-regular-header text-green-900 mb-4">
                 Climate
               </h2>
+              <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
               <p className="font-body-copy">
                 The Mountain Hemlock zone is one of Canada's wettest ecosystems
                 with annual precipitation of 1700-5000 mm. The majority of the
@@ -111,7 +131,7 @@ export default function MountainHemlockPage() {
                 insulation, which means the ground rarely freezes.
               </p>
             </div>
-            <div className="md:w-[80%] flex items-center justify-center">
+            <div className="md:w-[80%] min-h-[100%] flex items-center justify-center">
               <MHChart />
             </div>
           </div>
@@ -121,19 +141,28 @@ export default function MountainHemlockPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Subzones in the Mountain Hemlock Zone
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col justify-center gap-8">
             <p className="font-body-copy">
               Moisture levels are categorized simply as either moist or wet, and
               vegetation is further divided into two types:
             </p>
             <div className="flex flex-col w-full ">
-              <img src={Forested} alt="Subzone" className="rounded-lg" />
+              <img
+                src={Forested}
+                alt="Subzone"
+                className="rounded-lg max-h-150"
+              />
               <p className="mt-2 font-body-copy text-center italic">
                 Forested subzones, found at lower elevations
               </p>
             </div>
             <div className="flex flex-col w-full">
-              <img src={Parkland} alt="Subzone" className="rounded-lg" />
+              <img
+                src={Parkland}
+                alt="Subzone"
+                className="rounded-lg max-h-150"
+              />
               <p className="mt-2 font-body-copy text-center italic">
                 Parkland subzones, which occur higher up where conditions become
                 harsher.
@@ -146,6 +175,7 @@ export default function MountainHemlockPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Forests and Meadows
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="relative w-full h-[100vw] max-h-[600px] p-4 m-auto mb-6">
             <MHPieChart />
           </div>
@@ -155,9 +185,8 @@ export default function MountainHemlockPage() {
                 <img
                   src={MHLand1}
                   alt="Species Pie Chart"
-                  className="mb-4 rounded-xl"
+                  className="mb-4 rounded-xl w-full"
                 />
-                <figcaption>Hello!</figcaption>
               </figure>
               <p className="font-body-copy">
                 One of the most defining features of the MH zone is the
@@ -182,9 +211,17 @@ export default function MountainHemlockPage() {
               </p>
             </div>
             <div>
-              <div className="grid grid-cols-2 gap-4">
-                <img src={Forest1} alt="Meadow" className="rounded-lg" />
-                <img src={Forest2} alt="Plants" className="rounded-lg" />
+              <div className="flex flex-col lg:grid grid-cols-2 gap-4">
+                <img
+                  src={Forest1}
+                  alt="Meadow"
+                  className="rounded-lg min-h-[100px] w-full"
+                />
+                <img
+                  src={Forest2}
+                  alt="Plants"
+                  className="rounded-lg min-h-[100px] w-full"
+                />
               </div>
               <p className="p-2 font-body-copy">
                 In the parkland subzones, the forest canopy becomes more sparse.
@@ -205,6 +242,7 @@ export default function MountainHemlockPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Life in the MH zone
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col md:flex-row gap-8">
             <p className="font-body-copy">
               Few animals reside year-round in the MH zone due to its climate.
@@ -226,6 +264,7 @@ export default function MountainHemlockPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Cultural Connections of MH
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col md:flex-row gap-8">
             <p className="font-body-copy">
               Culturally, the MH zone is part of the traditional territory of
@@ -243,53 +282,39 @@ export default function MountainHemlockPage() {
           <h2 className="font-regular-header text-green-900 text-center mb-6">
             Glacial Landscape and Soils
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col gap-8">
             <div className="flex-col">
-              <div className="grid grid-cols-2">
-                <p className="font-body-copy">
-                  The Mountain Hemlock (MH) zone is shaped by a powerful
-                  combination of geology, glacial history, and cultural
-                  heritage. Its foundation lies on granitic bedrock (mainly
-                  quartz diorite and granodiorite), which is naturally acidic
-                  and nutrient-poor, forming well-drained, sandy soils. However,
-                  it's the region's glacial history that gives the MH zone its
-                  dramatic features—steep valleys, flat ridges, and rugged
-                  peaks.
-                </p>
-                <p className="font-body-copy">
-                  Glaciers also left behind till deposits that, along with
-                  colluvium and organic material, act as the parent material for
-                  soil formation. Despite being geologically young, soils here
-                  are surprisingly mature due to the cool, moist climate which
-                  slows decomposition and allows thick layers of Mor humus to
-                  form. These organic-rich layers, dominated by fungi, provide
-                  critical nutrient and moisture reserves for tree growth.
-                </p>
-              </div>
-              <figure>
-                <img src={Roadcut} alt="Soil 1" className="rounded-lg" />
-                <figcaption>The till and layers of parent materials</figcaption>
-              </figure>
+              <p className="font-body-copy p-2">
+                The Mountain Hemlock (MH) zone is shaped by a powerful
+                combination of geology, glacial history, and cultural heritage.
+                Its foundation lies on granitic bedrock (mainly quartz diorite
+                and granodiorite), which is naturally acidic and nutrient-poor,
+                forming well-drained, sandy soils. However, it's the region's
+                glacial history that gives the MH zone its dramatic
+                features—steep valleys, flat ridges, and rugged peaks.
+              </p>
+              <p className="font-body-copy p-2">
+                Glaciers also left behind till deposits that, along with
+                colluvium and organic material, act as the parent material for
+                soil formation. Despite being geologically young, soils here are
+                surprisingly mature due to the cool, moist climate which slows
+                decomposition and allows thick layers of Mor humus to form.
+                These organic-rich layers, dominated by fungi, provide critical
+                nutrient and moisture reserves for tree growth.
+              </p>
             </div>
-
-            <div className="flex flex-col">
-              <h3 className="font-regular-header text-center">
-                Two primary soil types define the area
-              </h3>
-              <div>
-                <p className="font-subheader text-center bg-[#7C9885] p-4 m-4 rounded-xl text-white">
-                  Organic Soils (e.g., Fibrisols, Mesisols): found in
-                  waterlogged areas.
-                </p>
-                <img src={Veg2} alt="Soil 2" className="rounded-lg mb-4" />
-              </div>
-              <div>
-                <p className="font-subheader text-center bg-[#7C9885] p-4 m-4 rounded-xl text-white">
-                  Podzolic Soils (e.g., Ferro-Humic Podzols): formed by water
-                  leaching in well-drained sites.
-                </p>
-                <img src={Veg2} alt="Soil 2" className="rounded-lg mb-4" />
-              </div>
+            <figure>
+              <img src={Roadcut} alt="Soil 1" className="rounded-lg w-full" />
+              <figcaption>The till and layers of parent materials</figcaption>
+            </figure>
+          </div>
+          <div className="rounded-xl">
+            <h2 className="font-regular-header text-green-900 text-center p-4">
+              Two primary soil types define the area
+            </h2>
+            <div className="w-full h-[240px] lg:h-120 ">
+              <Slideshow slides={soilSlides} />
             </div>
           </div>
         </section>

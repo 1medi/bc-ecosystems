@@ -144,7 +144,7 @@ export default function Footer() {
         <div className="mt-10 text-center text-xs text-gray-700 font-body-copy flex flex-col items-center justify-center gap-1">
           <span className="">
             In collaboration with{" "}
-            <strong>BCIT's Forest and Natural Resources Management</strong>{" "}&{" "}
+            <strong>BCIT's Forest and Natural Resources Management</strong>{" "}&{" "}  
             <strong>Fish, Wildlife and Recreation Programs</strong>.
           </span>
 
