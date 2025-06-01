@@ -25,24 +25,28 @@ export default function CDFPage() {
             What is the CDF Zone?
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-          <p className="font-body-copy">
-            The unique and biodiverse Coastal Douglas-fir (CDF) Biogeoclimatic
-            zone of BC is home to numerous rare and threatened ecosystems and
-            species. This zone represents one of BC's rarest forest types,
-            occupying only 0.3% of the province and found nowhere else in
-            Canada, making it highly threatened. It has experienced the most
-            conversion in BC, with twice the deforestation and land
-            fragmentation of the next most impacted zone. Consequently, the CDF
-            harbors 44 at-risk ecological communities (98%) and a significant
-            number of vulnerable species, including 49 vertebrate animals, 65
-            vascular plants, 45 invertebrate animals, 5 lichens, and 3
-            bryophytes. Its exceptional floral richness includes 50 species
-            unique to the zone. Alarmingly, the CDF has the least protected land
-            in BC, with the fewest large protected areas (over 250 ha),
-            resulting in only 5% of Garry oak ecosystems remaining intact. The
-            CDF consists of a single subzone: the moist maritime subzone
-            (CDFmm).
-          </p>
+          <div className="flex flex-col md:flex-row">
+            <p className="font-body-copy p-2 md:w-1/2">
+              The unique and biodiverse Coastal Douglas-fir (CDF) Biogeoclimatic
+              zone of BC is home to numerous rare and threatened ecosystems and
+              species. This zone represents one of BC's rarest forest types,
+              occupying only 0.3% of the province and found nowhere else in
+              Canada, making it highly threatened. It has experienced the most
+              conversion in BC, with twice the deforestation and land
+              fragmentation of the next most impacted zone.
+            </p>
+            <p className="font-body-copy p-2 md:w-1/2">
+              Consequently, the CDF harbors 44 at-risk ecological communities
+              (98%) and a significant number of vulnerable species, including 49
+              vertebrate animals, 65 vascular plants, 45 invertebrate animals, 5
+              lichens, and 3 bryophytes. Its exceptional floral richness
+              includes 50 species unique to the zone. Alarmingly, the CDF has
+              the least protected land in BC, with the fewest large protected
+              areas (over 250 ha), resulting in only 5% of Garry oak ecosystems
+              remaining intact. The CDF consists of a single subzone: the moist
+              maritime subzone (CDFmm).
+            </p>
+          </div>
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
@@ -64,7 +68,7 @@ export default function CDFPage() {
           <div className="flex-1 min-w-[300px]">
             <h2 className="font-regular-header text-green-900 mb-4">Climate</h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               The Coastal Douglas-fir biogeoclimatic zone boasts an appealing
               climate characterized by warm, dry summers and mild, wet winters.
               Average temperatures range from 16.9°C in the warmest month to
@@ -72,9 +76,16 @@ export default function CDFPage() {
               Rainfall dominates the precipitation in this zone, accounting for
               approximately 95% of the 955 mm average, lending it an almost
               Mediterranean feel. This distinctive climate is largely shaped by
-              two key factors: the moderating influence of the Pacific Ocean and
-              the Salish Sea, and the rain shadow effect created by the Insular
-              Mountains of the Olympic Peninsula and Vancouver Island.
+              two key factors:{" "}
+              <strong>the moderating influence of the Pacific Ocean </strong>{" "}
+              and the <strong> Salish Sea</strong> , and{" "}
+              <strong>
+                the rain shadow effect created by the Insular Mountains of the
+                Olympic Peninsula and Vancouver Island
+              </strong>
+              .
+            </p>
+            <p className="font-body-copy p-2">
               Geographically, the CDF zone extends across the southeastern
               quadrant of Vancouver Island, encompasses the Gulf Islands of the
               Salish Sea, and reaches its eastern limit in the southwestern
@@ -83,7 +94,7 @@ export default function CDFPage() {
               meters and often disappearing within 150 meters of sea level.
             </p>
           </div>
-          <div className="flex-1 min-w-[300px]">
+          <div className="flex-1 min-w-[300px] m-auto">
             <img
               src={CDFTemp}
               alt="Climate image"
@@ -126,7 +137,7 @@ export default function CDFPage() {
               zone include dull Oregon grape, fawn lily, arbutus, and salal.
             </p>
           </div>
-          <div className="flex-1 min-w-[300px]">
+          <div className="flex-1 min-w-[300px] m-auto">
             <img
               src={CDFVeg}
               alt="Vegetation image"
@@ -145,7 +156,7 @@ export default function CDFPage() {
               <h3 className="font-subheader-bold text-green-900 mb-4">
                 Resource Use
               </h3>
-              <p className="font-body-copy">
+              <p className="font-body-copy p-2">
                 The Coastal Douglas-fir one has experienced substantial logging
                 since the early 20th century. Forestry operations within the CDF
                 are constrained by low summer precipitation, which creates
@@ -154,6 +165,8 @@ export default function CDFPage() {
                 managed intensively for forestry. Today, the CDF is under
                 considerable pressure from diverse land uses, including
                 residential, industrial, and recreational activities.
+              </p>
+              <p className="font-body-copy p-2">
                 Alarmingly, since 2008, another 30% of its second-growth natural
                 areas have been lost to these developments. This rapid
                 urbanization represents a critical threat to this small and
@@ -168,25 +181,30 @@ export default function CDFPage() {
               <h3 className="font-subheader-bold text-green-900 mb-4">
                 Wildlife
               </h3>
-              <p className="font-body-copy">
+              <p className="font-body-copy p-2">
                 The CDF zone's mild, wet winters and warm, dry summers largely
                 dictate its animal inhabitants. Receiving the least snowfall of
                 any BC zone, the CDF supports a rich and diverse wildlife
-                population. Birdlife includes seabirds like ancient murrelets
-                and cormorants along the coast, songbirds such as song sparrows
-                and yellow-rumped warblers throughout, and larger birds like
-                great blue herons and bald eagles. Mammals inhabiting the CDF
-                include black-tailed deer (forest edges and grasslands), harbour
-                seals and sea lions (coastal waters), North American river
-                otters (aquatic burrows), European and Alaska rabbits
-                (grasslands and meadows), black bears (forests and shorelines),
-                northern raccoons (varied habitats), mink (Pacific Northwest
-                coast), red squirrels (coniferous/mixed forests and urban
-                areas), and cougars (mountainous forests). Species of concern in
-                the CDF include the threatened Western Screech-Owl and
-                endangered Little Brown Myotis, along with the Western Toad,
-                Common Sharp-tailed Snake, and Northern Red-legged Frog (all
-                Special Concern).
+                population.
+              </p>
+              <p  className="font-body-copy p-2">
+                Birdlife includes seabirds like ancient murrelets and cormorants
+                along the coast, songbirds such as song sparrows and
+                yellow-rumped warblers throughout, and larger birds like great
+                blue herons and bald eagles. Mammals inhabiting the CDF include
+                black-tailed deer (forest edges and grasslands), harbour seals
+                and sea lions (coastal waters), North American river otters
+                (aquatic burrows), European and Alaska rabbits (grasslands and
+                meadows), black bears (forests and shorelines), northern
+                raccoons (varied habitats), mink (Pacific Northwest coast), red
+                squirrels (coniferous/mixed forests and urban areas), and
+                cougars (mountainous forests).
+              </p>
+              <p  className="font-body-copy p-2">
+                Species of concern in the CDF include the threatened Western
+                Screech-Owl and endangered Little Brown Myotis, along with the
+                Western Toad, Common Sharp-tailed Snake, and Northern Red-legged
+                Frog (all Special Concern).
               </p>
             </div>
           </div>

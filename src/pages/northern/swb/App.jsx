@@ -15,20 +15,24 @@ export default function SWBPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2">
-              <h2 className="text-2xl font-regular-header text-green-900 mb-4">
+              <h2 className="text-center font-regular-header text-green-900">
                 Distribution & Climate
               </h2>
-              <p className="font-body-copy">
+              <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
+              <p className="font-body-copy p-2">
                 The Spruce Willow Birch Zone is a northern, interior, subalpine
                 zone in British Columbia, beginning around 57 degrees North
                 latitude and extending northward into the Yukon and likely the
                 Northwest Territories. It covers approximately 7.8% of British
                 Columbia's land area and occurs at elevations ranging from 900
-                to 1700 meters. This zone is characterized by a cold climate
-                with a long period of snow cover, resulting in very short
-                growing seasons, as brief as around 40 days near Cassiar. The
-                depth of the snowpack varies across the zone, ranging from very
-                shallow in some areas to quite deep in others.
+                to 1700 meters.
+              </p>
+              <p className="font-body-copy p-2">
+                This zone is characterized by a cold climate with a long period
+                of snow cover, resulting in very short growing seasons, as brief
+                as around 40 days near Cassiar. The depth of the snowpack varies
+                across the zone, ranging from very shallow in some areas to
+                quite deep in others.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -42,9 +46,10 @@ export default function SWBPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
-          <h2 className="text-2xl font-bold text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center">
             Ecological Characteristics
           </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col gap-8">
             <div>
               <p className="text-base leading-relaxed mb-4">
@@ -60,7 +65,8 @@ export default function SWBPage() {
                 considerable mining exploration, and these sites are generally
                 susceptible to disturbance.
               </p>
-              <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+              <ul className="list-disc list-inside font-body-copy space-y-1">
+                <h2 className="font-subheader text-green-900">Key Characteristics</h2>
                 <li className="font-bold">Open spruce parklands</li>
                 <li className="font-bold">
                   Scrub birch and willow shrub layer

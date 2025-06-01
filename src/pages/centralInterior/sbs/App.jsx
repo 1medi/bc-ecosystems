@@ -2,8 +2,9 @@ import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
 import bgHero from "../../../assets/sbs/sbs.webp";
 import SBSClimate from "../../../components/charts/sbsTemp/index.jsx";
-import { Link } from "react-router-dom";
+import { href, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SBSclimate from "../../../assets/sbs/sbsClimate.webp";
 export default function SBSPage() {
   return (
     <>
@@ -16,7 +17,9 @@ export default function SBSPage() {
         />
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">Overview</h2>
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
+            Overview
+          </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             The Sub-Boreal Spruce zone (SBS) is the third largest forested zone
@@ -25,7 +28,7 @@ export default function SBSPage() {
             warmest month to -10.2°C in the coldest. It receives about 652 mm of
             precipitation annually. The SBS zone spans elevations from valley
             bottoms to 1300 meters, predominantly covering plateaus between
-            1100–1300 m in the Central and Boreal Interior regions. Climax
+            1100-1300 m in the Central and Boreal Interior regions. Climax
             species include Hybrid Spruce, White Spruce, and Subalpine Fir.
           </p>
           <p className="font-body-copy mt-4">
@@ -37,7 +40,7 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
             Distribution
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -61,7 +64,9 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">Climate</h2>
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
+            Climate
+          </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             Climate varies across the SBS due to its broad range. Annual
@@ -71,28 +76,27 @@ export default function SBSPage() {
             remain below 0°C for 4–5 months and above 10°C for only 2–5 months.
           </p>
           <SBSClimate />
-          <Link
-            target="_blank"
-            to={
-              "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnProv&lstProvince=BC&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&stnID=346000000&dispBack=0"
+          <motion.button
+            onClick={() =>
+              window.open(
+                "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?searchType=stnProv&lstProvince=BC&txtCentralLatMin=0&txtCentralLatSec=0&txtCentralLongMin=0&txtCentralLongSec=0&stnID=346000000&dispBack=0",
+                "_blank"
+              )
             }
+            whileHover={{
+              scale: 1.05,
+              backgroundColor: "#14532d",
+              color: "#ffffff",
+              transition: { duration: 0.2 },
+            }}
+            className="font-button bg-green-800/20 text-green-900 border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
           >
-            <motion.p
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: "#14532d",
-                color: "#ffffff",
-                transition: { duration: 0.2 },
-              }}
-              className="font-button bg-green-800/20 text-green-900 border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
-            >
-              View the chart on Canada's Website Here
-            </motion.p>
-          </Link>
+            View the chart on Canada's Website Here
+          </motion.button>
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
             Geology & Soils
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -111,7 +115,7 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
             Vegetation
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -137,7 +141,9 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="font-regular-header text-green-900 mb-4">Wildlife</h2>
+          <h2 className="font-regular-header text-center text-green-900 mb-4">
+            Wildlife
+          </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <p className="font-body-copy">
             Moose thrive in the SBS due to dense cover and plentiful wetlands.
@@ -155,20 +161,20 @@ export default function SBSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg mx-auto bg-[#008080]/25 rounded-xl shadow-xl m-8">
-          <h2 className="text-5xl md:text-7xl font-regular-header text-green-900 uppercase leading-none tracking-tight">
-            Indigenous Communities &<br />
-            Land Management
+          <h2 className="text-center font-regular-header text-green-900 uppercase leading-none tracking-tight">
+            Indigenous Communities & Land Management
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-base md:text-lg leading-relaxed space-y-0">
-            <p>
-              The Sub-Boreal Spruce zone is home to 18 First Nations from 6
-              different language groups, who have a long-standing history and
-              relationship with this area. The strongest language group in the
-              area is the nations that speak Dakelh (ᑕᗸᒡ). They live in and
-              around the Central Interior of British Columbia.
+          <div className="flex flex-col gap-4">
+            <p className="font-body-copy">
+              The Sub-Boreal Spruce zone is home to{" "}
+              <strong>18 First Nations</strong> from 6 different language
+              groups, who have a long-standing history and relationship with
+              this area. The strongest language group in the area is the nations
+              that speak Dakelh (ᑕᗸᒡ). They live in and around the Central
+              Interior of British Columbia.
             </p>
-            <p>
+            <p className="font-body-copy">
               The families of the Dakelh are closely tied to the land and have
               their own fishing and hunting territories. Camps are held by the
               families for fishing, hunting and berry picking. Today many
@@ -177,7 +183,8 @@ export default function SBSPage() {
               Dakelh Peoples are the Natzko First Nation and the Saik'uz First
               Nation.
             </p>
-            <p>
+
+            <p className="font-body-copy">
               Natzko First Nations belongs to the Dakelh or Carrier First
               Nations located in the north-central Interior of British Columbia,
               approximately 120 km west of Quesnel. Ndazkoh means "river flowing
@@ -186,7 +193,7 @@ export default function SBSPage() {
               a wood processing plant and the "Three Nations Store and Lodge", a
               convenient store with associated lodge and restaurant.
             </p>
-            <p>
+            <p className="font-body-copy">
               The Saik'uz First Nation belongs to the family of Carrier or
               Dakelh First Nations and speaks the Southern Carrier dialect.
               Their name derives from the Dakelh word that means "on the sand",
@@ -197,7 +204,7 @@ export default function SBSPage() {
               to revitalize their language and develop sustainable cultural and
               economic growth.
             </p>
-            <p className="md:col-span-2">
+            <p className="font-body-copy">
               Today many Nations are revitalizing their rich cultural and
               traditional life while healing from the damage done through the
               residential school system. Besides environmental stewardship, the

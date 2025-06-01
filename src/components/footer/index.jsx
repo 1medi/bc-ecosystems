@@ -114,7 +114,7 @@ export default function Footer() {
 
               <div>
                 <p>
-                  UBC – Center for Forest Conservation Genetics.{" "}
+                  UBC - Center for Forest Conservation Genetics.{" "}
                   <em>CWH subzones map.</em>
                   <br />
                   Available at:{" "}

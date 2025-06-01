@@ -6,6 +6,7 @@ export default function EcosystemPage({
   heroVideo,
   children,
   alt,
+  bgColor,
 }) {
   return (
     <>
@@ -37,9 +38,9 @@ export default function EcosystemPage({
                   color: "#ffffff",
                   transition: { duration: 0.2 },
                 }}
-                className="font-button bg-green-800/20 text-black border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
+                className="font-button bg-green-800/20 text-white border-2 border-green-800/50 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 text-center mx-auto px-6 py-2 rounded-full w-fit backdrop-blur-sm"
               >
-                ← Back to Homepage
+                ← Back to Ecosystems List
               </motion.div>
             </a>
 
@@ -53,7 +54,7 @@ export default function EcosystemPage({
             </motion.h1>
             {subtitle && (
               <motion.p
-                className="font-subheader mt-4 text-lg max-w-xl bg-black/10 rounded-xl"
+                className="font-subheader mt-4 text-xl max-w-xl bg-grey/50 p-2 rounded-xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 1 }}

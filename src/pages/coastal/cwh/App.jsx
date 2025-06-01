@@ -2,7 +2,6 @@ import EcosystemPage from "../../../components/ecosystemTemplate";
 // import bgHero from "@/assets/images/bg-hero.jpg"
 import PageWrapper from "../../../components/pageWrapper";
 import CWHHero from "../../../assets/videos/cwhHero.mp4";
-import CWHConditions from "../../../assets/otherImages/ecologicalConditions.webp";
 import CWH from "../../../assets/otherImages/cwh.webp";
 import CWHZone from "../../../assets/otherImages/zone.webp";
 export default function CWHPage() {
@@ -22,20 +21,12 @@ export default function CWHPage() {
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
-              Western Hemlock is the most widespread and abundant tree species
-              along the coast of British Columbia. It thrives from sea level to
-              mid-elevation, growing on both the eastern and western slopes of
-              the Coast Mountains, and even extends inland into the wet belt of
-              the Interior, west of the Rocky Mountains. Rather than forming
-              pure stands, Western Hemlock typically grows in mixed forests
-              alongside species like Douglas-fir, Amabilis fir, Sitka spruce,
-              and Western redcedar. While it can occasionally form pure
-              stands—especially after large-scale windthrow—it more often
-              flourishes in the understory thanks to its high shade tolerance.
-              Due to its shallow root system, Western Hemlock is vulnerable to
-              being uprooted by strong winds and damaged by wildfires, but it
-              regenerates quickly in moist, shaded environments, often forming
-              dense young growth beneath mature canopies.
+              The Coastal Western Hemlock Biogeoclimatic Zone, or CWH zone, is
+              named for the Western Hemlock trees that cover the Pacific coast.
+              It’s a rainy area with dense forests of conifer trees and lots of
+              moss. Wind shapes the landscape, creating patches of trees of
+              different ages. Because of all the rain, there aren’t many fires,
+              so the trees can grow really old and big.
             </p>
 
             <h2 className="font-regular-header text-green-900 mt-8 mb-4">
@@ -54,7 +45,7 @@ export default function CWHPage() {
                 </li>
                 <li className="font-subheader text-green-900 m-2">
                   Elevation:
-                  <ul className="font-body-copy">
+                  <ul className="font-body-copy text-black">
                     <li>Sea level to 900 m (windward slopes, south coast)</li>
                     <li>Up to 1050 m (leeward slopes)</li>
                   </ul>
@@ -72,18 +63,11 @@ export default function CWHPage() {
         </section>
         <section className="flex m-8 flex-wrap gap-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <div className="flex-1 min-w-[300px]">
-            <div className="flex-1 min-w-[300px]">
-              <img
-                src={CWHConditions}
-                alt="Ecological Conditions"
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
             <h2 className="font-regular-header text-green-900 mt-10 mb-4 text-center">
               Ecological Conditions
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy mb-4">
               The Coastal Western Hemlock (CWH) zone has the wettest climate in
               British Columbia, receiving between 1000 and 4400 mm of
               precipitation annually. In the south, most of this falls as rain,
@@ -104,7 +88,7 @@ export default function CWHPage() {
             Forest Variation Across the Coastal Western Hemlock Zone
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-          <p className="font-body-copy">
+          <p className="font-body-copy m-2">
             The Coastal Western Hemlock (CWH) zone contains a wide variety of
             forest types that change depending on moisture levels and proximity
             to the coast. In hypermaritime areas, forests are dominated by
@@ -113,21 +97,20 @@ export default function CWHPage() {
             well-drained slopes and peatlands common on the outer coast. Wetter
             maritime subzones feature forests dominated by western hemlock and
             amabilis fir, often forming even-aged stands due to windthrow, with
-            redcedar more common on long-undisturbed sites. The typical
-            vegetation includes a rich moss layer and ericaceous shrubs like
-            Alaskan blueberry and salal. Drier maritime forests contain more
-            Douglas-fir and have well-developed salal and Oregon grape in the
-            understory, while submaritime forests—located farther inland—lack
-            typical coastal species and instead include interior species like
-            queen's cup, red-stemmed feathermoss, and false azalea, reflecting a
-            transition toward continental ecosystems.
+            redcedar more common on long-undisturbed sites.
           </p>
-          <div className="flex-1 mt-10">
-            <img src={CWHZone} alt="zone" className="rounded-lg w-full" />
-          </div>
+          <p className="font-body-copy m-2">
+            The typical vegetation includes a rich moss layer and ericaceous
+            shrubs like Alaskan blueberry and salal. Drier maritime forests
+            contain more Douglas-fir and have well-developed salal and Oregon
+            grape in the understory, while submaritime forests—located farther
+            inland—lack typical coastal species and instead include interior
+            species like queen's cup, red-stemmed feathermoss, and false azalea,
+            reflecting a transition toward continental ecosystems.
+          </p>
         </section>
 
-        <section className="flex flex-col gap-8 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
+        <section className="flex flex-col gap-4 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <h2 className="font-regular-header text-green-900 text-center ">
             CWH Subzone Climate Table
           </h2>
@@ -173,13 +156,13 @@ export default function CWHPage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
+        <section className="flex flex-col gap-4 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
           <h2 className="font-regular-header text-green-900 text-center">
             In-Depth Look at the CWH Ecosystem
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl" />
           <p className="font-body-copy text-base md:text-lg leading-relaxed text-center">
-            Learn more about the Coastal Western Hemlock zone’s unique
+            To learn more about the Coastal Western Hemlock zone’s unique
             ecological role, biodiversity, and climate patterns through this
             short documentary.
           </p>

@@ -11,15 +11,8 @@ export default function IDFPage() {
       <PageWrapper>
         <EcosystemPage
           title="Interior Douglas-fir"
-          subtitle="A dry forested ecosystem with Douglas-fir dominance"
+          subtitle="A dry forested ecosystem with Douglas-fir dominance."
           heroVideo={BGHero}
-          description="Found in valleys and low-elevation slopes, this zone is known for its dry conditions, grassy understories, and fire-adapted species."
-          stats={[
-            { label: "Mean Annual Temp", value: "7°C" },
-            { label: "Annual Precipitation", value: "300–800 mm" },
-            { label: "Dominant Tree", value: "Douglas-fir" },
-            { label: "Zone Code", value: "IDF" },
-          ]}
         />
 
         {/* Overview */}
@@ -29,14 +22,14 @@ export default function IDFPage() {
               Overview
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy mb-6">
+            <p className="font-body-copy p-2">
               The Interior Douglas-fir Biogeoclimatic zone (or the IDF BEC zone)
               is located in the central and southern interior regions of British
               Columbia. The zone is known for its warm dry summers, long growing
               seasons, and brisk winters. This is partly due to its location in
               the rain shadow of the Coast, Cascade and Columbia Mountains.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The IDF zone is characterized by its dry-belt Douglas fir
               (Pseudotsuga menziesii) dominated ecosystems. Due to its topology,
               soil composition and long history of fire, the IDF zone has also
@@ -59,19 +52,21 @@ export default function IDFPage() {
               Distribution
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               In British Columbia, the Interior Douglas-fir zone occurs between
               the 49th and 52nd parallels and covers about 5% of the province.
               Its elevation ranges from 130m in the western portion of the range
               to 900m in the northern portion, with upper elevations reaching
               1600m. The IDF zone can be found between other biogeoclimatic
-              zones. To the north, the zone is surrounded by the Sub-Boreal
-              Pine-Spruce and Sub-Boreal Spruce zones. The Bunchgrass zone is
-              found below the IDF along the Fraser and Chilcotin rivers. In the
-              coastal transition areas, the IDF is found below the Coastal
-              Western Hemlock zone. Typically, the IDF zone is found at
-              elevations below the Montane Spruce zone and above the Ponderosa
-              Pine zone.
+              zones.
+            </p>
+            <p className="font-body-copy p-2">
+              To the north, the zone is surrounded by the Sub-Boreal Pine-Spruce
+              and Sub-Boreal Spruce zones. The Bunchgrass zone is found below
+              the IDF along the Fraser and Chilcotin rivers. In the coastal
+              transition areas, the IDF is found below the Coastal Western
+              Hemlock zone. Typically, the IDF zone is found at elevations below
+              the Montane Spruce zone and above the Ponderosa Pine zone.
             </p>
           </div>
         </section>
@@ -83,7 +78,7 @@ export default function IDFPage() {
               Climate
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy mb-6">
+            <p className="font-body-copy p-2">
               The IDF zone has a continental climate characterized by warm, dry
               summers, a fairly long growing season, and cool winters. The rain
               shadow created by the topographical barriers of the Coast, Cascade
@@ -92,12 +87,15 @@ export default function IDFPage() {
               allows for the IDF to have warm, dry, and relatively long growing
               seasons of 3-5 months. During this time the average temperature is
               above 10°C+, but during the winter, for about 2-5 months, the
-              temperature is below 0°C. Temperature and precipitation both vary
-              depending on subzone; mean annual precipitation ranges from 300 to
-              750mm. However, in the wettest areas, precipitation exceeds
-              1000mm. Across the zone, twenty to fifty percent of the
-              precipitation falls as snow. Significant growing season moisture
-              deficits are common, and frosts can occur at any time.
+              temperature is below 0°C.
+            </p>
+            <p className="font-body-copy p-2">
+              Temperature and precipitation both vary depending on subzone; mean
+              annual precipitation ranges from 300 to 750mm. However, in the
+              wettest areas, precipitation exceeds 1000mm. Across the zone,
+              twenty to fifty percent of the precipitation falls as snow.
+              Significant growing season moisture deficits are common, and
+              frosts can occur at any time.
             </p>
             <img
               src={IDFClimate}
@@ -114,7 +112,7 @@ export default function IDFPage() {
               Geology and Soils
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               Ecosystems in the IDF occur on well to moderately well-drained
               sites on deposits derived from volcanic bedrock. Soils are
               typically orthic or dark gray luvisols, and eutric or dystric
@@ -125,8 +123,8 @@ export default function IDFPage() {
               the IDF grasslands, soils are mainly orthic dark brown chernozems
               at lower elevations and orthic black and dark grey chernozems and
               higher elevations.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               Humus form development usually results in moders, with occasional
               mors and mullmoders. Leptomoders are common on lower elevation
               zonal ecosystems, whereas mormoders and hemimors are more common
@@ -143,7 +141,7 @@ export default function IDFPage() {
               Life in the IDF zone
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               Due to the relatively short, cool winters and the variable canopy
               closure of the Douglas-fir forests, the IDF zone has a wide range
               of vegetation types that provide habitat for wildlife. In the
@@ -154,16 +152,16 @@ export default function IDFPage() {
               zone, south aspect forests and dry Douglas-fir/ponderosa pine
               forests provide winter habitat for Rocky Mountain elk, mule deer,
               white-tailed deer, and Bighorn Sheep.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The lower elevation grasslands of the IDF provide habitat for
               smaller mammals such as mice, voles, and ground squirrels. Other
               common species at lower elevations include the badger and the
               great basin pocket mouse. Rocky cliffs and talus provide security
               cover and breeding habitat for the mountain goat, yellow-bellied
               marmot and the common pika.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               A wide variety of birds feed on conifer seeds, bark insects, and
               small mammals. Some of the birds that can be found in this zone
               include the Pileated Woodpecker, Northern Flicker, Clark’s
@@ -171,16 +169,16 @@ export default function IDFPage() {
               Owl which nests in old ponderosa pine and Douglas-fir trees.
               Non-migratory passerine birds descend from higher elevations to
               form mixed species flocks during the winter months.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               Larger lakes and marshes are important staging and breeding areas
               for a great variety of waterbirds. Small lakes and potholes also
               serve as breeding grounds for various dabbling and diving ducks
               such as Northern Pintail, American Wigeon, Mallard, Blue-winged
               Teal, Lesser Scaup, and American Coot, as well as for the Painted
               Turtle.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               Wetland meadows and shady draws provide habitat for the Western
               Terrestrial Garter Snake, Northern Leopard Frog, and the Tiger
               Salamander. The Western Rattlesnake and Great Basin Spadefoot toad
@@ -196,48 +194,57 @@ export default function IDFPage() {
               Vegetation
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
-              Douglas fir is the most common species in this zone, comprising
-              over fifty percent of all other species. The thick bark of mature
-              Douglas fir trees can withstand frequent ground fires, which clear
-              the forests in the IDF but leave the larger trees standing. Mixed
-              stands with lodgepole pine and ponderosa pine indicate the
-              historical presence of crown fires. Kinnikinnik and Soopolallie
-              are found along the understory.
-              <br />
-              <br />
-              In wetter sites across the IDF, trembling aspen is a common minor
-              species. It is most frequently found in the northern zones of
-              IDFdk, dw, and xm and in the southern subzone of IDFdm. Engelmann
-              or hybrid spruce is found in high elevations on the wetter, cooler
-              transitional sites to the Montane Spruce zone.
-              <br />
-              <br />
-              Edaphic and topographic conditions, as well as fire history, has
-              led to the development of large grassland communities in parts of
-              the IDF zone. These grasslands have been further modified by the
-              grazing of domestic livestock and influenced by fire suppression.
-              Ponderosa pine can be found in these areas in scattered, open
-              composition, along with bunchgrass species such as Bluebunch
-              Wheatgrass.
-              <br />
-              <br />
-              Non-forested wetlands are also common in the IDF. Species found in
-              these wetlands include cattail and great bulrush marshes in
-              shallow depressions and around open water. Tall willow swamps also
-              follow small streams and drainage channels. Fens are peatlands
-              with nutrient-rich waters derived in part from groundwater and
-              runoff from adjacent mineral uplands. In the IDF there are
-              sedge-dominated fens with canopies of shrubby willows. Saline
-              meadow wetlands can also be found in the IDF.
-            </p>
-            <div className="m-auto flex justify-center items-center">
-              <img
-                src={IDFVegetation}
-                alt="IDF vegetation"
-                className="rounded-xl w-full p-4"
-              />
+            <div className="flex flex-col md:flex-row p-2">
+              <div className="p-2 md:w-1/2 ">
+                <p className="font-body-copy p-2">
+                  Douglas fir is the most common species in this zone,
+                  comprising over fifty percent of all other species. The thick
+                  bark of mature Douglas fir trees can withstand frequent ground
+                  fires, which clear the forests in the IDF but leave the larger
+                  trees standing. Mixed stands with lodgepole pine and ponderosa
+                  pine indicate the historical presence of crown fires.
+                  Kinnikinnik and Soopolallie are found along the understory.
+                </p>
+                <p className="font-body-copy p-2">
+                  In wetter sites across the IDF, trembling aspen is a common
+                  minor species. It is most frequently found in the northern
+                  zones of IDFdk, dw, and xm and in the southern subzone of
+                  IDFdm. Engelmann or hybrid spruce is found in high elevations
+                  on the wetter, cooler transitional sites to the Montane Spruce
+                  zone.
+                </p>
+              </div>
+
+              <div className="p-2 md:w-1/2 ">
+                <p className="font-body-copy p-2">
+                  Edaphic and topographic conditions, as well as fire history,
+                  has led to the development of large grassland communities in
+                  parts of the IDF zone. These grasslands have been further
+                  modified by the grazing of domestic livestock and influenced
+                  by fire suppression. Ponderosa pine can be found in these
+                  areas in scattered, open composition, along with bunchgrass
+                  species such as Bluebunch Wheatgrass.
+                </p>
+                <p className="font-body-copy p-2">
+                  Non-forested wetlands are also common in the IDF. Species
+                  found in these wetlands include cattail and great bulrush
+                  marshes in shallow depressions and around open water. Tall
+                  willow swamps also follow small streams and drainage channels.
+                  Fens are peatlands with nutrient-rich waters derived in part
+                  from groundwater and runoff from adjacent mineral uplands. In
+                  the IDF there are sedge-dominated fens with canopies of
+                  shrubby willows. Saline meadow wetlands can also be found in
+                  the IDF.
+                </p>
+              </div>
             </div>
+          </div>
+          <div className="m-auto flex justify-center items-center">
+            <img
+              src={IDFVegetation}
+              alt="IDF vegetation"
+              className="rounded-xl max-w-full"
+            />
           </div>
         </section>
 
@@ -248,7 +255,7 @@ export default function IDFPage() {
               Resource Use
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               In the IDF zone, resource value is placed on forestry,
               agriculture, and recreation tourism. In the past, sawlog and
               pulpwood production was prevalent in the area, but now a shift
@@ -256,8 +263,8 @@ export default function IDFPage() {
               harvesting is still prevalent in the area however, with the IDF
               zone comprising 25% of the Timber Harvesting Land Base in Williams
               Lake Timber Supply Area (TSA) and 50% in the 100 Mile House TSA.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The IDF zone’s primary agricultural use is cattle grazing as the
               zone provides forested and grassland ranges for cattle to roam. In
               the southern regions of the zone, vineyards and orchards are
@@ -265,8 +272,8 @@ export default function IDFPage() {
               reach 40 degrees celsius during the day, but cool nights allow for
               the grapes to maintain their natural acidity. This makes wines
               coming from the IDF zone unique.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The IDF zone has a variety of topographical features that make
               outdoor recreation desirable. Thousands of tourists visit the IDF
               zone in the winter for activities like downhill skiing, cross
@@ -288,7 +295,7 @@ export default function IDFPage() {
               Indigenous Communities and Land Management{" "}
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy pb-2">
               There are many Indigenous Communities that call the IDF region
               home. The Okanagan region, making up a large portion of the IDF
               zone, is on the unceded and traditional territory of the Okanagan
@@ -301,8 +308,8 @@ export default function IDFPage() {
               as: Yale First Nation, Spuzzum First Nation, Boston Bar First
               Nation, Boothroyd Indian Band, Siska First Nation and the Skuppah
               First Nation.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy pb-2">
               Wildfires in B.C. can be described using the “natural disturbance
               types” system. This system describes the level and frequency of
               natural disturbances across different BEC zones. As an example,
@@ -318,9 +325,9 @@ export default function IDFPage() {
             <img
               src={IDFLand}
               alt="IDF vegetation"
-              className="rounded-lg w-full h-auto p-4"
+              className="rounded-lg w-full h-auto"
             />
-            <p className="font-body-copy">
+            <p className="font-body-copy pt-2">
               Cultural burning is one way to bring back fire onto the landscape
               and reduce wildfire risk. Prior to the bushfire act of 1874 some
               Indigenous communities within the IDF regularly burned the
@@ -342,12 +349,12 @@ export default function IDFPage() {
               Subzones and Variants
             </h2>
             <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-            <p className="font-body-copy">
+            <p className="font-body-copy p-2">
               The IDF landscape ranges from open forest with grassy ground
               cover, to a closed forest with shrubs and mixed forb-grass-moss
               ground cover. Seven subzones cover this variable landscape.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The three very dry subzones commonly include ponderosa pine, but
               lack lodgepole pine, twinflower, falsebox, and prince’s pine
               species. These very dry subzones occupy the major valleys of the
@@ -359,8 +366,8 @@ export default function IDFPage() {
               Creek area and midslopes of the Fraser River valley west of
               Clinton. The IDFxm occupies lower elevations of the Chilcotin and
               Fraser river valleys from south of Alexandria to west of Clinton.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The dry IDF subzones occur at moderate elevations on the lee side
               of the Coast, Cascade, and Purcell mountains. The modal IDFdk
               subzone occupies lower to middle elevations of the southern
@@ -372,8 +379,8 @@ export default function IDFPage() {
               Mountain Trench and its major tributaries south of the Blaeberry
               River. This subzone is distinguished by the presence of western
               larch.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               The two moist and wet subzones include western redcedar, paper
               birch, and pinegrass cover, but do not include kinnikinnick. The
               moister IDFmw occurs in a narrow band from east of Peachland to
@@ -383,8 +390,8 @@ export default function IDFPage() {
               the Klinaklini and Atnarko river valleys, along the Lillooet River
               valley east of Pemberton, as well as in the Fraser River valley
               around Boston Bar.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               Four typical site associations include: hybrid spruce, Douglas
               fir, gooseberry and feathermoss; Douglas fir, lodgepole pine,
               pinegrass and feathermoss; Douglas fir, pinegrass and yarrow; and

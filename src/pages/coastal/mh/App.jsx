@@ -55,7 +55,7 @@ export default function MountainHemlockPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-12 items-start">
             <div className="md:w-1/3">
-              <h2 className="font-regular-header text-green-900 mb-4">
+              <h2 className="font-regular-header text-center text-green-900 mb-4">
                 Distribution
               </h2>
               <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -112,7 +112,7 @@ export default function MountainHemlockPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
-              <h2 className="font-regular-header text-green-900 mb-4">
+              <h2 className="font-regular-header text-center  text-green-900 mb-4">
                 Climate
               </h2>
               <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -137,7 +137,7 @@ export default function MountainHemlockPage() {
         </section>
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#C5D6F5]/75 rounded-xl shadow-xl">
-          <h2 className="font-regular-header text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-center  text-green-900 text-center mb-6">
             Subzones in the Mountain Hemlock Zone
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
@@ -152,7 +152,7 @@ export default function MountainHemlockPage() {
                 alt="Subzone"
                 className="rounded-lg max-h-150"
               />
-              <p className="mt-2 font-body-copy text-center italic">
+              <p className="mt-2 font-caption text-center ">
                 Forested subzones, found at lower elevations
               </p>
             </div>
@@ -162,7 +162,7 @@ export default function MountainHemlockPage() {
                 alt="Subzone"
                 className="rounded-lg max-h-150"
               />
-              <p className="mt-2 font-body-copy text-center italic">
+              <p className="mt-2 font-caption text-center">
                 Parkland subzones, which occur higher up where conditions become
                 harsher.
               </p>
@@ -180,34 +180,42 @@ export default function MountainHemlockPage() {
           </div>
           <div className="flex flex-col justify-center m-auto p-4">
             <div className="flex flex-col md:grid md:grid-cols-[60fr_100fr] md:gap-4 p-4">
-              <figure>
+              <figure className="m-auto">
                 <img
                   src={MHLand1}
-                  alt="Species Pie Chart"
-                  className="mb-4 rounded-xl w-full"
+                  alt="Land within the MH Region"
+                  className=" rounded-xl w-full  "
                 />
+                <figcaption className="font-caption">
+                  Typical land within the MH zone
+                </figcaption>
               </figure>
-              <p className="font-body-copy">
-                One of the most defining features of the MH zone is the
-                dominance of Mountain hemlock (Tsuga mertensiana), which thrives
-                in both forested and parkland areas. Alongside it, Amabilis fir
-                (Abies amabilis) and Yellow cedar (Chamaecyparis nootkatensis)
-                are common, forming the backbone of the subalpine forest
-                ecosystems. In the lower forested regions, you'll also find
-                species like Western hemlock, Western redcedar, Douglas-fir,
-                Sitka spruce, and Western white pine, varying by location and
-                elevation. Higher up, near the timberline, Subalpine fir and
-                Whitebark pine make appearances, particularly where the MH zone
-                begins to transition into the Engelmann Spruce-Subalpine Fir
-                zone as you move from the coastal ecosystems to the interior
-                ecosystems. The understory is rich with shrubs, including
-                various species of blueberry (oval-leaved, Alaska, and black
-                huckleberry), false azalea, white-flowered rhododendron, and
-                copperbush. Mosses form thick carpets, such as pipecleaner moss,
-                red-stemmed feathermoss, and fan moss. Herbs and low-growing
-                plants are fewer, but species like queen's cup, skunk cabbage,
-                and twisted stalk can be found.
-              </p>
+              <div>
+                <p className="font-body-copy p-2">
+                  One of the most defining features of the MH zone is the
+                  dominance of Mountain hemlock (Tsuga mertensiana), which
+                  thrives in both forested and parkland areas. Alongside it,
+                  Amabilis fir (Abies amabilis) and Yellow cedar (Chamaecyparis
+                  nootkatensis) are common, forming the backbone of the
+                  subalpine forest ecosystems. In the lower forested regions,
+                  you'll also find species like Western hemlock, Western
+                  redcedar, Douglas-fir, Sitka spruce, and Western white pine,
+                  varying by location and elevation.
+                </p>
+                <p className="font-body-copy p-2">
+                  Higher up, near the timberline, Subalpine fir and Whitebark
+                  pine make appearances, particularly where the MH zone begins
+                  to transition into the Engelmann Spruce-Subalpine Fir zone as
+                  you move from the coastal ecosystems to the interior
+                  ecosystems. The understory is rich with shrubs, including
+                  various species of blueberry (oval-leaved, Alaska, and black
+                  huckleberry), false azalea, white-flowered rhododendron, and
+                  copperbush. Mosses form thick carpets, such as pipecleaner
+                  moss, red-stemmed feathermoss, and fan moss. Herbs and
+                  low-growing plants are fewer, but species like queen's cup,
+                  skunk cabbage, and twisted stalk can be found.
+                </p>
+              </div>
             </div>
             <div>
               <div className="flex flex-col lg:grid grid-cols-2 gap-4">
@@ -222,11 +230,11 @@ export default function MountainHemlockPage() {
                   className="rounded-lg min-h-[100px] w-full"
                 />
               </div>
-              <p className="p-2 font-body-copy">
+              <p className="p-4 font-body-copy">
                 In the parkland subzones, the forest canopy becomes more sparse.
                 Trees grow in clusters, separated by lush meadows or low-lying
                 heath vegetation. These meadows are home to colorful herbs like
-                false hellebore, Sitka valerian, paintbrush species, and white
+                false hellebore, Sitka valerian, running clubmoss, and white
                 marsh marigold. Subalpine heaths support mountain heather
                 species—pink, white, and yellow—as well as partridgefoot,
                 running clubmoss, and crowberry. Wet subalpine basins may host
@@ -278,8 +286,7 @@ export default function MountainHemlockPage() {
                 rel="noopener noreferrer"
                 className="underline hover:text-green-800 transition"
               >
-                Squamish
-              Lil’wat Cultural Centre in Whistler
+                Squamish Lil’wat Cultural Centre in Whistler
               </a>
               .
             </p>
@@ -329,8 +336,8 @@ export default function MountainHemlockPage() {
             </figure>
           </div>
           <div className="rounded-xl">
-            <h2 className="font-regular-header text-green-900 text-center p-4">
-              Two primary soil types define the area
+            <h2 className="font-subheader-bold text-green-900 text-center p-4">
+              Two primary soil types define the area...
             </h2>
             <div className="w-full h-[240px] lg:h-120 ">
               <Slideshow slides={soilSlides} />

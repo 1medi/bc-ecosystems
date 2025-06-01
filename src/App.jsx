@@ -12,7 +12,7 @@ import SBPS from "./pages/centralInterior/sbps/App.jsx";
 import SBS from "./pages/centralInterior/sbs/App.jsx";
 import AT from "./pages/alpineTundra/App.jsx";
 import BWBS from "./pages/northern/bwbs/App.jsx";
-import ESSF from "./pages/northern/essf/App.jsx";
+import ESSF from "./pages/essf/App.jsx";
 import SWB from "./pages/northern/swb/App.jsx";
 import Map from "./pages/map/App.jsx";
 import Home from "./Home.jsx";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/FAQ" element={<FAQPage />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Alpine-Tundra" element={<AT />} />
-
+          <Route path="/Engelmann-Spruce-Subalpine-Fir" element={<ESSF />} />
           {/* Coastal */}
           <Route path="/Mountain-Hemlock" element={<MH />} />
           <Route path="/Coastal-Western-Hemlock" element={<CWH />} />
@@ -48,9 +48,7 @@ function App() {
           <Route path="/Sub-Boreal-Spruce" element={<SBS />} />
 
           {/* Northern */}
-
           <Route path="/Boreal-White-and-Black-Spruce" element={<BWBS />} />
-          <Route path="/Engelmann-Spruce-Subalpine-Fir" element={<ESSF />} />
           <Route path="/Spruce-Willow-Birch" element={<SWB />} />
 
           {/* Interactive Map*/}

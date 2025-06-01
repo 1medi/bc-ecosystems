@@ -10,7 +10,7 @@ export default function AlpineTundraPage() {
     <PageWrapper>
       <EcosystemPage
         title="Alpine Tundra Complex"
-        subtitle="High-elevation ecosystems above the treeline shaped by snow, wind, and resilience"
+        subtitle="High-elevation ecosystems above the treeline shaped by snow, wind, and resilience."
         description="Located above the treeline, the Alpine Tundra Complex endures extreme conditions, supporting a tapestry of hardy plants and subdivided into three biogeoclimatic zones."
         heroVideo={ATVideo}
       />
@@ -54,7 +54,7 @@ export default function AlpineTundraPage() {
             <h3 className="font-subheader-bold text-green-800 mb-2">IMA</h3>
             <p className="font-body-copy">
               The Interior Mountain Heather Alpine Tundra is found further south
-              in BC’s interior. It features diverse heath vegetation and
+              in BC's interior. It features diverse heath vegetation and
               maintains a cold, continental climate.
             </p>
           </div>
@@ -62,13 +62,10 @@ export default function AlpineTundraPage() {
             <h3 className="font-subheader-bold text-green-800 mb-2">CMA</h3>
             <p className="font-body-copy">
               The Coastal Mountain Heather Alpine Tundra lies above the MH zone
-              along BC’s coast. A maritime climate shapes its flora, which
+              along BC's coast. A maritime climate shapes its flora, which
               resembles coastal ecosystems.
             </p>
           </div>
-        </div>
-        <div className="mt-8">
-          {/* <img src={Subzones} alt="Alpine tundra subzone diagram" className="rounded-lg mx-auto" /> */}
         </div>
       </section>
     </PageWrapper>

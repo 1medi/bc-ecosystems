@@ -55,9 +55,10 @@ export default function BWBSPage() {
       <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/2">
-            <h2 className="text-2xl font-bold font-regular-header text-green-900 mb-4">
+            <h2 className="text-center font-regular-header text-green-900 ">
               Overview and Geography
             </h2>
+            <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
             <p className="font-body-copy">
               The Boreal White and Black Spruce Zone in British Columbia
               represents a significant portion of the broader boreal forest that
@@ -78,19 +79,22 @@ export default function BWBSPage() {
                 alt="BWBS zone map"
                 className="rounded-lg w-full"
               />
-              <figcaption className="font-caption p-2">Landscape overlooking the BWBS Zone</figcaption>
+              <figcaption className="font-caption p-2">
+                Landscape overlooking the BWBS Zone
+              </figcaption>
             </figure>
           </div>
         </div>
       </section>
 
       <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#556B2F]/15 rounded-xl drop-shadow-xl">
-        <h2 className="text-2xl font-bold font-regular-header text-green-900 text-center mb-6">
+        <h2 className="text-2xl font-bold font-regular-header text-green-900 text-center">
           Ecological Characteristics
         </h2>
+        <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p className="font-body-copy mb-4">
+            <p className="font-body-copy p-2">
               The climax, or zonal, ecosystems within this boreal zone are
               typically dominated by black and white spruce, accompanied by
               heath shrubs and feather mosses such as{" "}
@@ -99,8 +103,8 @@ export default function BWBSPage() {
               Humo-Ferric Podzol soils, although Luvisolic soils, specifically
               Orthic Gray and Brunisolic Gray Luvisols, are more prevalent in
               the Great Plains region.
-              <br />
-              <br />
+            </p>
+            <p className="font-body-copy p-2">
               Fire plays a significant role as a disturbance factor in this
               zone. Historically, particularly in the Peace River country, many
               fires were human-caused, but in more recent times, lightning is

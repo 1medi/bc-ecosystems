@@ -92,7 +92,7 @@ export default function EcosystemGrid() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-8 lg:px-16"
+      className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4 lg:px-16"
     >
       <h2 className="text-center font-section-header mb-6">
         EXPLORE BC'S ECOSYSTEMS
@@ -144,18 +144,22 @@ export default function EcosystemGrid() {
 
                       {/* Semi-transparent Color Overlay */}
                       <div
-                        className={`absolute inset-0 z-[1] ${color} opacity-70`}
+                        className={`absolute inset-0 z-[1] ${color} opacity-60`}
                       />
 
                       {/* Foreground Text */}
                       <div className="relative z-10">
-                        <div className="text-left font-card leading-tight break-words text-[clamp(0.85rem,3.5vw,2.125rem)] w-full">
+                        {/* Title */}
+                        <div className="text-left font-card leading-tight break-words text-sm sm:text-base md:text-lg lg:text-xl w-full">
                           {name.split(" (")[0]}
                         </div>
 
-                        <div className="text-[clamp(0.75rem,3vw,0.9rem)] text-left opacity-80 mt-1 tracking-wider">
-                          ({name.split(" (")[1]}
-                        </div>
+                        {/* Code (optional second part) */}
+                        {name.includes(" (") && (
+                          <div className="text-[clamp(0.75rem,3vw,0.9rem)] text-left opacity-80 mt-1 tracking-wider break-words">
+                            ({name.split(" (")[1]?.replace(/\)$/, "")})
+                          </div>
+                        )}
                       </div>
                     </motion.div>
                   </Link>

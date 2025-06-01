@@ -14,7 +14,7 @@ const AboutZoneCard = ({
           >
             <div className="flex flex-col gap-4 md:flex-row md:gap-8 items-start">
               <div className="md:w-2/3">
-                <h2 className="font-regular-header text-green-900 mb-2">
+                <h2 className="font-regular-header text-center text-green-900 mb-2">
                   {title}
                 </h2>
                 <div className="border-b border-4 border-green-950 my-3 rounded-xl " />

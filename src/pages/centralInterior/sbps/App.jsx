@@ -14,19 +14,21 @@ export default function SBPSPage() {
         <section className="p-8 m-8 max-w-screen-lg mx-auto bg-[#008080]/25  rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2">
-              <h2 className="font-regular-header text-green-900 mb-4">
+              <h2 className="text-center font-regular-header text-green-900 ">
                 Distribution & Landscape
               </h2>
               <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
-              <p className="font-body-copy">
+              <p className="font-body-copy p-2">
                 The Sub-boreal Pine-Spruce (SBPS) biogeoclimatic zone is
                 situated in the west-central interior of British Columbia,
                 specifically in the Chilcotin region. This zone was established
                 based on Forest Service classification work conducted in the
-                Cariboo Forest Region during the mid-1970s. It encompasses
-                portions of Krajina's former Cariboo Aspen-Lodgepole
-                Pine-Douglas Fir zone, as well as previous areas classified
-                within the Sub-boreal Spruce (SBS) zone. The SBPS is
+                Cariboo Forest Region during the mid-1970s.
+              </p>
+              <p className="font-body-copy p-2">
+                It encompasses portions of Krajina's former Cariboo
+                Aspen-Lodgepole Pine-Douglas Fir zone, as well as previous areas
+                classified within the Sub-boreal Spruce (SBS) zone. The SBPS is
                 characterized by extreme cold during the winter months due to
                 cold air drainage and is comparatively colder and drier than the
                 adjacent SBS zone. It is further divided into four subzones:
@@ -44,7 +46,7 @@ export default function SBPSPage() {
         </section>
 
         <section className="p-8 max-w-screen-lg m-auto rounded-xl bg-[#008080]/25  shadow-xl mb-8 ">
-          <h2 className="font-regular-header text-green-900 text-center mb-6">
+          <h2 className="font-regular-header text-green-900 text-center ">
             Ecological Characteristics
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
