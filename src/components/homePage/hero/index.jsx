@@ -25,9 +25,8 @@ export default function HeroSection() {
               autoPlay
               muted
               loop
-              preload="auto"
               playsInline
-              className="min-w-screen h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-cover"
             />
           </div>
         </div>
