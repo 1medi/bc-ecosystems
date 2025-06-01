@@ -6,7 +6,7 @@ export default function ExploreSection() {
   const items = [
     {
       title: "Interactive Maps",
-      desc: "Discover BC’s ecosystems visually.",
+      desc: "Discover BC's ecosystems visually.",
       link: "/Interactive-Map",
     },
     {
@@ -22,9 +22,13 @@ export default function ExploreSection() {
   ];
 
   return (
-    <section
+    <motion.section
       id="explore"
-      className="bg-[#FCF5EE] rounded-xl shadow-lg m-12 py-12 text-center"
+      className="bg-[#FCF5EE] rounded-xl shadow-lg m-10 py-12 text-center"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
     >
       <h2 className="font-section-header mb-6">COME EXPLORE!</h2>
       <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
@@ -36,7 +40,7 @@ export default function ExploreSection() {
             className="bg-white shadow rounded p-2 w-72 cursor-pointer"
           >
             <h3 className="font-card-title">{item.title}</h3>
-            <p className="mt-2 text-gray-600 font-body-copy">{item.desc}</p>
+            <p className="mt-2 font-body-copy">{item.desc}</p>
             <motion.button
               onClick={() => navigate(item.link)}
               whileHover={{ backgroundColor: "#5C7A50" }}
@@ -47,6 +51,6 @@ export default function ExploreSection() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

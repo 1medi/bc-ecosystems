@@ -37,24 +37,24 @@ export default function Description() {
   ];
 
   return (
-    <section className="w-full max-w-5xl m-auto px-4 bg-[#FCF5EE] rounded-xl shadow-xl overflow-hidden p-8 m-8">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className=""
-      >
-        <div className="w-full h-[240px] lg:h-120">
-          <Slideshow slides={slides} />
-        </div>
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-3">Land Acknowledgement</h3>
-          <p className="text-gray-700 leading-relaxed">
-            {combinedAcknowledgement}
-          </p>
-        </div>
-      </motion.div>
-    </section>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className=" max-w-5xl m-auto px-4 bg-[#FCF5EE] rounded-xl shadow-xl overflow-hidden p-8 m-8"
+    >
+      <div className="w-full h-[240px] lg:h-120">
+        <Slideshow slides={slides} />
+      </div>
+      <div className="p-6">
+        <h3 className="font-section-header text-center mb-3">
+          Land Acknowledgement
+        </h3>
+        <p className="text-center font-body-copy lg:text-left ">
+          {combinedAcknowledgement}
+        </p>
+      </div>
+    </motion.section>
   );
 }

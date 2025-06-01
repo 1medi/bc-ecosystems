@@ -18,7 +18,7 @@ export default function HeroSection() {
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
       {/* BACKGROUND VIDEO */}
-      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full z-0">
+      <div className="fixed top-0 left-0 h-[120vh] w-full z-0">
         <motion.div className="relative w-full h-full">
           <video
             src={HeroVideo}

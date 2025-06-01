@@ -6,6 +6,7 @@ import ESSFSpecies from "../../../components/charts/essfSpecies";
 import ESSFRocks from "../../../components/charts/essfRock";
 import ESSFClimate from "../../../assets/otherImages/essfClimate.webp";
 import ESSFSubzones from "../../../assets/otherImages/essfSubzones.webp";
+import BackToTop from "../../../components/toTop";
 export default function ESSFPage() {
   return (
     <>
@@ -302,6 +303,7 @@ export default function ESSFPage() {
             </p>
           </div>
         </section>
+        <BackToTop/>
       </PageWrapper>
     </>
   );

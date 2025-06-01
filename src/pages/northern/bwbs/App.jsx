@@ -72,11 +72,14 @@ export default function BWBSPage() {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img
-              src={BWBSLandscape1}
-              alt="BWBS zone map"
-              className="rounded-lg w-full"
-            />
+            <figure>
+              <img
+                src={BWBSLandscape1}
+                alt="BWBS zone map"
+                className="rounded-lg w-full"
+              />
+              <figcaption className="font-caption p-2">Landscape overlooking the BWBS Zone</figcaption>
+            </figure>
           </div>
         </div>
       </section>

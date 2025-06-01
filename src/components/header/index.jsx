@@ -19,7 +19,7 @@ export default function Header() {
           {/* Desktop Nav */}
           <nav className="hidden font-body-copy md:flex space-x-8 text-sm font-medium text-gray-700 uppercase tracking-widest">
             <a href="/Interactive-Map" className="hover:text-green-700">
-              Ecosystems
+              Ecosystems Map
             </a>
             <a href="/Gallery" className="hover:text-green-700">
               Gallery
@@ -51,7 +51,7 @@ export default function Header() {
         {isOpen && (
           <nav className="md:hidden mt-4 space-y-4 text-sm font-medium text-gray-700 uppercase tracking-widest pb-4 border-t pt-4">
             <a href="/Interactive-Map" className="block hover:text-green-700">
-              Ecosystems
+              Ecosystems Map
             </a>
             <a href="/Gallery" className="block hover:text-green-700">
               Gallery

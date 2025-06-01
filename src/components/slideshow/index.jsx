@@ -22,7 +22,7 @@ export default function Slideshow({ slides = [], autoPlay = true }) {
           <div className="relative w-full h-full">
             {slides[current].image}
 
-            <div className="absolute bottom-0 left-0 w-full bg-[#4C6440] bg-opacity-60 font-body-copy text-white p-2 text-sm md:text-base z-10">
+            <div className="absolute bottom-0 left-0 w-full bg-[#4C6440] bg-opacity-60 font-body-italic text-white p-2 text-sm md:text-base z-10">
               {slides[current].description || "\u00A0"}
             </div>
           </div>

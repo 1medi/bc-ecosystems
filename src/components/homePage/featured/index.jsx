@@ -32,7 +32,13 @@ export default function FeaturedEcosystems() {
   ];
 
   return (
-    <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-6 text-center">
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-6 text-center"
+    >
       <h2 className="font-section-header mb-10">FEATURED ECOSYSTEMS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {featured.map((eco) => (
@@ -41,7 +47,7 @@ export default function FeaturedEcosystems() {
             href={eco.link}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 250 }}
-            className="bg-white shadow-lg rounded w-80 overflow-hidden cursor-pointer"
+            className="bg-white shadow-lg rounded w-80 overflow-hidden "
           >
             <img
               src={eco.img}
@@ -54,7 +60,7 @@ export default function FeaturedEcosystems() {
               <motion.button
                 onClick={() => navigate(eco.link)}
                 whileHover={{ backgroundColor: "#5C7A50" }}
-                className="mt-4 inline-block text-white bg-[#16A34A] p-2 rounded-xl"
+                className="mt-4 inline-block font-button text-white bg-[#16A34A] p-4 rounded-xl cursor-pointer"
               >
                 Learn More
               </motion.button>
@@ -62,6 +68,6 @@ export default function FeaturedEcosystems() {
           </motion.a>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

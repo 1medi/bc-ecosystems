@@ -19,11 +19,11 @@ html,
 body {
   height: auto;
   overflow-x: hidden;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 p {
-  font-family: var(--font-body-copy); /* If using CSS variable */
+  font-family: var(--font-body-copy); 
 }
 
 /* Hero Header */
@@ -36,6 +36,14 @@ p {
 .font-card {
   font-family: "Kapital-Demi", sans-serif;
   font-weight: 100;
+}
+/* captions */
+.font-caption {
+  font-family: "Work-Sans", sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.5;
+  font-weight: 200;
+  font-style: italic;
 }
 
 /* Body Copy */
@@ -54,6 +62,13 @@ p {
   font-weight: bold;
 }
 
+/* Body Copy */
+.font-body-italic {
+  font-family: "Work-Sans", sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.5;
+  font-style: italic;
+}
 /* Regular Header */
 .font-regular-header {
   font-family: "Work-Sans", sans-serif;

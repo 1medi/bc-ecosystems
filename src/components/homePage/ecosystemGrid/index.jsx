@@ -87,80 +87,84 @@ const imageMap = {
 
 export default function EcosystemGrid() {
   return (
-    <div className="scroll-mt-32">
-      <section className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-4">
-        <h2 className="text-center text-3xl font-semibold mb-6">
-          EXPLORE BC'S ECOSYSTEMS
-        </h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-          British Columbia is home to some of the most diverse ecosystems in the
-          world. Discover the unique flora, fauna, and landscapes that make each
-          region special.
-        </p>
-        <div className="max-w-[1600px] mx-auto space-y-12">
-          {Object.entries(sections).map(([region, ecosystems]) => (
-            <div
-              key={region}
-              id={region.toLowerCase().replace(/\s+/g, "-")}
-              className="scroll-mt-32"
-            >
-              <h3 className="font-regular-header mb-4">{region}</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
-                {ecosystems.map(({ name, color }) => {
-                  const path = routeMap[name];
-                  return (
-                    <Link to={path} key={name}>
-                      <motion.div
-                        whileHover="hover"
-                        initial="rest"
-                        animate="rest"
-                        variants={{
-                          rest: { scale: 1 },
-                          hover: { scale: 1.05 },
-                        }}
-                        className={`relative overflow-hidden text-white px-4 py-4 rounded shadow 
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="bg-[#FCF5EE] m-12 rounded-xl shadow-lg py-16 px-8 lg:px-16"
+    >
+      <h2 className="text-center font-section-header mb-6">
+        EXPLORE BC'S ECOSYSTEMS
+      </h2>
+      <p className="text-center font-subheader max-w-2xl mx-auto mb-12">
+        British Columbia is home to some of the most diverse ecosystems in the
+        world. Discover the unique flora, fauna, and landscapes that make each
+        region special.
+      </p>
+      <div className="max-w-[1600px] mx-auto space-y-12">
+        {Object.entries(sections).map(([region, ecosystems]) => (
+          <div
+            key={region}
+            id={region.toLowerCase().replace(/\s+/g, "-")}
+            className="scroll-mt-32"
+          >
+            <h3 className="font-section-header mb-4">{region}</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
+              {ecosystems.map(({ name, color }) => {
+                const path = routeMap[name];
+                return (
+                  <Link to={path} key={name}>
+                    <motion.div
+                      whileHover="hover"
+                      initial="rest"
+                      animate="rest"
+                      variants={{
+                        rest: { scale: 1 },
+                        hover: { scale: 1.05 },
+                      }}
+                      className={`relative overflow-hidden text-white px-4 py-4 rounded shadow 
     w-full h-[240px] lg:h-[420px] 
     flex flex-col justify-end cursor-pointer`}
-                      >
-                        {/* Background Image */}
-                        <motion.div
-                          variants={{
-                            rest: { opacity: 0 },
-                            hover: { opacity: 0.9 },
-                          }}
-                          transition={{ duration: 0.4 }}
-                          className="absolute inset-0 z-0"
-                          style={{
-                            backgroundImage: `url(${imageMap[name]})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                          }}
-                        />
+                    >
+                      {/* Background Image */}
+                      <motion.div
+                        variants={{
+                          rest: { opacity: 0 },
+                          hover: { opacity: 0.9 },
+                        }}
+                        transition={{ duration: 0.4 }}
+                        className="absolute inset-0 z-0"
+                        style={{
+                          backgroundImage: `url(${imageMap[name]})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      />
 
-                        {/* Semi-transparent Color Overlay */}
-                        <div
-                          className={`absolute inset-0 z-[1] ${color} opacity-70`}
-                        />
+                      {/* Semi-transparent Color Overlay */}
+                      <div
+                        className={`absolute inset-0 z-[1] ${color} opacity-70`}
+                      />
 
-                        {/* Foreground Text */}
-                        <div className="relative z-10">
-                          <div className="text-left font-card leading-tight break-words text-[clamp(0.85rem,3.5vw,2.125rem)] w-full">
-                            {name.split(" (")[0]}
-                          </div>
-
-                          <div className="text-[clamp(0.75rem,3vw,0.9rem)] text-left opacity-80 mt-1 tracking-wider">
-                            ({name.split(" (")[1]}
-                          </div>
+                      {/* Foreground Text */}
+                      <div className="relative z-10">
+                        <div className="text-left font-card leading-tight break-words text-[clamp(0.85rem,3.5vw,2.125rem)] w-full">
+                          {name.split(" (")[0]}
                         </div>
-                      </motion.div>
-                    </Link>
-                  );
-                })}
-              </div>
+
+                        <div className="text-[clamp(0.75rem,3vw,0.9rem)] text-left opacity-80 mt-1 tracking-wider">
+                          ({name.split(" (")[1]}
+                        </div>
+                      </div>
+                    </motion.div>
+                  </Link>
+                );
+              })}
             </div>
-          ))}
-        </div>
-      </section>
-    </div>
+          </div>
+        ))}
+      </div>
+    </motion.section>
   );
 }

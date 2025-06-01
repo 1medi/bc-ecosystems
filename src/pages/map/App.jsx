@@ -162,7 +162,7 @@ export default function InteractiveMapSidebar() {
     <>
       <PageWrapper>
         <div className="p-8 m-8 max-w-screen-5xl mx-auto bg-[#FCF5EE] rounded-xl shadow-xl ">
-          <h1 className="font-kapital-big-button text-center p-4 ">
+          <h1 className="font-section-header text-center p-4 ">
             British Columbia Ecosystems Map
           </h1>
           <div className="flex flex-col md:flex-row justify-center items-center lg:justify-around lg:items-around  gap-4 max-w-screen-5xl  mx-auto">

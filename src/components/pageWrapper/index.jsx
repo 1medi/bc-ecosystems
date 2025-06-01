@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
 import BKG from "../../assets/bkgSubtle.webp";
+import BackToTop from "../toTop";
 export default function PageWrapper({ children }) {
   return (
     <>
@@ -22,6 +23,7 @@ export default function PageWrapper({ children }) {
           }}
         >
           {children}
+          <BackToTop/>
         </motion.div>
 
         <Footer />

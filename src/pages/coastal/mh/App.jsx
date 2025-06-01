@@ -4,7 +4,6 @@ import AboutZoneCard from "../../../components/aboutZoneCard";
 import MHChart from "../../../components/charts/mhChart/index";
 import PageWrapper from "../../../components/pageWrapper";
 import Krumm from "../../../assets/mh/krumhotz.webp";
-import MHCover from "../../../assets/mh/mhcover.webp";
 import Coastal from "../../../assets/mh/diagram/coastalMountain.webp";
 import Western from "../../../assets/mh/diagram/coastalWestern.webp";
 import Hemlock from "../../../assets/mh/diagram/mountainHemlock.webp";
@@ -15,9 +14,9 @@ import MHLand1 from "../../../assets/mh/mhLand1.webp";
 import Forest1 from "../../../assets/mh/forestMeadows1.webp";
 import Forest2 from "../../../assets/mh/forestMeadows2.webp";
 import Roadcut from "../../../assets/mh/roadCut.webp";
-import Veg1 from "../../../assets/mh/mhVeg2.webp";
 import Veg2 from "../../../assets/mh/mhVeg3.webp";
 import Slideshow from "../../../components/slideshow";
+
 const soilSlides = [
   {
     image: (
