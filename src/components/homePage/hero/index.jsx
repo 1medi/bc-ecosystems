@@ -17,19 +17,20 @@ export default function HeroSection() {
         className="relative flex items-center justify-center min-h-screen overflow-visible"
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
-        {/* BACKGROUND VIDEO */}
-        <div className="fixed top-0 left-0 h-screen w-full z-0">
-          <div className="relative w-full h-full">
-            <video
-              src={HeroVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover"
-            />
-          </div>
-        </div>
+      {/* BACKGROUND VIDEO */}
+      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full z-0">
+        <motion.div className="relative w-full h-full">
+          <video
+            src={HeroVideo}
+            autoPlay
+            muted
+            loop
+            preload="auto"
+            playsInline
+            className="min-w-screen h-full object-cover"
+          />
+        </motion.div>
+      </div>
 
         {/* OVERLAY CONTENT */}
         <div className="relative z-10 w-full px-4 text-white">
