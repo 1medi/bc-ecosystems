@@ -11,13 +11,6 @@ export default function BGPage() {
         title="Bunchgrass Zone"
         subtitle="A dry, rare grassland ecosystem home to unique wildlife, cryptogamic crusts, and limited forest cover"
         heroVideo={bgHero}
-        description="Covering less than 1% of BC, the Bunchgrass (BG) zone features bunchgrass-dominated ecosystems, rare flora and fauna, and a climate prone to summer drought. It's ecologically vital and underrepresented in protected areas."
-        stats={[
-          { label: "Mean Annual Temp", value: "5.9°C" },
-          { label: "Annual Precipitation", value: "337 mm" },
-          { label: "Dominant Plant", value: "Bluebunch Wheatgrass" },
-          { label: "Zone Code", value: "BG" },
-        ]}
       />
 
       {/* Overview */}

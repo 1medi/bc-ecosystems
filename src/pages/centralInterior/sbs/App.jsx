@@ -2,9 +2,7 @@ import EcosystemPage from "../../../components/ecosystemTemplate";
 import PageWrapper from "../../../components/pageWrapper";
 import bgHero from "../../../assets/sbs/sbs.webp";
 import SBSClimate from "../../../components/charts/sbsTemp/index.jsx";
-import { href, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import SBSclimate from "../../../assets/sbs/sbsClimate.webp";
 export default function SBSPage() {
   return (
     <>

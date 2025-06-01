@@ -177,7 +177,7 @@ export default function PPPage() {
             </li>
           </ul>
           <figure className="max-w-screen font-body-copy">
-            <img src={PPIndigenous}/>
+            <img alt="PP Communities" src={PPIndigenous}/>
             <figcaption>A map displaying the indigenous communities within the Ponderosa Pine</figcaption>
           </figure>
         </section>
