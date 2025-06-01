@@ -3,7 +3,12 @@ import { useState } from "react";
 import PageWrapper from "../../components/pageWrapper";
 import galleryImages from "../../data/galleryImages";
 import ViewerWithOverlay from "../../components/360Images/index.jsx";
-import Image1 from "../../assets/360/cmaWhistler.webp"
+import Image1 from "../../assets/360/cmaWhistler.webp";
+import Image2 from "../../assets/360/mhSquamish.webp";
+import Image3 from "../../assets/360/cmaWhistler2.webp";
+import Image4 from "../../assets/360/cwhWoodlot.webp";
+import Image5 from "../../assets/360/imaCathedral.webp";
+import Image6 from "../../assets/360/malcolmKnapp.webp";
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -26,15 +31,19 @@ const Gallery = () => {
       : extendedImages;
 
   const image360List = [
-    { label: "Mountain", value: "mountain", src: Image1 },
-    // { label: "Forest", value: "forest", src: "/360/forest.jpg" },
-    // { label: "Coastal", value: "coastal", src: "/360/coastal.jpg" },
+    { label: "Whistler", value: "Whistler", src: Image1 },
+    { label: "Squamish", value: "Squamish", src: Image2 },
+    { label: "Whistler 2", value: "Whistler 2", src: Image3 },
+    { label: "Woodlot", value: "Woodlot", src: Image4 },
+    { label: "Cathedral", value: "Cathedral", src: Image5 },
+    { label: "Malcolm Knapp", value: "Malcolm Knapp", src: Image6 },
   ];
-  const [selected360, setSelected360] = useState("mountain");
+  const [selected360, setSelected360] = useState("Whistler");
+  const [fullscreen360, setFullscreen360] = useState(false);
 
   return (
     <PageWrapper>
-      <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 overflow-x-hidden">
         <h1 className="font-section-header text-center mb-8">Photo Gallery</h1>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
@@ -72,7 +81,7 @@ const Gallery = () => {
                 onClick={() => setSelectedImage(image)}
               >
                 <img
-                loading="lazy"
+                  loading="lazy"
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   className="w-full h-full object-cover"
@@ -174,21 +183,53 @@ const Gallery = () => {
               ))}
             </div>
 
-            <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div
-                className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg group"
-                title="Click and drag to explore in 360°"
-              >
-                <ViewerWithOverlay
-                  src={
-                    image360List.find((img) => img.value === selected360)?.src
-                  }
-                />
-
-                <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                  Click and drag to explore
-                </div>
+            <div
+              className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg group cursor-pointer"
+              title="Click and drag to explore in 360°"
+              onClick={() => setFullscreen360(true)}
+            >
+              <ViewerWithOverlay
+                src={image360List.find((img) => img.value === selected360)?.src}
+              />
+              <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                Click and drag to explore
               </div>
+            </div>
+          </div>
+        )}
+
+        {fullscreen360 && (
+          <div
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setFullscreen360(false)}
+          >
+            <div
+              className="relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="absolute top-4 right-4 z-10 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition-colors"
+                onClick={() => setFullscreen360(false)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <span className="sr-only">Close</span>
+              </button>
+              <ViewerWithOverlay
+                src={image360List.find((img) => img.value === selected360)?.src}
+              />
             </div>
           </div>
         )}

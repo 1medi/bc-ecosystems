@@ -262,18 +262,38 @@ export default function MountainHemlockPage() {
 
         <section className="p-8 m-8 max-w-screen-lg mx-auto  bg-[#C5D6F5]/75 rounded-xl shadow-xl">
           <h2 className="font-regular-header text-green-900 text-center mb-6">
-            Cultural Connections of MH
+            Indigenous Communities and Land Management
           </h2>
           <div className="border-b border-4 border-green-950 my-3 rounded-xl " />
           <div className="flex flex-col md:flex-row gap-8">
-            <p className="font-body-copy">
-              Culturally, the MH zone is part of the traditional territory of
-              many Indigenous communities. One significant species is the Yellow
-              cedar, prized for its durability, spiritual importance, and use in
-              carving and canoe building. Visitors can deepen their
-              understanding of Indigenous land stewardship at the Squamish
-              Lil'wat Cultural Centre in Whistler, which showcases the enduring
-              connection between people and the land.
+            <p className="font-body-copy text-base md:text-lg leading-relaxed md:w-1/2">
+              The Mountain Hemlock zone is a beautiful and rich ecosystem which
+              plays an important role in the lives of many different Indigenous
+              Peoples, past, present and future. For example, the Squamish
+              Nation and Lil’wat Nation, have managed this ecosystem, respecting
+              and harvesting its many resources since time immemorial. You can
+              learn more about these two specific nations at the{" "}
+              <a
+                href="https://slcc.ca/?srsltid=AfmBOop3Wnml4zQtoVNelg3gkgIgY3dhMoJwekD_JU1IZqWjr8RBnv-Y"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-800 transition"
+              >
+                Squamish
+              Lil’wat Cultural Centre in Whistler
+              </a>
+              .
+            </p>
+
+            <p className="font-body-copy text-base md:text-lg leading-relaxed md:w-1/2">
+              One of the resources that is unique to the Mountain Hemlock zone
+              is the Mountain goat. In the springtime, these beautiful creatures
+              shed their wool naturally. It can be collected in clumps that get
+              stuck in shrubs and bushes at higher elevations. This wool was an
+              important resource to the Coast Salish peoples, and was used to
+              create yarn for weaving. At the Squamish Lil’wat Cultural Centre,
+              you can see examples of Salish Weaving and learn more about this
+              ancient and beautiful practice that was nearly lost.
             </p>
           </div>
         </section>

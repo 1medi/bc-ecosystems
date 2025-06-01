@@ -190,8 +190,59 @@ export default function CDFPage() {
               </p>
             </div>
           </div>
-          <div className="flex m-auto justify-center items-center w-full">
-            <img src={CDFForest} alt="forest" className="rounded-xl" />
+        </section>
+
+        <section className="flex flex-col gap-4 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
+          <h2 className="font-regular-header text-green-900 text-center text-xl sm:text-2xl md:text-3xl leading-tight">
+            Indigenous Communities and Land Management
+          </h2>
+
+          <div className="border-b border-4 border-green-950  rounded-xl " />
+
+          <div className="flex flex-col gap-6 pt-4">
+            <p className="font-body-copy text-base md:text-lg leading-relaxed">
+              The Coastal Douglas-fir ecosystem has been tended and cared for by
+              many different Coast Salish Indigenous Peoples since time
+              immemorial. Through their land management practices, such as
+              cultural burning, these ecosystems thrived and prospered.
+              Low-intensity burns were used as a management tool for Garry oak
+              meadows to allow for the growth of important food sources like
+              chocolate lily (tsaliqw) and camas (speenhw) while maintaining
+              biodiversity. This practice was outlawed by the government, and
+              these ecosystems suffered as a result.
+            </p>
+
+            <p className="font-body-copy text-base md:text-lg leading-relaxed">
+              Cultural burning is seeing a revival and Indigenous communities
+              such as the Penelakut First Nation are actively working to blend
+              their traditional knowledge with western science in a stewardship
+              and monitoring program to restore balance in the CDF. An example
+              of this is the Nuts’a’maat Forage Forest . You can visit the
+              Nuts’a’maat Forage Forest on Galiano Island, which is a
+              collaborative eco-cultural restoration project with the intent to
+              bring people and the land back together. In the Hul’qumi’num
+              language, nuts’a’maat means ‘working together with one heart, one
+              mind‘. If you want to learn more about the Hul’qumi’num language
+              and the plants and wildlife of the CDF ecosystem, check out the
+              Ecosystem Guide:{" "}
+              <a
+                href="https://nlpslearns.sd68.bc.ca/resources/ecosystem-guide/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-800 transition"
+              >
+                A Hul’q’umi’num’ language guide to plants and animals of
+                southern Vancouver Island, the Gulf Islands and the Salish Sea{" "}
+              </a>
+            </p>
+
+            <div className="w-full max-w-3xl mx-auto">
+              <img
+                src={CDFForest}
+                alt="forest"
+                className="rounded-xl w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </section>
       </PageWrapper>

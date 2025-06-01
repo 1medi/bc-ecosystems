@@ -173,9 +173,26 @@ export default function CWHPage() {
           </div>
         </section>
 
-        {/* <div className="flex-1">
-          <CWHGraph/>
-      </div> */}
+        <section className="flex flex-col gap-6 m-8 p-8 max-w-screen-lg mx-auto rounded-xl shadow-xl bg-[#C5D6F5]/75">
+          <h2 className="font-regular-header text-green-900 text-center">
+            In-Depth Look at the CWH Ecosystem
+          </h2>
+          <div className="border-b border-4 border-green-950 my-3 rounded-xl" />
+          <p className="font-body-copy text-base md:text-lg leading-relaxed text-center">
+            Learn more about the Coastal Western Hemlock zone’s unique
+            ecological role, biodiversity, and climate patterns through this
+            short documentary.
+          </p>
+          <div className="relative w-full pt-[56.25%] rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-xl"
+              src=" https://www.youtube.com/embed/Pmpfmw0jGXo?si=S4qSqYatmRmUeT7v"
+              title="Coastal Western Hemlock Ecosystem Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
       </PageWrapper>
     </>
   );
